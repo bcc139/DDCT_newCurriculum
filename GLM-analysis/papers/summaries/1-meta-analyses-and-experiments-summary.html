@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1-meta-analyses-and-experiments — papers digest</title>
+<style>
+:root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#0f766e}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+header.hero{background:linear-gradient(135deg,#111827,#134e4a);color:#fff;border-radius:16px;padding:24px 26px;margin-bottom:20px}
+header.hero h1{margin:0 0 6px;font-size:22px}header.hero p{margin:0;color:#cdeae5;font-size:13.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:2px 10px;border-radius:999px;font-size:11.5px}
+h2{font-size:18px;margin:30px 0 8px}
+.paper{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:14px 18px;margin:12px 0}
+.paper.star{border-left-color:#d97706;background:#fffbeb}
+.paper h3{margin:0 0 4px;font-size:15px}.paper .cite{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.paper ul{margin:6px 0;padding-left:20px;font-size:13.5px}.paper li{margin:3px 0}
+.map{font-size:12.5px;background:#eef8f4;border-radius:8px;padding:6px 10px;margin-top:8px}
+.top{background:#fdf2f8;border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin:12px 0}
+.top h3{margin:0 0 6px;font-size:15px;color:#831843}
+footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="hero">
+  <h1>1-meta-analyses-and-experiments — papers digest</h1>
+  <p>Summaries and DDCT-relevant cases extracted from 10 papers · generated 2026-10-13 by digest agent</p>
+  <div class="badges"><span class="badge">★ = concrete transferable case</span><span class="badge">numbers cited from source text</span></div>
+</header>
+
+<div class="paper star">
+  <h3>2024 · Computer Science Education in ChatGPT Era: Experiences from an Experiment in a Programming Course for Novice Programmers</h3>
+  <div class="cite">Mathematics 12(5):629 (MDPI) · controlled between-subjects experiment, one full semester · n=182 first-year C++ OOP students (Univ. of Maribor; 2 groups ×99, 8 control users removed for protocol breach)</div>
+  <ul>
+    <li>ChatGPT access changed nothing: lab work 65.27% vs 66.72% (p=0.760), midterms 65.96% vs 66.58% (p=0.856), final grade 65.93% vs 66.61% (p=0.730) — all null hypotheses accepted.</li>
+    <li>The null is credited to course redesign: ChatGPT-resistant assignments (UML diagrams, given code/main/I-O instead of rich text prompts), in-lab extension problems solved without AI, interactive oral defense (concept questions, code analysis, code changes, code completion), and paper-based midterms.</li>
+    <li>Redesign shifted usage, not just scores: only 21/69 treatment students used ChatGPT for every assignment; reported use favored code optimization/comparison over code generation. 70% of all students used ChatGPT regularly outside programming by June 2023.</li>
+    <li>ChatGPT itself scored 24/44 on the assignments without prompt engineering (~34 with expert prompting) — the defense requirement exists because raw output is grade-competitive.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L5 (process visibility beats surveillance) + DR23 (assessment integrity) + S0 3-zone policy — the copyable package is "AI-permitted homework + AI-free in-lab extension + oral defense + paper exams"; it operationalizes a 🔴 zone that makes a permissive 🟢 zone safe. Authors warn the package needs periodic refresh as models improve (DR14 tool churn).</div>
+</div>
+
+<div class="paper star">
+  <h3>2025 · ChatGPT in Introductory Programming: Counterbalanced Evaluation of Code Quality, Conceptual Learning, and Student Perceptions</h3>
+  <div class="cite">ACM SIGCITE ’25 · counterbalanced quasi-experiment (each group alternated AI / no-AI across two assignments) · n=27 CS1 students (C; groups of 14/13), multidimensional rubric, inter-rater κ=0.87</div>
+  <ul>
+    <li>ChatGPT groups scored significantly higher on rubric-based code quality both times (functions: t=4.46, p=0.018; structures: t=5.02, p&lt;0.001), especially correctness, readability, warning analysis — e.g. error handling 2.0 vs 0.05 on Assignment 2.</li>
+    <li>Completion time collapsed: 495s vs 2385s (A1, ~4.8×; t=−5.222, p=0.0002) and 868s vs 1934s (A2, ~2.2×; t=4.175, p=0.0011).</li>
+    <li>Conceptual learning was mixed: no overall difference on functions (U=153.5, p=0.323) except one "uses of functions" item (91.7% vs 0% correct, OR=∞); structures favored the ChatGPT group overall (U=77.0, p=0.0457) but no single question was significant.</li>
+    <li>Students valued debugging/practice help but worried about accuracy and long-term skill development; perceived learning skewed more positive in the first AI assignment than the second.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L2 (integration mode is the variable) + DR23 + S0 tool-sprint labs — copy the design: counterbalanced AI-on/AI-off lab blocks with a published 5-category rubric (correctness / efficiency / readability / warning analysis / error handling) so quality gains are measurable, plus separate AI-free concept checks for the 🔴 zone. Small n=27; treat magnitudes as indicative.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 · Does Generative Artificial Intelligence Improve Students’ Higher-Order Thinking? A Meta-Analysis Based on 29 Experiments and Quasi-Experiments</h3>
+  <div class="cite">Journal of Intelligence 13(12):160 (MDPI) · meta-analysis, 29 studies / 59 effect sizes, Hedges’s g, random effects (I²=77.3%)</div>
+  <ul>
+    <li>Overall effect on higher-order thinking g=0.609 (95% CI 0.485–0.732); by dimension: problem-solving g=0.745 &gt; critical thinking g=0.691 &gt; creativity g=0.444 (all p&lt;0.001).</li>
+    <li>Duration shows an inverted U: 8–16 weeks g=0.759 beats 0–8 weeks g=0.494 and &gt;16 weeks g=0.372 (Q=9.106, p=0.011) — very long exposure breeds over-reliance.</li>
+    <li>Strongest moderator is the learner: high self-regulation g=0.863 vs low g=0.284 (Q=40.962, p&lt;0.001). Pedagogy: project-based g=0.717 vs lecture-based g=0.396 (between-group n.s., p=0.232); K-12 g=0.857 vs post-secondary g=0.539 (n.s., p=0.067).</li>
+    <li>Egger’s test t=1.871, p=0.066 — mild publication bias cannot be ruled out.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L6 (higher-order gains only medium → protect fundamentals) + L8 (block formats) — the 8–16-week sweet spot validates half-semester AI blocks (S0 3-week sprints may be too short to peak; S1/S4 studio-length blocks are in range), and the SRL gap says pair AI with self-regulation scaffolds (judgment notebook, reflection logs) rather than expecting benefits by default.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 · Effect of generative artificial intelligence on university students learning outcomes: A systematic review and meta-analysis</h3>
+  <div class="cite">Educational Research Review (Elsevier, doi 10.1016/j.edurev.2025.100737) · meta-analysis, 57 studies / 97 effect sizes, 5,389 university students, AT-MCSCL framework, random effects (I²=93.1%)</div>
+  <ul>
+    <li>Raw overall effect is large: g+=0.804 — but trim-and-fill correction for publication bias drops it to g+=0.321 (Egger intercept 2.975, p=0.002); academic achievement 0.633→0.354 adjusted.</li>
+    <li>By outcome: language skills g+=2.331 (heavily biased), academic achievement 0.633, affective-motivational 0.617, higher-order thinking 0.580, metacognition n.s. (g+=0.078) — no evidence GenAI builds metacognition on its own.</li>
+    <li>Effects largest for freshmen (0.698), language disciplines (1.782) vs STEM (0.578); medium samples 40–100 give 1.218 vs large samples &gt;100 only 0.465; classroom g+=0.891 vs laboratory 0.261; 4–12-week interventions 1.014 vs &gt;12 weeks 0.350 (n.s.).</li>
+    <li>Context equity signal: low-ICT countries 1.764, low-SES students 1.751, high power-distance 0.859 (significant) vs low power-distance 0.236 (n.s.); South/Southeast Asia g+=0.651.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L6 with the sharpest caveat in this folder (bias-adjusted truth ≈ g 0.32, not 0.80) — grounds S0's "defend the fundamentals" argument in real numbers; classroom-embedded beats lab-pilot (test any DDCT AI block inside real studio courses, not sandbox demos); SE-Asia/high-power-distance context suggests Thai students respond strongly to structured, teacher-framed AI use.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 · Impact of generative AI interaction and output quality on university students’ learning outcomes: a technology-mediated and motivation-driven approach</h3>
+  <div class="cite">Scientific Reports (Nature portfolio) · two-wave longitudinal survey (4 months apart) + CB-SEM and latent moderated SEM · n=323 Chinese undergraduates (58.4% engineering; 68.4% ChatGPT users)</div>
+  <ul>
+    <li>GAI <b>output quality</b> directly predicts learning outcomes (β=0.405 wave 1; β=0.346 wave 2, p&lt;0.001; total effect 0.538 = 0.453 direct + 0.085 via motivation) — mere <b>interaction</b> has no direct path to outcomes, only indirect ones via learning motivation (β=0.116–0.148) and creative self-efficacy (β=0.179–0.189).</li>
+    <li>Motivational chain replicates in both waves: learning motivation → academic self-efficacy (β=0.421–0.552) → creative self-efficacy (β=0.373–0.428) → outcomes (β=0.200–0.143).</li>
+    <li>Creative thinking moderation flips over time: strongly negative in wave 1 (β=−136.322, p&lt;0.001 — outlier-scale value, interpret direction only) but positive in wave 2 (β=0.182, p&lt;0.05): creative students first find AI interaction disappointing, then productive after familiarization.</li>
+    <li>Self-reported scale study — outcomes are perceptions ("using GAI improved my learning"), not grades; single-country sample.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L1 (aligned AI beats raw AI — here: output quality, not usage frequency, is the active ingredient) + AI-as-junior-staff loop — the brief→draft→<b>critique/quality-gate</b> step is exactly the mechanism this paper says carries the effect; also predicts DD art-track "creative" students may need a deliberate familiarization phase before AI blocks pay off (S4 conversion design).</div>
+</div>
+
+<div class="paper star">
+  <h3>2025 · The effectiveness of ChatGPT in assisting high school students in programming learning: evidence from a quasi-experimental research</h3>
+  <div class="cite">Interactive Learning Environments 33(6):3726–3743 (Taylor &amp; Francis) · quasi-experiment + post-hoc interviews · n=153 students (77 ChatGPT / 76 conventional), girls’ senior high school, Taiwan; 6 weeks C++ (3-week common baseline + 3-week treatment); MANCOVA/ANCOVA</div>
+  <ul>
+    <li>Honest negative: the ChatGPT group scored significantly <b>lower</b> on all three outcomes — flow experience (F=9.20, p=0.003, η²=0.06), self-efficacy (F=15.78, p&lt;0.001, η²=0.10), and learning achievement (F=3.96, p=0.048, η²=0.03; posttest 42.42 vs 50.52).</li>
+    <li>Interview causes: communication overhead ("I had to repeat requests constantly"), answers not adapted to the learner’s level, and attribution of success to the AI undermining self-efficacy ("Though it gave me direct answers, I lacked the process of thinking and organizing myself"); 6/11 interviewees found it helpful, 5 did not.</li>
+    <li>Remedy proposed — the guidance–practice–transformation (G–P–T) model: (1) guided keywords/prompts, (2) practice assignments interspersed with <b>bi-directional annotation</b> (student and ChatGPT annotate each other’s code) as a comprehension gate, (3) reflective transformation tasks (report on one’s own project).</li>
+    <li>Instructional setting was conventional lecture-based; ChatGPT used as a virtual TA for syntax/debugging — i.e., raw, unstructured access for novices.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> the folder’s strongest anti-“just give them ChatGPT” evidence (L2 integration mode) + DR7/DR27 (student identity &amp; anxiety — forcing AI-skeptical or novice students onto raw AI hurts self-efficacy, the exact risk in DDCT’s population); copy G–P–T’s bi-directional annotation exercise as a 🟡-zone assignment in S0/S4 intro blocks.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 · The impact of GenAI on learning outcomes: A systematic review and meta-analysis of experimental studies</h3>
+  <div class="cite">Elsevier-format review article (venue not printed in converted text) · PRISMA meta-analysis, 68 studies / 337 effect sizes (2022–2025), SMD, random effects (I²=95%); East China Normal University</div>
+  <ul>
+    <li>Overall effect moderate: SMD=0.45 (95% CI 0.43–0.47); distribution is wide — 35% of effect sizes ≥0.8 while 29% &lt;0.2; fail-safe N=4,882 (robust to unpublished nulls).</li>
+    <li>By dimension: behavioral engagement SMD=1.08 and self-regulation/metacognition 0.74 (monitoring &amp; reflection 0.77) beat cognitive development 0.36 and affective-motivational 0.38 (emotional states n.s. 0.03).</li>
+    <li>Inside cognition, higher-order thinking (0.36) ≈ basic knowledge acquisition (0.34; between-group p=.55) — no premium for depth.</li>
+    <li>Moderators: natural sciences 0.70 &gt; humanities 0.46 &gt; social sciences 0.39; secondary 0.58 &gt; university 0.41; short-term 0.49 &gt; long-term 0.35; medium/small samples 0.55/0.52 vs large samples 0.33.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L6 (higher-order ≈ basic → GenAI is not a HOT machine) + L3 (reflection scaffolds: monitoring/reflection is the biggest measurable winner — build the judgment notebook into AI blocks) — contradicts papers 3–4 on duration (here short &gt; long), reinforcing that "how" dominates "how long" (L2).</div>
+</div>
+
+<div class="paper star">
+  <h3>2026 · Generative AI in higher education: A systematic review of empirical uses, outcomes, and risks</h3>
+  <div class="cite">International Journal of Educational Research Open (Elsevier, doi 10.1016/j.ijedro.2026.100584) · PRISMA 2020 systematic review, 103 empirical studies (Jan 2023–Oct 2025), content analysis into 7 use categories + 4-level outcome typology, inter-coder κ=0.781</div>
+  <ul>
+    <li>56% of studies are "positive but conditional"; the stable explanatory lens across domains is <b>scaffolding vs substitution</b> — effects depend on pedagogy, assessment design, and verification, not on the model.</li>
+    <li>Concrete positive cases: custom GPT-4 tutor produced higher physics learning gains <b>in less time</b> than in-class active learning (Kestin et al.); guidance-based ChatGPT aid that requires an initial attempt then gives hints (not answers) beat standard ChatGPT on self-regulated learning and higher-order thinking (Lee et al.; Makransky et al.); teacher+AI interactive feedback produced the largest writing gains while passive AI-only feedback produced the smallest (Jiang); rubric-prompted LLM grading matched instructor scores on Python assignments and "dramatically reduced grading time" (Bernik).</li>
+    <li>Neutral-by-design: Kosar-style courses "absorb" GenAI via tool-free exams, oral defenses, in-lab extensions, localized tasks — neutral grades = successful risk-managed integration, not failure.</li>
+    <li>Risks quantified/observed: heavy LLM use for code generation &amp; debugging linked to <b>lower final grades</b> while explanation-seeking is not (Jošt); Turnitin flagged AI submissions but staff reported only ~half of suspected cases and AI work earned similar grades (Perkins) — detection is brittle; higher GenAI dependency linked to lower GPA (Revesai); high performers use AI for disciplined autonomy while weaker students substitute → gaps widen.</li>
+    <li>Greenspan randomized field experiment: GenAI-permitted sections improved attitudes, prohibited sections raised grades — acceptance ≠ achievement.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> the folder’s case catalog — L1/L2/L5 + DR23 + L7 (faculty training works: Oman lecturer capacity-building improved GenAI teaching use, Alsaiari); mine it for the attempt-first tutor pattern, hybrid AI+teacher feedback, rubric-prompted grading for studio-scale feedback, and the "explanation-seeking is safe, solution-generation erodes grades" rule to teach students explicitly.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 · Impact of ChatGPT on learning outcomes and performance of students in computer programming courses: a mixed-method approach</h3>
+  <div class="cite">Open-access journal (venue not printed in converted text) · mixed-methods: student survey + instructor survey + course records · N=855 students (from 1,889 enrolled) in a mandatory undergraduate programming course, Nigeria + 17 markers/instructors; correlation + OLS regression</div>
+  <ul>
+    <li>98.4% of students had prior ChatGPT exposure; affective ratings were positive: enjoyment 3.93/5, motivation 3.75/5, confidence 3.72/5, usefulness 2.56/3.</li>
+    <li>But perceptions did not translate into performance: regression on final scores R²=0.006 (0.6% of variance), <b>no predictor significant</b> (all p&gt;0.1); mean score 7.21/10 (SD 3.57).</li>
+    <li>Correlates cluster only among perceptions (concept understanding ↔ problem-solving r=0.640; error-fixing ↔ concepts r=0.577; reliance ↔ assignment completion r=0.572) — a closed loop of beliefs, not outcomes.</li>
+    <li>Markers (n=17): students rely on ChatGPT solutions without fully understanding them (median 4/5), noticeable code similarity across students (3.94/5), changed problem-solving approaches since ChatGPT (3.77/5).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> large-sample confirmation of the perception–performance decoupling (L6) + DR23 — "students like it" is not an outcome argument for curriculum change; marker-observed solution-copying supports mandatory process evidence (drafts, versions, defense) rather than polished-artifact grading.</div>
+</div>
+
+<div class="paper star">
+  <h3>2026 · Rewriting the curriculum: A systematic review of generative AI-driven pedagogical change and emerging systems of learning in higher education</h3>
+  <div class="cite">Elsevier-format article (venue not printed in converted text) · triangulated mixed methods: scoping review + VOSviewer bibliometrics (n=209 records) + SLR of 36 studies (2023–2025) + 10 semi-structured interviews with academic leaders across 5 institutions in Australia &amp; Indonesia; proposes the "AI-Augmented Learning System" framework</div>
+  <ul>
+    <li>"Curricula" is only a peripheral node in the co-occurrence map — curriculum-level transformation is marginal in the literature; capabilities &amp; skills explicitly addressed in just 3/36 articles.</li>
+    <li>Five system shifts: static curriculum → dynamic AI-integrated design; teacher-centred delivery → AI-augmented facilitation; knowledge transfer → capability development; local experimentation → institutional governance; fragmented use → ecosystemic integration. Via SAMR, most current practice sits at substitution/augmentation — genuine redefinition is rare.</li>
+    <li>Concrete practitioner cases: an Australian Go8 college runs a faculty-level <b>"traffic signal" AI policy</b> ("restrict / allow with guardrails / totally unrestricted" applied college-wide) plus a mandatory staff integrity module; one educator requires students to submit a <b>disclosure table listing every AI tool used and how</b>; another institution gives all students a free GenAI tool to prevent a digital divide.</li>
+    <li>Reform reported as "incremental and unit-led rather than institution-wide"; decentralized tool-building creates integration costs ("we created our own system … it’s actually more troublesome").</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> direct external validation of S0 — the traffic-signal policy is a live instance of the 3-zone (🟢🟡🔴) policy and DR16 disclosure (the disclosure-table assignment is a ready-made 🟡-zone artifact); DR24/DR25 (faculty readiness, slow/fast layers: continuous check-up points on how people actually use AI); DR26 DigiPen channel: coordinate institution-wide rather than per-program to avoid the Indonesian fragmentation trap.</div>
+</div>
+
+<h2>Top 3 cases for the DDCT curriculum</h2>
+<div class="top">
+  <h3>1. The "Maribor package" — assessment redesign that safely absorbs ChatGPT (Kosar et al. 2024, corroborated across 6 studies in Hawi &amp; Samaha 2026)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> AI-resistant assignment formats (UML diagrams, provided code/main, minimal text) + weekly in-lab extension problems solved without AI + interactive oral defense (explain/change/complete your code) + paper-based midterms. · <b>Measured result:</b> across n=182 over a full semester, ChatGPT vs no-ChatGPT showed no difference in labs (p=0.760), midterms (p=0.856), or final grade (p=0.730) — permission became harmless; usage shifted from code generation to optimization/comparison, and only 21/69 opted to use it on every assignment. · <b>Strengthens:</b> S0 3-zone policy + DR23 + L5 — DDCT can run 🟢 AI-permitted homework precisely because 🔴 AI-free defenses/exams anchor grades to internalized competence; refresh formats each year as models improve.</p>
+</div>
+<div class="top"><h3>2. Attempt-first, hints-not-answers AI tutor wrappers (Lee et al. 2024, Makransky et al. 2025, Kestin et al. 2025; programming variant: G–P–T model, Yang et al. 2025)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> require an initial student attempt, then deploy GenAI for structured hints/teach-back/guided questioning rather than solutions; in physics (Kestin) a custom GPT-4 tutor; in chemistry (Lee/Makransky) a guidance-based ChatGPT aid vs standard ChatGPT; G–P–T adds bi-directional annotation (student and ChatGPT annotate each other’s code) as a comprehension gate. · <b>Measured result:</b> higher learning gains in less time than in-class active learning (Kestin); better self-regulated learning and higher-order thinking than generic ChatGPT (Lee); stronger conceptual knowledge at key timepoints (Makransky) — vs Yang’s raw-access control group, which <i>lost</i> achievement, flow, and self-efficacy. · <b>Strengthens:</b> L1/L3 + S1 (AI-Augmented Production track) + S5 (L2 applied blocks) + AI-as-junior-staff loop — the brief→draft→critique→quality-gate cycle is the studio-scale version of attempt-first tutoring; expect AI-skeptical DD students to need a guided familiarization phase before gains appear (Bai &amp; Wang wave-1 negative → wave-2 positive moderation).</p></div>
+<div class="top"><h3>3. Counterbalanced AI-on/AI-off lab blocks with a published multidimensional quality rubric (Andleeb et al. 2025)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> two-group counterbalanced design — each student cohort alternated ChatGPT and no-ChatGPT across consecutive assignments, scored with a replicable rubric (correctness, efficiency, code quality, warning analysis, error handling; κ=0.87) plus timed work and post-task concept checks. · <b>Measured result:</b> rubric scores significantly higher with AI both times (t=4.46 p=0.018; t=5.02 p&lt;0.001; error handling 2.0 vs 0.05), completion time cut 2.2–4.8× (p≤0.0011), conceptual gains mixed (n.s. on functions; U=77.0 p=0.0457 on structures). · <b>Strengthens:</b> S0 3-week tool-sprint blocks + DR23 + L2 — the evaluation pattern itself is the transferable artifact: alternate 🟢/🔴 weeks inside a block so students experience and measure the delta (speed &amp; polish up, concepts unchanged), and reuse the published rubric for QC-style grading that maps onto DR9/DR14 pipeline-quality habits.</p></div>
+
+<h2>Gaps &amp; notes</h2>
+<ul style="font-size:13.5px">
+<li><b>Meta-analytic spread is wide and partly contradictory.</b> Overall effects range SMD 0.45 (Han) to g 0.609 (Zhao) to g+ 0.804 (Chen &amp; Cheung — but 0.321 after trim-and-fill); duration findings conflict (Zhao: 8–16-week peak; Chen: 4–12-week peak; Han: short &gt; long). Common safe reading: gains are real but modest, context-dominated, and inflated by publication bias in achievement/language outcomes.</li>
+<li><b>Metacognition contradiction:</b> Chen &amp; Cheung find no significant metacognition effect (g+=0.078) while Han reports self-regulation/metacognition SMD=0.74 — different constructs/measures; DDCT should not assume AI builds metacognition without explicit reflection scaffolds.</li>
+<li><b>Programming-specific nulls cluster:</b> Kosar (null), Jošt/Cubillos/Sun (no grade differences, via Hawi &amp; Samaha), Gambo (R²=0.006, n=855) vs positive lab effects at small n (Andleeb, n=27). Large-sample and semester-long designs trend null; short controlled tasks trend positive on speed/quality, not concepts.</li>
+<li><b>Honest negatives are use-conditioned:</b> the high-school decrement (Yang) and the usage-mode findings (code-generation/debugging reliance → lower grades; explanation-seeking → neutral) all point to unstructured novice access as the failure mode, consistent with L2.</li>
+<li><b>Venue gaps:</b> three converted texts (Han et al.; Gambo et al.; Sabani et al.) do not print journal names in the source markdown — citations given as far as the text allows. Numbers not present in the texts are marked "not reported" rather than estimated.</li>
+<li><b>Thin coverage for DDCT’s art/design side:</b> creativity has the weakest HOT effect (g=0.444, Zhao) and visual-tool effects are the smallest content type (g+=0.510, Chen) — no experimental evidence yet on generative <i>image/video/3D</i> pipelines in art-school settings; folder 1 supports the pedagogy layer, not the media layer.</li>
+<li><b>Practitioner-level policies lack measurement:</b> the traffic-light policy and disclosure table (Sabani) are interview evidence — directly analogous to DDCT’s 3-zone design but with no outcome numbers yet.</li>
+</ul>
+
+<footer>Part of the papers-digest pipeline · source text in ../text/1-meta-analyses-and-experiments/ · master index: 00-INDEX.html</footer>
+</div></body></html>

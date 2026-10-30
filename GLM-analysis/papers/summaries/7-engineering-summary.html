@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7-engineering — papers digest</title>
+<style>
+:root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#0f766e}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+header.hero{background:linear-gradient(135deg,#111827,#134e4a);color:#fff;border-radius:16px;padding:24px 26px;margin-bottom:20px}
+header.hero h1{margin:0 0 6px;font-size:22px}header.hero p{margin:0;color:#cdeae5;font-size:13.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:2px 10px;border-radius:999px;font-size:11.5px}
+h2{font-size:18px;margin:30px 0 8px}
+.paper{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:14px 18px;margin:12px 0}
+.paper.star{border-left-color:#d97706;background:#fffbeb}
+.paper h3{margin:0 0 4px;font-size:15px}.paper .cite{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.paper ul{margin:6px 0;padding-left:20px;font-size:13.5px}.paper li{margin:3px 0}
+.map{font-size:12.5px;background:#eef8f4;border-radius:8px;padding:6px 10px;margin-top:8px}
+.top{background:#fdf2f8;border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin:12px 0}
+.top h3{margin:0 0 6px;font-size:15px;color:#831843}
+footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="hero">
+  <h1>7-engineering — papers digest</h1>
+  <p>Summaries and DDCT-relevant cases extracted from 4 papers · generated 2026-10-13 by digest agent</p>
+  <div class="badges"><span class="badge">★ = concrete transferable case</span><span class="badge">numbers cited from source text</span></div>
+</header>
+
+<div class="paper">
+  <h3>2024 · Exploring the Potential of Generative AI in Shaping Engineering Education: Opportunities and Challenges</h3>
+  <div class="cite">Journal of Engineering Education Transformations, Vol. 37, Jan 2024 Special Issue (eISSN 2394-1707), "Practice" category · position/practice paper, narrative synthesis; no study sample (n not reported)</div>
+  <ul>
+    <li>No measured results anywhere in the paper — all claims are qualitative (e.g., "generative AI simplifies curriculum updates", "optimizes faculty time"). Effect sizes / n: not reported.</li>
+    <li>Names second-hand institutional deployments without data: UC Berkeley AI virtual lab for fluid mechanics; MIT VR engineering lab and interactive truss-design simulation; University of Michigan AI auto-grading of homework/exams.</li>
+    <li>One concrete classroom practice: students evaluate GAI answers to lecture topics via think-pair-share — framed as raising engagement and "reducing the risk of students misusing the technology."</li>
+    <li>Four GAI use areas for accreditation (ABET): standardized rubrics/assessments, evidence-based curriculum documentation, streamlined data collection via LMS (Blackboard/Canvas), continuous-improvement analytics. Warns AI content is "only a starting point" needing review, and lists faculty training + communities of practice as the bottleneck.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> S0 / L7 / DR23 — the copyable practice is the in-lecture "critique-the-AI-output" think-pair-share (an anti-misuse, AI-fluency micro-exercise), plus faculty communities of practice for GAI upskilling; the ABET/assessment-automation angle supports the accreditation/documentation side of a curriculum retrofit.</div>
+</div>
+
+<div class="paper">
+  <h3>2024 · Redefining Engineering Education: The Transformative Role of Generative AI Technologies</h3>
+  <div class="cite">Proceedings of IHSES 2024 — Int. Conf. on Humanities, Social and Education Sciences, San Francisco, pp. 163–175, ISTES · literature review / conceptual paper; number of studies reviewed not reported</div>
+  <ul>
+    <li>Purely conceptual — no empirical data, no effect sizes, no sample sizes (all "not reported"). Argues GAI should be evaluated against CDIO Standard 2 (explicitly formulated learning outcomes) and Standard 8 (active, hands-on learning).</li>
+    <li>Key transferable ideas: "curriculum agility" (Tran &amp; Phan 2022) — a curriculum framework designed for fast adaptation to technological change; specialized AI courses covering algorithms, deep learning, optimization + ethics; capstone projects co-designed with industry partners.</li>
+    <li>Positions GAI as a translator across disciplines (engineers ↔ non-engineers) and as a democratizer of expertise; ethics taught must cover bias, privacy, and job displacement — AI framed as "enhancing human work rather than replacing it."</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR25 (slow/fast curriculum layers — "curriculum agility") / L4 (ethics embedded, incl. job displacement = a DD-CT student anxiety) / S0 — the useful piece is the CDIO-standards framing: tie any AI-era course change to explicit outcome maps and active-learning formats, i.e., retrofit within an accreditation skeleton rather than a new program first.</div>
+</div>
+
+<div class="paper star">
+  <h3>2025 · Generative AI in Chemical Engineering Education: Rebuilding Thermodynamics, Material and Energy Balances and Kinetics Courses with AI ★</h3>
+  <div class="cite">ASEE-format conference paper (Bilgin, UIC; Chen, Columbia; Velegol, Penn State; venue name not stated in converted text) · mixed-methods: 3-faculty course-rebuild case study (ChatGPT-4o) + end-of-semester survey, n = 78 students (sophomores + seniors, UIC, Fall 2024)</div>
+  <ul>
+    <li>Course-rebuild protocol: 3 faculty at 3 institutions rebuilt 3 core courses using a standardized 8-prompt ChatGPT-4o protocol (syllabus → book-chapter map → lesson plans → ABET-outcome map → learning outcomes → open-ended questions → quizzes → real-life case studies); textbooks deliberately excluded. Syllabi were "comprehensive, well-organized"; the ABET-mapping prompt was called out as a highlight; case-study development gave the biggest time savings; assessments were the weakest output (took longer to fix than using textbook solution manuals, contained conceptual errors, e.g., wrong steady-state/accumulation and ambiguous recycle MCQs).</li>
+    <li>Adoption is already near-universal: 87.2% of sophomores and 92.3% of seniors had used AI tools for academic work; ChatGPT dominant. Sophomores use it for concept understanding/homework; seniors for technical writing, literature synthesis, and code.</li>
+    <li>Perception gaps (Likert 1–5): problem-solving usefulness 3.76 (sophomores) vs 2.65 (seniors), p &lt; 0.05; performance expectations 3.83 vs 3.38, p &lt; 0.05; trust in AI outputs low in both (2.87 vs 2.65); awareness of limitations high (4.36 vs 4.54). Gender trends (n.s.): female students scored higher on critical evaluation of AI outputs (4.2 vs 3.9), males higher on trust (3.1 vs 2.8).</li>
+    <li>Open-ended responses show a conversion arc from hostility to strategic use ("I considered it cheating but then I learned to use the information as a guidance…"), plus skill-atrocity worry ("My ability of doing my hw has decreased and I feel dependency on ChatGPT") and an explicit student demand for "clear expectations… from schools and professors on AI usage."</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> S0 + L7 (the folder's flagship case: faculty can rebuild a whole course from a fixed 8-prompt protocol — directly reusable for DDCT course redesign sprints and the syllabus-design workshop) · the student demand for explicit rules validates the 3-zone AI policy (🟢🟡🔴) under DR23 · the skepticism→acceptance trajectory and atrophy quotes inform DR7 (identity/resistance) and DR3 (skill atrophy).</div>
+</div>
+
+<div class="paper star">
+  <h3>2026 · Exploring Enhancement of Student Learning Outcomes by Redefining Problem Generation in Mechanical Engineering Using Generative AI ★</h3>
+  <div class="cite">Peer-reviewed research article (Das, Moratti, Gasper, Singh, Baby, Morkos; University of Georgia; received 4 Aug 2025, accepted 17 Jul 2026; journal name not present in converted text) · mixed-methods lab experiment: n = 14 ME students (10M/4F, UG + grad), IRB-approved; two-way ANOVA + Duncan post hoc + Kruskal–Wallis + coded scripts (κ = 0.71) and interviews (κ = 0.99)</div>
+  <ul>
+    <li>Design: same numerical problem in 3 sources — Textbook (Kalpakjian &amp; Schmid), AI (GPT-3.5 re-write with personalized real-world narrative), Textbook+AI (AI-expanded background) — across 4 manufacturing topics; sources hidden from students; expert-verified for accuracy.</li>
+    <li>Performance: AI-sourced problems roughly doubled rubric scores vs textbook — AI 6.62 vs Textbook 3.31 vs Textbook+AI 4.44 (out of 10; ANOVA p = 0.003, KW p = 0.021). Preference reversed: Textbook +0.92 &gt; Textbook+AI +0.13 &gt; AI −0.23 (ANOVA p = 0.03, but KW p = 0.06 → downgraded to a trend).</li>
+    <li>Mental workload unaffected by source (mental demand p = 0.66) but strongly affected by problem type (forging 15.13 vs bending 7.11 on 0–20 NASA-TLX, p &lt; 0.001); facial-expression emotions (Py-Feat): no significant effects.</li>
+    <li>Core recommendation "scaffolded authenticity": use AI to add real-world context while keeping textbook clarity, with scaffolds (explicit assumptions, diagrams, intermediate prompts); richer AI framing reduced procedural/interpretation errors; "one difficulty level across topics is not realistic."</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L1 (aligned AI beats raw AI: context-wrapped, expert-verified AI problems beat the textbook original on performance) · L6 + DR23 (students still prefer textbook problems — keep fundamentals-first, layer AI-context problems on top, don't replace) · S0 tool-sprint blocks / any DD/CT problem-based course: the prompt protocol (textbook-accurate numbers + "interesting, real-life, engaging" keywords + expert review) is a copyable assessment-generation workflow.</div>
+</div>
+
+<h2>Top 3 cases for the DDCT curriculum</h2>
+<div class="top">
+  <h3>1. The 8-prompt course-rebuild protocol (2025 ChemE paper)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> Three faculty at three universities rebuilt three whole courses (Thermodynamics, Material &amp; Energy Balances, Kinetics) with ChatGPT-4o using a fixed 8-prompt sequence — syllabus, textbook-chapter mapping, weekly lesson plans, ABET-outcome mapping, measurable learning outcomes, open-ended questions, quiz questions, real-life case studies — with textbooks deliberately excluded, then wrote structured reflections. · <b>Measured result:</b> syllabi + learning objectives + ABET maps = clear time savings and "comprehensive"; case-study creation = biggest time saving; assessments = net time loss vs textbook solution manuals and contained conceptual errors (steady-state/accumulation, recycle). · <b>Strengthens:</b> S0 + L7 — run exactly this protocol (with accreditation-outcome mapping swapped for DDCT program outcomes) as a faculty course-redesign sprint; expect AI to draft structure and cases, humans to own depth and assessments.</p>
+</div>
+<div class="top">
+  <h3>2. AI-contextualized problem generation, expert-verified (2026 ME paper)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> Textbook problems rewritten by GPT-3.5 with real-world narrative ("Sam's metal workshop", turbine-shaft machining) keeping identical numbers and physics, expert-verified, then solved blind by 14 ME students against the textbook originals. · <b>Measured result:</b> rubric performance 6.62 (AI) vs 3.31 (textbook) / 4.44 (hybrid), p = 0.003 — near-double scores with no rise in NASA-TLX mental workload (p = 0.66) — yet students still preferred textbook problems (+0.92 vs −0.23). · <b>Strengthens:</b> L1, L6, DR23 — for any DD/CT problem-based course, generate contextualized practice/training sets with this prompt protocol + expert verification, but deploy as a layer on top of textbook-style fundamentals (students' stated preference and the "scaffolded authenticity" recommendation both say: supplement, don't replace).</p>
+</div>
+<div class="top">
+  <h3>3. Perception baseline and the skepticism→strategy conversion arc (2025 ChemE paper)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> End-of-semester survey (AIAS-4/GAAIS-derived, n = 78, sophomores + seniors) on AI use, trust, and concerns in core engineering courses. · <b>Measured result:</b> adoption 87.2% (soph) / 92.3% (senior); trust in outputs low (2.87 / 2.65 of 5); awareness of limitations high (4.36 / 4.54); open-ended responses document hostile students converting to strategic users within one semester ("I considered it cheating but then I learned to use the information as a guidance"), plus atrophy worry and an explicit demand for clear institutional AI rules. · <b>Strengthens:</b> DR7 (student identity/resistance — DDCT's AI-skeptical cohort demonstrably converts through guided use, not abstinence), DR23/3-zone policy (students themselves ask for explicit 🟢🟡🔴 rules), DR3 (the atrophy quote is first-person evidence for the Brake·Anchor·Engine counterweight).</p>
+</div>
+
+<h2>Gaps &amp; notes</h2>
+<ul style="font-size:13.5px">
+  <li>Both 2024 papers are conceptual/narrative with zero reported numbers; the named deployments (Berkeley virtual lab, MIT VR lab, Michigan auto-grading) are second-hand and uncited — treat as leads to verify, not evidence.</li>
+  <li>Course-rebuild case (2025) measured no learning outcomes — no grade or exam comparison between AI-built and conventional courses; reflections are self-report from 3 faculty; survey is single-institution, n = 78.</li>
+  <li>Problem-generation experiment (2026): n = 14, gender-imbalanced, single-session lab, GPT-3.5 (Feb 2024) — already dated; fixed problem order (order effects); preference effect failed the nonparametric check; emotion null is likely a webcam-measurement limitation.</li>
+  <li>Notable tension worth designing around: students <i>perform better</i> on AI-contextualized problems but <i>prefer</i> textbook ones — supports DDCT's fundamentals-protective stance (L6) while still justifying AI-generated context layers.</li>
+  <li>All four papers are US engineering (text-only ChatGPT); nothing on generative image/video media, art or design disciplines, Thai/SEA industry, or NDA-safe local models — folder offers no direct DD-track evidence.</li>
+</ul>
+
+<footer>Part of the papers-digest pipeline · source text in ../text/7-engineering/ · master index: 00-INDEX.html</footer>
+</div></body></html>

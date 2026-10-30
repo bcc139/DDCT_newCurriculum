@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3-assessment-frameworks — papers digest</title>
+<style>
+:root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#0f766e}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+header.hero{background:linear-gradient(135deg,#111827,#134e4a);color:#fff;border-radius:16px;padding:24px 26px;margin-bottom:20px}
+header.hero h1{margin:0 0 6px;font-size:22px}header.hero p{margin:0;color:#cdeae5;font-size:13.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:2px 10px;border-radius:999px;font-size:11.5px}
+h2{font-size:18px;margin:30px 0 8px}
+.paper{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:14px 18px;margin:12px 0}
+.paper.star{border-left-color:#d97706;background:#fffbeb}
+.paper h3{margin:0 0 4px;font-size:15px}.paper .cite{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.paper ul{margin:6px 0;padding-left:20px;font-size:13.5px}.paper li{margin:3px 0}
+.map{font-size:12.5px;background:#eef8f4;border-radius:8px;padding:6px 10px;margin-top:8px}
+.top{background:#fdf2f8;border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin:12px 0}
+.top h3{margin:0 0 6px;font-size:15px;color:#831843}
+footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="hero">
+  <h1>3-assessment-frameworks — papers digest</h1>
+  <p>Summaries and DDCT-relevant cases extracted from 9 papers · generated 2026-10-13 by digest agent</p>
+  <div class="badges"><span class="badge">★ = concrete transferable case</span><span class="badge">numbers cited from source text</span></div>
+</header>
+
+<div class="paper star">
+  <h3>2023 · Assigning AI: Seven Approaches for Students, with Prompts</h3>
+  <div class="cite">Wharton School / Wharton Interactive working paper (E. Mollick &amp; L. Mollick) · practitioner framework paper, no empirical sample; 7 prompt-based AI roles (tutor, coach, mentor, teammate, student, simulator, tool)</div>
+  <ul>
+    <li>Each role ships as a ready-made classroom package: theory → copy-paste prompt → example transcript → risks → teacher guidelines → student instructions → "build your own" recipe.</li>
+    <li>Universal process rule in every role: students must <b>share the complete AI interaction and write a paragraph reflection</b> on what was (or wasn't) helpful — reflection is built into the assignment, not added on.</li>
+    <li>Prompt-compatibility matrix (Appendix): GPT-4 executed all 7 prompts; GPT-3.5 only 1 of 7 (AI-Student); Bard 0 of 7 — a dated but reusable method for vetting tools before assigning them. No learning outcomes measured (not reported).</li>
+    <li>AI-as-Student role deliberately weaponizes hallucination: AI explains a concept, student must name what it got wrong — turns error-checking into the assessed act.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [S0 AI-Fluency course / S4 atelier / DR23 / L3+L5] — this is the "Mollick 7 roles" hook: adopt the prompt library as the S0 tool-sprint starter pack; the "share interaction + reflection" requirement and AI-as-Student critique exercise slot directly into the AI-as-junior-staff loop (brief→draft→critique→quality gate + judgment notebook).</div>
+</div>
+
+<div class="paper star">
+  <h3>2024 · The AI Assessment Scale (AIAS) Revisited: A Framework for Educational Assessment</h3>
+  <div class="cite">Preprint, Dec 2024 (Perkins, Roe, Furze; British University Vietnam / JCU Singapore / Deakin) · framework revision; adoption evidence from pilot implementations (Furze et al. 2024)</div>
+  <ul>
+    <li>Revised 5-level scale: 1 No AI (supervised/controlled) → 2 AI Planning → 3 AI Collaboration → 4 Full AI → 5 AI Exploration (co-designed with students); traffic-light colors dropped for a neutral, non-hierarchical palette.</li>
+    <li>Scale of adoption: used in <b>over a dozen countries, translated into ≥12 languages</b>; recognized by Australia's TEQSA and commended for the Prof Tracey Bretag Prize 2024; cited pilot evidence links AIAS use to improved student outcomes and reduced misconduct.</li>
+    <li>Level 1 redefined as requiring a <b>controlled environment</b> — an honor-system "AI-free" take-home is explicitly declared untenable; detectors called unreliable and adversarial.</li>
+    <li>Concrete vignettes: Media/Film storyboard worth <b>25% of the unit grade</b> set at Level 2 (AI-assisted planning with Firefly/ControlNet/Runway, assessed on storyboarding conventions); third-year CS course at Level 4 with institution-provided Copilot-class tools; creative-arts dance project at Level 5.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [S0 3-zone policy / S5-L1 / DR23 / DR28 / L5] — the AIAS is the 5-level industrial-strength version of DDCT's 🟢🟡🔴 3-zone policy; lift the storyboard vignette almost verbatim into DD pre-production courses, and the Level-4 "institution provides the tools" move maps to the S0 local-model lab for NDA-safe equity (DR12).</div>
+</div>
+
+<div class="paper star">
+  <h3>2025 · Reimagining the Artificial Intelligence Assessment Scale (AIAS): A Refined Framework for Educational Assessment</h3>
+  <div class="cite">Journal of University Teaching &amp; Learning Practice 22(7) (Perkins, Roe, Furze) · framework paper, 3rd iteration with implementation guidance</div>
+  <ul>
+    <li>Adoption now <b>300+ institutions worldwide, 30 translations</b> — the most-deployed AI assessment framework available to DDCT.</li>
+    <li>Key upgrade over 2024: explicit <b>discursive vs structural</b> distinction — "simply labelling an unchanged task 'Level 3' is a discursive change students can ignore"; every level must change task mechanics (role of GenAI, required process evidence, staged checkpoints, marking criteria). Recommends staging "No AI" assessments at key program points to protect validity.</li>
+    <li>Mapped against Sydney's two-lane model (Level 1 ≈ secured Lane 1; Levels 2–5 ≈ open Lane 2) — positions AIAS as a design tool, two-lane as a security tool.</li>
+    <li>Level-2 implementation spec: make planning visible and assessable via <b>prompt rationales, planning notes, storyboard artefacts</b>; Level 3 tasks might require a short prompt log or reflection.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [S0 3-zone policy / S5-L1 badge levels / DR23 / DR28] — use the 5 AIAS levels as the grading grammar for every DDCT brief (they subdivide the yellow zone usefully for a 3-zone rollout); the "structural not discursive" warning is the design rule for the S0 retrofit — relabeling existing briefs without changing mechanics fails. Free tools/resources at aiassessmentscale.com.</div>
+</div>
+
+<div class="paper star">
+  <h3>2026 · A Discipline-Agnostic AI Literacy Course for Academic Research (BSTA 495/395)</h3>
+  <div class="cite">Lehigh University curriculum design paper (Gogovi; journal not stated in text) · design-based research + single-cohort pre–post survey, n=27 pre / 29 post / 26 matched, Spring 2026</div>
+  <ul>
+    <li>13-week, prerequisite-free, dual-level (UG+PG) course on AI-assisted literature review; 4 cumulative modules (comprehension → taxonomy → gap-finding → synthesis), each output feeding the next; 2h40 sessions = 45 min didactic + 75 min hands-on lab + 20 min debrief.</li>
+    <li>Measured pre–post gains (Wilcoxon, matched n=26): <b>AI attribution practice d=+2.40</b> (M 2.12→4.12), <b>hallucination detection d=+1.45</b>, responsible AI use d=+1.33, taxonomy construction d=+1.23, output verification d=+1.22; 88% likely to apply skills; 73% rated course very/extremely valuable.</li>
+    <li>Transferable mechanics: semester-long <b>AI-use log</b>; standardized attribution template (tool+version, task, exact prompt, output, verification method, error rate, correction); 4-dimension rubric (substance / verification / attribution / <b>authorial mastery</b> — must defend every claim under questioning); methods section written <b>without</b> AI; calibration heuristic — LLM citations (30–50% hallucination) need 100% verification, index-backed tools (Elicit etc.) need only 25% stratified spot-checks; Cohen's κ taxonomy validation.</li>
+    <li>"Experience-before-taxonomy": the hallucination/bias typology is taught <b>after</b> students have personally been burned by hallucinations — proved the most consequential sequencing decision.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [S0 AI-Fluency core course / S5-L1 fluency credential / DR3 skill atrophy / DR23 / L1+L3] — the single best blueprint for S0's AI-Fluency core: swap the literature-review spine for a production-pipeline spine, keep the AI-use log + attribution template + authorial-mastersey viva as the assessment engine; the calibration rule and experience-first sequencing apply unchanged to generative-media tools.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 · The Impact of AI Literacy on Learning Engagement: Psychological Capital and Professional Identity</h3>
+  <div class="cite">Frontiers in Psychology 17:1892204 (Wang; Henan Finance University) · cross-sectional stratified survey, n=1,198 undergrads, 4 universities (Zhengzhou), PLS-SEM + 5,000 bootstrap resamples</div>
+  <ul>
+    <li>AI literacy ↔ learning engagement r=0.57; direct path β=0.668 (R²=0.446); psychological capital (self-efficacy, hope, optimism, resilience) partially mediates: indirect effect 0.327, <b>VAF 48.5%</b> — half the AI-literacy benefit travels through psychology, not skill.</li>
+    <li>Professional (career) commitment moderates the PsyCap→engagement link (interaction β=0.134): slope rises 0.324 → 0.459 → 0.593 from low to high commitment; the indirect AI-literacy effect nearly doubles (+83%, 0.204→0.374) at high commitment.</li>
+    <li>Oddity worth noting: professional commitment is essentially uncorrelated with AI literacy itself (r=0.001) — identity amplifies literacy's payoff but doesn't predict it; males scored higher on AI literacy (t=5.51), females higher on engagement (t=9.74).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [DR7 student identity/resistance / DR22 anxiety / S4] — mechanism paper for the AI-skeptical DDCT cohort: literacy training alone leaves ~half its engagement benefit on the table unless it also builds PsyCap (mastery experiences, wins) and professional identity; S4's student-authored missions + matched advisers are exactly the commitment amplifier this model predicts is needed. Correlational, single-country, self-report — use as rationale, not proof.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 · AI Literacy Interventions in Education: A Meta-Analysis of Effects and Moderators</h3>
+  <div class="cite">Peer-reviewed journal review article (Liu, Lin, Ng, Yang, Dai; CUHK Faculty of Education — journal name not shown in converted text) · three-level meta-analysis, 59 studies, 172 effect sizes, 7,211 participants, 2020–2024</div>
+  <ul>
+    <li>Overall effect of AI-literacy interventions <b>g=0.837</b> [0.692, 0.982] (large) — but 95% prediction interval [−0.292, 1.966] and 71.4% between-study variance: effects are real on average and wildly context-dependent.</li>
+    <li>Significant moderators: region (SE Asia g=1.680 but k=4 only; Europe 0.960; East Asia 0.782; North America 0.658) and outcome type — knowledge g=0.965 vs attitudes 0.676, skills 0.672, ethics 0.635: <b>interventions move knowledge far more than skills, ethics, or attitudes</b>.</li>
+    <li>Non-significant but directional: GenAI tools g=1.140 (k=10) > conventional AI 0.837; mixed pedagogy 1.071 and reflective pedagogy 0.988 > authentic/constructive 0.716 and direct instruction 0.688; performance tasks 0.901 > self-report 0.774; higher education g=0.952.</li>
+    <li>Fail-safe N=190,005 (no publication bias signal); short interventions under-deliver on ethics/attitudes, which need "sustained interaction, reflection, and authentic contexts."</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [L6 / L4 / S0 tool-sprints] — the numbers behind evidence lesson L6: knowledge gains are easy (g≈0.97) but skills/ethics gains plateau near g≈0.64–0.67, so a lecture-plus-workshop AI-Fluency course will not move ethics — embed it in-studio (L4) across semesters; the reflective/mixed + GenAI-tools advantage validates block-format hands-on sprints. SE-Asia figure is 4 effect sizes — don't lean on it for Thailand claims.</div>
+</div>
+
+<div class="paper star">
+  <h3>2026 · Redesigning Teaching, Learning, and Assessment in the Age of Generative AI: A Constructive Alignment Perspective</h3>
+  <div class="cite">MDPI open-access journal, 14 Sep 2026 (Klapproth, Medical School Berlin) · critical narrative review + original design framework (four formats, 3-column protocol, decision logic)</div>
+  <ul>
+    <li>Evidence core (cited with numbers): high-school field experiment (~1,000 students) — base GPT-4 boosted practice performance but students then performed <b>worse than no-AI controls</b> once access removed, while a hints-only tutor version eliminated the harm; university RCT — unrestricted ChatGPT cut 45-day retention to <b>57.5% vs 68.5% (d=0.68)</b>; natural experiment (N=1,066) — switching an exam from AI-permissive take-home to supervised in-person pushed failure from <b>2–6% to 18.4%</b>, i.e., AI-permissive and AI-restricted formats are no longer measurement-equivalent.</li>
+    <li><b>Three-column AI-use protocol</b> (reflection-based format): (a) own starting point / (b) AI's contribution / (c) justified human decision (adopted-modified-rejected, each with criterion) — graded on decision quality, not log length; closing question: "which competence did I practice, and which did I merely outsource?"</li>
+    <li><b>Four-option decision logic</b> derived from the intended learning outcome: AI prohibited / permitted / permitted-with-documentation / required — "the AI rule for a task is derived from the learning outcome, never the other way around"; arts instantiation given: unaided studio routine vs critically reflected AI co-creation.</li>
+    <li>Design rule that protects fundamentals (L6): <b>every AI-supported sequence closes with an unaided parallel task</b> — transfer case, memory reconstruction, or AI-free application; plus revision-depth and deletion tests for AI-assisted writing.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [DR23 / S0 3-zone policy / L2+L3+L6] — the strongest theoretical tightening of DDCT's 3-zone policy: zones become an ILO-derived 4th option ("required") plus a documentation column; adopt the 3-column protocol as the student-facing judgment notebook and the close-without-AI rule as the standard ending of every AI-augmented studio block. Framework itself is theory-derived, not yet experimentally validated.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 · Reframing Faculty Development for Digital Transformation and Generative AI in Higher Education</h3>
+  <div class="cite">Frontiers in Medicine 13:1864520 (Hou, Chen, Zhang; Heilongjiang Univ. of Chinese Medicine) · structured literature review (PCC / PRISMA-ScR-aligned) + institutional framework; no sample sizes or outcome numbers reported</div>
+  <ul>
+    <li>"Three-tier, four-stage, five-pathway" faculty-development framework: tiers = university / school / department; stages = entry &amp; adaptation → stable development → integrative deepening → academic leadership; pathways = blended professional learning, cross-boundary linkage, community mutual learning, diagnostic mentoring, evidence-informed practice.</li>
+    <li>Core operational claims: run <b>diagnostic competence profiles before any training</b> (DigCompEdu / HeDiCom instruments); evaluate development by <b>practice changed, not training hours attended</b> (course redesigns completed, resources built, evidence-based assessment changes).</li>
+    <li>Stage table maps needs→support: entry = mentoring + microteaching + embedded course design; stable = course-redesign + learning-analytics + research translation; integrative = innovation platforms + interdisciplinary projects + AI-ethics discernment; leadership = exemplary courses + mentoring others + governance.</li>
+    <li>All numbers "not reported" — no effect data, no counts of studies; medical-university single-institution anchor.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [L7 faculty readiness / DR24 / S0+S4 rollout] — the change-management skeleton for whichever scenario DDCT picks: stage-match the faculty support (junior DDCT staff need embedded course-design mentoring, seniors need innovation platforms), and swap the "training hours" KPI for "assessments redesigned per AIAS level" as the faculty-readiness metric. Framework-only evidence.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 · Supporting Assessment Redesign in the Age of AI: A Critical Practice-Based Framework for Equitable Change</h3>
+  <div class="cite">Teaching in Higher Education 31(7):1412–1435 (Laidlaw, Charles Sturt University) · framework development via literature synthesis + participatory action research; ~40 teaching staff, faculty-wide assessment renewal 2024, one Australian regional university</div>
+  <ul>
+    <li>Framework: Theory of Practice Architectures × critical pedagogy — redesign must move simultaneously on <b>cultural-discursive</b> (language/framing), <b>material-economic</b> (tools, time, money), and <b>social-political</b> (power, governance) dimensions; 4-phase matrix (critical analysis → intervention design → equity-focused implementation → multidimensional evaluation).</li>
+    <li>Practice findings from the 40-staff renewal: initial discourse was 100% deficit-framed ("catching cheaters"); <b>time poverty</b>, not philosophy, made some faculty abandon redesign; the generational inversion — <b>early-career staff had the most AI familiarity and the least institutional power</b> — repeatedly blocked change; resource allocation through existing power structures created "resource-power spirals" that amplified disciplinary inequities.</li>
+    <li>Honest outcome: change was <b>incremental, not transformative</b>; the durable gains were shared critical AI literacy and collaborative networks — the paper argues these should count as success metrics. No quantitative outcome measures reported.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> [L7 / DR24 / S0 governance] — the cautionary checklist for the S0 retrofit: budget redesign time explicitly in workload models, give AI-fluent junior staff real seats (and credit) in the assessment-redesign governance, and audit that AI budget flows to the less-resourced program (DD vs CT), or the retrofit will widen the DD/CT gap. Single-institution, self-reported.</div>
+</div>
+
+<h2>Top 3 cases for the DDCT curriculum</h2>
+<div class="top">
+  <h3>1. Lehigh BSTA 495/395 "Getting Started with AI-Assisted Research" — a fully specified, measured AI-literacy course</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> 13-week prerequisite-free course, 4 cumulative modules over an authentic workflow, AI-use log + attribution template on every submission, 4-dimension rubric with an "authorial mastery" viva component, ethics taught as subject not policy, hallucination theory taught after students experience failures · <b>Measured result:</b> attribution d=+2.40, hallucination-detection d=+1.45, responsible use d=+1.33 (n=26 matched); 88% intend to apply skills · <b>Strengthens:</b> S0 AI-Fluency core course and S5-L1 fluency credential (DR3 skill atrophy, DR23) — clone the architecture and swap the literature-review spine for a DD/CT production-pipeline spine (comprehend references → organize a moodboard/taxonomy → find the gap → synthese/direct); keep the log, template, and viva unchanged.</p>
+</div>
+<div class="top"><h3>2. The AIAS five-level scale with structural (not label-only) implementation — deployed at 300+ institutions</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> per-assessment levels No-AI(supervised) / AI-Planning / AI-Collaboration / Full-AI / AI-Exploration, each with task-mechanics changes (prompt rationales, storyboard artefacts, staged checkpoints, institution-provided tools); pilot evidence of improved outcomes and reduced misconduct · <b>Measured result:</b> 300+ institutions, 30 translations; TEQSA recognition; storyboard vignette = 25% of unit grade at Level 2 · <b>Strengthens:</b> S0 3-zone policy and DR23/DR28 — the 🟡 zone should be subdivided into AIAS Levels 2–4 for course briefs, Level 5 (AI Exploration, co-designed with students) becomes the S4 capstone mode, and the "institution provides the tools" rule becomes the local-model-lab equity argument (DR12).</p></div>
+<div class="top"><h3>3. Klapproth's three-column AI-use protocol + "close without AI" rule — evidence-anchored assessment mechanics</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> students document (own starting point | AI contribution | justified adopt/modify/reject decision) graded on decision quality; every AI-supported sequence ends with an unaided parallel task; four-option decision logic (prohibited/permitted/documented/required) derived from the intended learning outcome · <b>Measured result (supporting evidence cited):</b> unrestricted ChatGPT cut 45-day retention 57.5% vs 68.5% (d=0.68); supervised-format switch raised failure 2–6%→18.4% (N=1,066) — AI-permissive products overstate competence, so process evidence + AI-free bookends are required · <b>Strengthens:</b> DR23 assessment integrity, L2 (integration mode is the variable), L3/L6 — this is the judgment notebook of the AI-as-junior-staff loop, operationalized, and the cheapest fundamental-protecting rule DDCT can adopt studio-wide tomorrow.</p></div>
+
+<h2>Gaps &amp; notes</h2>
+<ul style="font-size:13.5px">
+  <li><b>No 3D/creative-production assessments anywhere in the folder.</b> The closest transferable artefacts are the AIAS Level-2 storyboard vignette and the Level-5 contemporary-dance co-design case; everything else is essays, lit reviews, medicine, CS. DDCT must translate, not copy.</li>
+  <li><b>Skills/ethics gains are the weak spot everywhere:</b> meta-analysis shows knowledge g=0.965 vs ethics g=0.635 / skills g=0.672; one-shot workshops can't move them (L4/L6 confirmed quantitatively).</li>
+  <li><b>Detector/surveillance consensus is unanimous</b> across 5 papers: AI text detectors unreliable and biased against non-native writers — DDCT should spend nothing on detection and everything on process visibility (L5).</li>
+  <li><b>Disclosure is cultural, not policy:</b> students under-declare AI use even when permitted (Gonsalves 2024, cited by AIAS papers) — expect the 🟡 zone's disclosure norm to need a semester of normalization, not an announcement.</li>
+  <li><b>Two framework papers report zero numbers</b> (faculty development; practice-architectures framework) — useful as scaffolds, not as evidence; the PsyCap study is single-country, cross-sectional, self-report with one counterintuitive null (professional commitment ↔ AI literacy r=0.001).</li>
+  <li><b>Geographic caution:</b> the meta-analysis SE-Asia g=1.680 rests on 4 effect sizes — do not use it to claim Thai-classroom effects will be large; the faculty-development and PsyCap papers are China-specific institutional contexts.</li>
+  <li><b>Effect sizes from the Lehigh course are self-reported confidence</b> (single cohort, no control) — treat d=+2.40 as design-consistent perception, not causal proof.</li>
+</ul>
+
+<footer>Part of the papers-digest pipeline · source text in ../text/3-assessment-frameworks/ · master index: 00-INDEX.html</footer>
+</div></body></html>

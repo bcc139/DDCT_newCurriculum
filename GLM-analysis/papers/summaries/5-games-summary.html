@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5-games — papers digest</title>
+<style>
+:root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#0f766e}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+header.hero{background:linear-gradient(135deg,#111827,#134e4a);color:#fff;border-radius:16px;padding:24px 26px;margin-bottom:20px}
+header.hero h1{margin:0 0 6px;font-size:22px}header.hero p{margin:0;color:#cdeae5;font-size:13.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:2px 10px;border-radius:999px;font-size:11.5px}
+h2{font-size:18px;margin:30px 0 8px}
+.paper{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:14px 18px;margin:12px 0}
+.paper.star{border-left-color:#d97706;background:#fffbeb}
+.paper h3{margin:0 0 4px;font-size:15px}.paper .cite{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.paper ul{margin:6px 0;padding-left:20px;font-size:13.5px}.paper li{margin:3px 0}
+.map{font-size:12.5px;background:#eef8f4;border-radius:8px;padding:6px 10px;margin-top:8px}
+.top{background:#fdf2f8;border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin:12px 0}
+.top h3{margin:0 0 6px;font-size:15px;color:#831843}
+footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="hero">
+  <h1>5-games — papers digest</h1>
+  <p>Summaries and DDCT-relevant cases extracted from 5 papers · generated 2026-10-13 by digest agent</p>
+  <div class="badges"><span class="badge">★ = concrete transferable case</span><span class="badge">numbers cited from source text</span></div>
+</header>
+
+<div class="paper star">
+  <h3>2022 · Materializing the abstract: Understanding AI by game jamming</h3>
+  <div class="cite">Frontiers in Computer Science 4:959351 (published 22 Sep 2022) · Qualitative expert-interview study + Sch&ouml;n reflective-practice theory; of 5 identified AI-focused jams, 4 organizers surveyed, 3 semi-structured interviews (31&ndash;48 min, spring 2022); thematic analysis</div>
+  <ul>
+    <li>Four factors make jams uniquely suited to learning AI as a design material: hands-on interactive prototyping, playful participation, creative AI&times;game combinations, and understandable goals &mdash; in a game, AI is judged by player experience (flow), not accuracy metrics.</li>
+    <li>Four design recommendations: <b>align repertoires</b> (longer than 48 h &mdash; experts ran a 7-day jam and a 5-day summer school + jam; pre-jam common ground; short tutorial + follow-along exercises received better reception than long lectures), <b>playful participation</b> (voluntary; avoid competition &mdash; replaced judging with a jammers-only popular vote), <b>support ideation</b> (ready-made AI+mechanic examples and open-source libraries &mdash; though "most people didn't use them"), <b>facilitate evaluation/reflection</b> (Discord channels with mentors; post-jam Expo showcase).</li>
+    <li>Entry bar: AI jams need game-dev-experienced participants &mdash; in 2&ndash;3 days novices manage "an interaction&hellip; that's not a game" (E1); complete novices burn the time on the engine instead of the AI.</li>
+    <li>No learning outcomes measured (n=3 experts; one organizer explicitly rejects pre/post literacy testing); prototypes should not be graded on functionality.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L8 + L3 + S4/S5-L3 &mdash; copy the "lectures first &rarr; jam after" sandwich as the shape of a 3-week block: pre-block AI primer, voluntary non-competitive jam, Discord mentors, Expo; grade the reflection, not the prototype (DR23).</div>
+</div>
+
+<div class="paper star">
+  <h3>2024 · My Teammate is an AI: Evaluating Generative AI in Game Asset Creation through a Post-GameJam Study</h3>
+  <div class="cite">Bezzina &amp; Dingli, University of Malta · Proceedings of DiGRA 2025 (jam run in the 2023-24 academic year) · Mixed-methods post-jam survey (19 questions), n=37 AI undergraduates (43.2% beginners, 27.1% no game-dev experience, 73% first-time jammers); first jam in which GenAI tools formally replaced graphic-design students on teams</div>
+  <ul>
+    <li>Tool reliability averaged <b>2.16/5</b> (45.9% "somewhat unreliable", 21.6% "very unreliable"; only 5.4% "very reliable"); asset quality judged "slightly worse" than human-made by 48.6% (only 5.4% "much better") &mdash; and these raters were untrained CS students, so professionals would presumably be harsher.</li>
+    <li>Honest pipeline placement confirmed: static assets (backgrounds, main menus) were the effective cases; character sprites and sprite sheets consistently failed (inconsistencies, non-standard grids).</li>
+    <li>Teams held together without artists: communication 83.7% effective (45.9% very + 37.8% somewhat), roles clear for 81% (48.6% very + 32.4% somewhat) &mdash; students became hybrid "creative technologists".</li>
+    <li>Learning: 45.9% substantial gains (37.8% "quite a bit" + 8.1% "a great deal"); 56.7% likely to reuse GenAI (27.0% very + 29.7% somewhat) vs 10.8% not; creativity net-positive but mixed (40.5% enhanced vs 21.6% hindered; 37.8% neutral); customisation poor (16.2% "not at all customisable").</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR1/DR9 + L8 + S4&middot;S5-L3 &mdash; run the same "AI formally fills the artist seat" jam block: it measurably builds hybrid-role confidence while teaching students where AI assets break; keep QC/craft fundamentals (L6, DR13) because reliability is 2.16/5. The 19-question survey is a reusable baseline instrument.</div>
+</div>
+
+<div class="paper star">
+  <h3>2025 · A Generative AI Game Jam Case Study from October 2024</h3>
+  <div class="cite">Josef Spjut, NVIDIA · venue not stated in text (self-published technical case study) · Single-author instrumental case study: 1 expert programmer new to Godot, "a couple days"; shipped playable demo "Plunderwater: Sunken Treasure"; Perplexity + ChatGPT-4o + Gemini + DALL-E + local Stable Diffusion (RTX 3090 Ti, 24 GB VRAM, Automatic1111); chat logs and git repo archived as supplements</div>
+  <ul>
+    <li>"Build your own tutorial" effect: AI-generated, follow-up-adaptable engine instructions let an engine novice ship a playable demo within days &mdash; today's GenAI already works as a customized tutor for engine onboarding (Perplexity's web citations partially mitigate outdated-version advice).</li>
+    <li>Hard tool limits: all image generators tried were "terrible at sprite sheets" (near-identical animation frames, non-grid layout); "top down"/"isometric" prompts still produced side views; code targeted older Godot syntax despite version instructions (only a couple of compile failures); human edits remained necessary in many cases for both code and images.</li>
+    <li>Human made every tool and feature decision; AI only drafted code and images &mdash; the AI-as-junior loop yielded a playable demo but no player objectives (an artifact of the process); no time or quality metrics reported.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR9/DR10 + S0 local-model lab &mdash; copy the logged "custom-tutorial" sprint as a week-1 tool-sprint block for engine onboarding; the local Stable Diffusion on a 24 GB GPU is exactly the shape of the NDA-safe local-model lab; archived chat logs model process visibility (L5).</div>
+</div>
+
+<div class="paper">
+  <h3>2025 · Generative AI in Game Development: A Qualitative Research Synthesis</h3>
+  <div class="cite">Ternar, Denisova, Cunha, Kultima, Guckelsberger (Aalto/York/Coimbra/QMUL) · Manuscript submitted to ACM (Dec 2025), 35 pp · Meta-ethnography of 10 qualitative studies (Jan 2020&ndash;Jun 2025); PRISMA-S search (320 records &rarr; 10 studies), CASP appraisal, eMERGe reporting; primary-study Ns from 2 to 42 plus one 3,091-post mining study</div>
+  <ul>
+    <li>Industry scale: &ge;7% of games released on Steam now disclose AI use (up from 1% the year before); ~60% of disclosed implementations involve visual asset generation.</li>
+    <li>Nine themes (C1&ndash;C9): human-in-the-loop refinement is the production norm &mdash; no study found inclusion-ready outputs without expert revision; GenAI is an early-stage ideation scaffold, not an autonomous author; efficiency is contested (phase/asset/expertise-dependent; manual editing beat generative help when the spec was tight); outputs misfit pipelines (not packaged, versioned, or engine-conformant; backgrounds less stable than characters); "assistant" is the baseline framing &mdash; professionals revert to "tool" when authorship is at stake; adoption is conditional democratisation; anticipatory job displacement is a lived experience; governance is a first-class design object (per-asset-class acceptance criteria, integration gates, regression checks, provenance capture); authorship risk includes aesthetic flattening.</li>
+    <li>Education recommendation: assessments should grade <b>refinement competence</b> (diagnose, steer, integrate outputs) rather than first-attempt generation quality.</li>
+    <li>Evidence caveats: >50% of the 10 primary studies show medium-to-strong CASP weaknesses; no longitudinal studies; 3D, animation and audio under-evidenced; 2D imagery and code dominate.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR9/DR13/DR15 + DR24 + L2/L6 &mdash; adopt the C8 governance recipe (integration gates with acceptance thresholds per asset class + provenance capture) as the rubric of every studio course, and shift grading to refinement competence; it is the folder's strongest workflow-design evidence (maps: GenAI synthesis).</div>
+</div>
+
+<div class="paper star">
+  <h3>2026 · Generative AI as a More Knowledgeable Other: An Autoethnographic Study of Game Design Education</h3>
+  <div class="cite">Sultan A. Alharthi, University of Jeddah · MDPI journal (name not stated in text; ed. Andrea Prati; published 5 Jun 2026) · Autoethnography (teacher-researcher) + thematic analysis through Vygotsky's ZPD/MKO lens; 4 initiatives in Saudi Arabia, May&ndash;Sep 2025 (2 university workshops, 1 game-incubator program, 1 youth camp); n=113, mean age 19.0 (SD 1.43); tools: ChatGPT, Midjourney, Scenario, Rodine AI (2D&rarr;3D); IRB-approved (UJ-REC-326)</div>
+  <ul>
+    <li>GenAI functions as a More Knowledgeable Other: the ZPD becomes a dynamic, "negotiated scaffolding" &mdash; the learner moves dependence &rarr; anticipation &rarr; internalization ("learning with AI" &rarr; "learning through AI").</li>
+    <li>Risks documented: illusion of competence (working code without understanding), emotional dependency, authorship displacement ("was I designing or merely curating?"); the educator's role expands to ethical and emotional guidance &mdash; "design moments where reflection deliberately interrupts automation".</li>
+    <li>Concrete practice: three named <b>prompt design patterns</b> &mdash; "critique then improve", "multi-angle brainstorming", "constraints first" &mdash; taught explicitly; students who iteratively refined prompts engaged more deeply in design reasoning than output-acceptors, and the patterns acted as "distributed expertise" (a version of the instructor's reasoning available when the instructor is not present).</li>
+    <li>No long-term outcomes or retention measured (stated limitation); quantitative measures not reported.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L3 + DR3 + DR24 + DR28 (maps: MKO autoethnography) &mdash; put the three named prompt patterns into the S0 AI-Fluency core course as teachable templates; make AI-on/AI-off alternation the block-structure default (assessment integrity); "critique then improve" is literally the AI-as-junior-staff loop (brief &rarr; draft &rarr; critique &rarr; quality gate).</div>
+</div>
+
+<h2>Top 3 cases for the DDCT curriculum</h2>
+<div class="top">
+  <h3>1. Lecture-jam sandwich (Falk &amp; Inie 2022)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> pre-jam AI primer (short tutorial + follow-along exercises) &rarr; voluntary, non-competitive 7-day AI game jam (longer than the 48 h default) &rarr; Discord mentor channels + post-jam Expo showcase with a jammers-only popular vote; prototypes deliberately not graded on functionality · <b>Measured result:</b> no outcome numbers (n=3 expert organizers, theory-grounded consensus) · <b>Strengthens:</b> S4 3-week block intensives / S5-L3 studio intensives, L8, L3, DR23 &mdash; runnable at DDCT in year 1 with no new infrastructure as the pilot block format.</p>
+</div>
+<div class="top"><h3>2. AI-fills-the-artist-seat jam (Bezzina &amp; Dingli 2024)</h3><p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> configuration change to an annual university jam &mdash; GenAI tools formally replaced graphic-design students on every team &mdash; plus a 19-question post-jam survey · <b>Measured result:</b> n=37; 45.9% substantial learning gains; 56.7% intend to reuse GenAI; reliability 2.16/5; 48.6% rate AI assets "slightly worse" than human; team communication 83.7% effective; sprites/sheets fail while backgrounds/menus work · <b>Strengthens:</b> S4/S5-L3 studio blocks, DR1/DR9 (honest pipeline placement), L6 (protect QC fundamentals) &mdash; and the survey is a ready-made baseline instrument for DDCT's own AI-skeptical cohort.</p></div>
+<div class="top"><h3>3. Prompt design patterns + AI-on/AI-off alternation (Alharthi 2026)</h3><p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> teach three named prompt patterns ("critique then improve", "multi-angle brainstorming", "constraints first") as explicit curriculum; alternate AI-guided exploration with AI-free independent creation; build reflection moments that interrupt automation · <b>Measured result:</b> n=113 across 4 programs; qualitative &mdash; deeper design engagement among prompt-iterators vs output-acceptors; no quantitative outcomes · <b>Strengthens:</b> S0 AI-Fluency core course (named, teachable templates), DR24 assessment integrity (AI-off phases), DR3 skill-atrophy countermeasure, L3.</p></div>
+
+<h2>Gaps &amp; notes</h2>
+<ul style="font-size:13.5px">
+<li>Evidence quality is thin: only one measured cohort (n=37); the 2025 synthesis found >50% of its 10 primary studies had medium-to-strong methodological weaknesses; zero longitudinal or retention data in the entire folder.</li>
+<li>Convergent across all five papers: AI excels at ideation, static assets and custom tutorials; fails at sprite sheets/animation, pipeline-conformant outputs and autonomy &mdash; human refinement is never optional (supports DR9 honest placement and L6 protect fundamentals).</li>
+<li>Sprit-sheet failure is independently reported by an expert (Spjut, n=1) and by students (Bezzina &amp; Dingli, n=37) &mdash; a rare replicated tool-gap finding.</li>
+<li>Framing split: students and jams call AI a "teammate"; professionals revert to "tool" when authorship or liability is at stake (Ternar et al.) &mdash; directly relevant to DD/CT student-identity work (DR7).</li>
+<li>Scope note: the 2022 paper's jams use AI/ML as <i>in-game design material</i> (NPCs, flocking, InteractML), not GenAI content pipelines &mdash; both directions (AI in the game vs AI in the pipeline) are curriculum-relevant; don't collapse them.</li>
+<li>Nothing Thailand/SEA-specific; no cost data; the only industry-scale number is Steam's &ge;7% AI-disclosure rate (itself an undercount, per the synthesis).</li>
+<li>Venue gaps: the NVIDIA case study and the 2026 MDPI article do not state their venue/journal name in the source text.</li>
+</ul>
+
+<footer>Part of the papers-digest pipeline · source text in ../text/5-games/ · master index: 00-INDEX.html</footer>
+</div></body></html>

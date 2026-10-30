@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2-computer-science — papers digest</title>
+<style>
+:root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#0f766e}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+header.hero{background:linear-gradient(135deg,#111827,#134e4a);color:#fff;border-radius:16px;padding:24px 26px;margin-bottom:20px}
+header.hero h1{margin:0 0 6px;font-size:22px}header.hero p{margin:0;color:#cdeae5;font-size:13.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:2px 10px;border-radius:999px;font-size:11.5px}
+h2{font-size:18px;margin:30px 0 8px}
+.paper{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:14px 18px;margin:12px 0}
+.paper.star{border-left-color:#d97706;background:#fffbeb}
+.paper h3{margin:0 0 4px;font-size:15px}.paper .cite{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.paper ul{margin:6px 0;padding-left:20px;font-size:13.5px}.paper li{margin:3px 0}
+.map{font-size:12.5px;background:#eef8f4;border-radius:8px;padding:6px 10px;margin-top:8px}
+.top{background:#fdf2f8;border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin:12px 0}
+.top h3{margin:0 0 6px;font-size:15px;color:#831843}
+footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="hero">
+  <h1>2-computer-science — papers digest</h1>
+  <p>Summaries and DDCT-relevant cases extracted from 15 papers · generated 2026-10-13 by digest agent</p>
+  <div class="badges"><span class="badge">★ = concrete transferable case</span><span class="badge">numbers cited from source text</span></div>
+</header>
+
+<div class="paper star">
+  <h3>★ 2023 Teaching Computer Game Development with Unity Engine: A Case Study</h3>
+  <div class="cite">CEUR Workshop Proceedings (3L-Person 2022) · case study, master's students in Secondary Education (Informatics), Kryvyi Rih State Pedagogical University, Ukraine (survey n not reported; response granularity ≈ 40 students)</div>
+  <ul>
+    <li>One-semester Unity course split 50/50: Part 1 = six 3-hour guided Unity labs; Part 2 = group game projects (teams of 3–4) with milestone deliverables: game concept plan → character modelling → vertical slice → usability test → final game + weekly progress reports.</li>
+    <li>Highest-rated elements: teamwork in labs M=4.05/5 (SD 0.71); hands-on labs M=4.03 (SD 0.92); peer work M=3.9 (SD 0.9).</li>
+    <li>Largest self-reported gains: Unity Engine ability M=4.18/5 (SD 0.87); understanding the game development process M=4.03 (SD 0.83).</li>
+    <li>Tool selection rationale: Unity over Unreal for a less steep learning curve; free for education; earlier XNA-based attempt left "many students halfway to the games".</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> S0/S4, DR14 (workflow design) — a pre-AI craft baseline for the CT track. Copy the milestone-scaffolded group project (concept → vertical slice → usability test → weekly reports) and the day-2 cross-team code review; this is the structure AI-era projects should keep while adding disclosure/QC gates.</div>
+</div>
+
+<div class="paper">
+  <h3>2024 Student-AI Interaction: A Case Study of CS1 Students</h3>
+  <div class="cite">ACM manuscript (2024, 15 pp.) · mixed-methods observational lab study; n=15 CS1 students (8F/7M, majority non-white), 3 Python tasks via custom GPT-3.5 VS Code plugin, 60 prompts logged; pre/post self-efficacy (n=10 usable)</div>
+  <ul>
+    <li>29 of 40 submitted solutions used GenAI; only 19 of those (65%) were correct — 35% incorrect despite (or because of) AI.</li>
+    <li>1/3 of all prompts (20/60) pasted the full task description ("entire solution"); 4 of 15 participants used this delegation strategy on every task; 18/60 AI answers were accepted without visible evaluation; few students verified solutions.</li>
+    <li>17 linear vs 23 iterative activity patterns; only 6/15 students solved all three tasks.</li>
+    <li>Self-efficacy diverged by strategy: hybrid user P6 rose 4.00→4.75; full-delegator P9 fell 2.58→1.75 despite completing everything.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR3 (skill atrophy), L3 (reflection scaffolds), 3-zone policy — unrestricted ChatGPT becomes an "oracle" even under supervision and on camera; supports zoning foundational courses 🔴/🟡 and explicitly teaching step-by-step and hybrid prompting strategies (Prompt-Problems-style exercises).</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2024 Teaching CS50 with AI: Leveraging Generative AI in CS Education</h3>
+  <div class="cite">SIGCSE 2024 · tool deployment case study; ~70 summer students → ~500 on-campus (Fall 2023) → 50,000+ unique users, 1.8M+ queries by Dec 2023</div>
+  <ul>
+    <li>Course-specific stack: CS50 Duck (GPT-4) + Explain-Highlighted-Code + AI style50, with pedagogical guardrails, RAG over 30-second lecture-caption segments (ChromaDB), PII scrubbing, prompt-injection guard, and 10-hearts usage throttling (1 heart / 3 min).</li>
+    <li>Accuracy on Ed forum: 88% curricular (22/25) and 77% administrative (30/39) vs ChatGPT's 48% baseline on software-engineering questions; every Ed answer subject to human endorsement/amendment/deletion.</li>
+    <li>Adoption: 78% of Fall students used tools "frequently/constantly"; 86% loved/liked them; 73% found them "always/frequently helpful" (33%+55%).</li>
+    <li>Cost: ~$1.90/student/month, $0.05/prompt; usage grew 5→15 prompts/user/day; Ed questions per student fell 0.89→0.28 (support shifted to the tutor).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> S0 (AI-Fluency core + local-model lab), AI-as-junior-staff loop, L1/L2, DR23 — build a guardrailed, course-specific "studio duck" over DDCT/DigiPen course materials instead of banning commercial AI; throttling doubles as a pedagogy for question formulation.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 A Survey of LLM-Based Applications in Programming Education</h3>
+  <div class="cite">Preprint (2025), NC State / U. Pittsburgh · survey of 42 papers (formative feedback 20, assessment 14, knowledge modelling 8), 2021–2025, SIGCSE/ITiCSE/ICER/LAK/EDM/CHI/EMNLP</div>
+  <ul>
+    <li>Recurring success pattern: human-in-the-loop oversight — educators interpret, refine, arbitrate; fully automated approaches "often constrained in capturing pedagogical nuances".</li>
+    <li>Cited deployments: GPT-4 reliably graded straightforward submissions in a 1,000+ student course but needed human arbitration on nuanced cases; GPT-4-generated knowledge-component tags preferred over instructor tags in ~2/3 of cases.</li>
+    <li>CodeAid finding: direct answers without educator scaffolding risk undermining learning; over-complete fixes short-circuit reasoning.</li>
+    <li>Best practices table: LLM hints/scaffolds for feedback; rubric alignment + human arbitration for assessment; expert validation for knowledge models.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L1 (aligned AI beats raw AI), L7 (faculty readiness), DR23 — hybrid pipelines where LLMs handle routine feedback and humans arbitrate nuanced cases; justifies faculty-in-the-loop ownership of any DDCT AI tutor.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 Adoption of AI-Coding Assistants in Programming Education: Extended TAM</h3>
+  <div class="cite">Springer journal (2025) · survey + PLS-SEM; n=311 CS undergrads at 2 Mexican universities (Tec 155, IPN 156); 39-item questionnaire; extended TAM, 18 hypotheses</div>
+  <ul>
+    <li>Supported paths: learning interest→usefulness β=0.265 (p=.003); achievement goals→usefulness β=0.280 and→ease β=0.277; trust→ease β=0.238; ease→usefulness β=0.244; usefulness→intention β=0.661 (f²=1.34); intention→actual use β=0.690 (f²=1.57).</li>
+    <li>Not significant: subjective norms (peers/instructors), doubt, and insecurity — social pressure and anxiety did not move adoption.</li>
+    <li>Variance explained: usefulness 58.5%, ease 49.4%, intention 43.6%, actual use 47.7%; attitude construct dropped for discriminant-validity failure.</li>
+    <li>Sample: 62.7% male, mean age 21.0; only 1.3% self-rated AI-tool "expert".</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR7 (student identity/resistance) — AI-skeptical students won't be converted by peer norms or mandates; adoption follows perceived usefulness tied to their own achievement goals plus hands-on trust building. Frame S0/S4 AI blocks around each student's goals (missions), not around what classmates do.</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2025 Effects of GitHub Copilot on Computing Students in Brownfield Coding Tasks (ICER)</h3>
+  <div class="cite">ICER 2025 Vol.1 · within-subjects controlled experiment; n=10 upper-division undergrads (Oregon State); 3,818-LOC legacy web app; 2 isomorphic feature tasks; second-by-second video coding (Krippendorff α=0.91/0.85)</div>
+  <ul>
+    <li>With Copilot: 35% faster Task-1 completion (M=837s vs 1285.9s, p=.04, r=0.66) and 50% more tests passed (6.30 vs 4.20, p=.01, r=0.80).</li>
+    <li>Process shift: manual code writing fell 30.45%→19.82% of time; web search collapsed 13.51%→1.91%; Markov analysis shows a new prompt→view-response→implement cycle replacing read→understand→implement (p&lt;.0001).</li>
+    <li>Low performers pasted whole Copilot-chat chunks; high performers pasted 83.9% less, accepting granular suggestions and editing manually — selective, metacognitive adoption beat wholesale adoption.</li>
+    <li>Exit interviews: students worried they didn't understand "how or why" suggestions work or fit the legacy code base.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR9 (honest pipeline placement), DR3, L2 — brownfield = the studio's real pipeline condition (modifying others' assets/code). Copy the isomorphic-task experimental design for DDCT tool evaluations, and teach granular acceptance + "why does this fit the codebase conventions?" reflection as an explicit 🟢-zone skill.</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2025 Improving AI in CS50: Leveraging Human Feedback for Better Learning</h3>
+  <div class="cite">SIGCSE TS 2025 · iterative deployment + evaluation experiments; 29 TFs made 1,309 single-turn comparisons (50 queries); 72 TFs made 480 multi-turn comparisons with Elo scoring; 211,000 users / 10M queries by Nov 2024</div>
+  <ul>
+    <li>"Instruction dilution" quantified: 22% of 10M messages (48% of 1.3M conversations) contained code blocks despite prompts forbidding solutions; the GPT-4→GPT-4o swap silently worsened it (20%→25% message-level, 44%→56% conversation-level).</li>
+    <li>"Here's an example…" phrasing appeared 1.9M times — the tell of over-helpful tutoring.</li>
+    <li>Fixes: V1 Socratic prompt (ask leading questions), V2 few-shot (4 examples), V3 fine-tuned GPT-4o-mini on just 50 curated tutor conversations (5 epochs); V2/V3 beat V0 in ~60% of multi-turn comparisons; V0's Elo ranked reliably last.</li>
+    <li>Model-graded "battle" evaluation agreed with human TFs 82% of the time, enabling scale; cost fell to $1.50/student/year.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L1/L3/L5, DR23, S0 local-model lab — a small, high-quality, staff-curated dataset (50 conversations) plus an arena-style eval platform is enough to align a tutor to pedagogy. Copy: TF-curated fine-tune set + periodic battle evals + regression checks whenever the underlying model updates.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 Influence of AI Tools on Learning Outcomes in Computer Programming: Meta-Analysis</h3>
+  <div class="cite">Computers (MDPI) 14:185 · PRISMA systematic review + random-effects meta-analysis; 35 controlled studies 2020–2024 (text inconsistently also says 32); US 14, Europe 10, Asia 5</div>
+  <ul>
+    <li>Student performance: SMD=0.86 (95% CI [0.36, 1.37], p=.0008, I²=54%) — AI-assisted students scored clearly higher.</li>
+    <li>Task completion time: SMD=−0.69 but NOT significant (p=.34, I²=95%); success/ease of understanding: SMD=0.16, n.s. (p=.41), unstable in sensitivity analysis (drops to −0.03 when one study removed).</li>
+    <li>Perceived usefulness pooled prevalence 1.0 (95% CI [0.92, 1.00], I²=0%) — near-universal student acceptance.</li>
+    <li>Mitigation strategies from reviewed studies: structured scaffolding with gradual AI-fading, critical-reflection assignments (explain the AI's reasoning), and instructor-mediated AI-free checkpoints.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L6 (gains positive; higher-order/understanding effects weak → protect fundamentals), DR3, L3 — the three mitigation moves map directly onto the 3-zone policy (🟡 fading support, 🔴 AI-free checkpoints) and the judgment-notebook reflection habit.</div>
+</div>
+
+<div class="paper">
+  <h3>2025 Large Language Models in Computer Science Education: A Systematic Literature Review</h3>
+  <div class="cite">SIGCSE TS 2025 · SLR per Kitchenham guidelines; 1,735 papers screened → 125 included (2019–Jun 2024)</div>
+  <ul>
+    <li>80%+ of studies (111/125) target undergraduates; K-12 only 2 papers; 67% of all work sits in intro programming/intro CS (65 intro-programming papers).</li>
+    <li>Python appears in 55% of papers; ChatGPT/GPT-3.5 is the dominant model (GPT-4 often excluded for cost).</li>
+    <li>Methods: case study/ethnography 38%, action research 24%, experiments with humans 24; only 5% benchmark LLMs.</li>
+    <li>Sentiment gap: students generally positive; instructors report a negative correlation between LLM use and grades in one cited study, worry about over-reliance and plagiarism, yet "most CS curricula still need to be changed to accommodate recent advances in AI".</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR28 (DigiPen channel), S2 — evidence base is concentrated in intro Python/ChatGPT; advanced courses, engines, and non-Python pipelines are nearly untouched. DDCT's upper-division/game-engine AI integration would be filling a documented gap, not following a settled playbook.</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2026 A Scoping Review of Vibe Coding and AI-Assisted Programming</h3>
+  <div class="cite">MDPI journal (2026), NUS-ISS · PRISMA scoping review, OSF-preregistered; 37 studies 2022–Jul 2026 (33 from 2025–26); 5 RQs</div>
+  <ul>
+    <li>Interaction reality: 78.0% of 732 remediation episodes were pure retesting (Lai &amp; Hsueh, 366 students); of tested interactions 91.7% were common cases, 2.2% edge cases, 0% unit tests (Geng et al.); detailed specifications correlated positively with final grade, pasted unprocessed errors negatively (Isa et al., 147 students/448 logs); top-quartile students explore, bottom quartile go assignment→solution directly (Rinja et al., 110 students/19,418 turns).</li>
+    <li>Validated strategies: planning hints were the only hint type consistently associated with higher performance (Phung et al., 102 students); adaptive scaffolding that withholds full solutions; dual-mode assignments (independent phase then AI phase); process-visibility designs.</li>
+    <li>Assessment redesign: Al-Khalifa graded 20% code output / 30% prompt log / rest critical reflection, fairness rated 4.4–4.6/5; three generic strategies — resist trivial generation, segregate AI-free vs AI phases, diversify evidence (oral exams, video explanations, journals).</li>
+    <li>Faculty: 73.7% of 110 surveyed expect more plagiarism, 56.3% expect weaker critical thinking, but only 2.7% support bans. Curriculum proposals shift weight to specification, verification, and review (Liao's 5-module course; capstone = formal spec + verification suite + interaction log + prototype).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L3 (reflection/scaffolding strongest lever), DR23 (assessment integrity), DR9 (evaluation/QC) — adopt dual-mode assignments, prompt-log + reflection grading, and spec-driven capstone artifacts; "verification is the new bottleneck" is the core Direction-Ladder argument for 🟡-zone critique training.</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2026 Computer Science Achievement and Writing Skills Predict Vibe Coding Proficiency</h3>
+  <div class="cite">CHI 2026, ETH Zürich · preregistered cross-sectional lab study; N=100 tertiary students (56 women, mean age 25); 8-expert Delphi-designed tasks; custom no-code GUI vibe-coding platform; SCS1 + essay test + ICAR16</div>
+  <ul>
+    <li>CS achievement predicts vibe-coding performance r=.39 (partial r=.281, p=.005 after controlling for general cognition); writing skill r=.29 (p=.003; partial r=.186, p=.066 n.s. after control).</li>
+    <li>Joint model R²=0.208: CS contributes ~2× the unique variance of writing (ΔR²=0.125 vs 0.059), but both are independent predictors (β=0.356 and 0.244).</li>
+    <li>Prompt quality mediates ~52% of the writing→performance link (indirect 0.152, 95% CI [0.061, 0.279]) — better writers write clearer prompts, clearer prompts build better apps.</li>
+    <li>Exploratory: self-reported LLM-use frequency correlates negatively with vibe performance (r=−.258) and writing (r=−.282); decontextualized task was hardest (M=0.34 vs 0.46/0.55 of context-rich tasks).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR4 (direction-skills premium), S1 Craft &amp; Direction — "pure" vibe coding still rewards CS fundamentals and precise writing; for the DD art track this gives writing/briefing practice direct instrumental value. Reuse the vetted Delphi task suite (replication + feature-extension + decontextualized) as AI-era studio assignments.</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2026 How AI Assistance Impacts the Formation of Coding Skills</h3>
+  <div class="cite">Anthropic Fellows Program report (Feb 2026) · preregistered between-subjects RCT; n=52 experienced Python devs learning the new Trio async library (26 AI / 26 no-AI); GPT-4o chat assistant; 27-point quiz on conceptual/code-reading/debugging; 4 pilots (n=39/107/20/20) to kill non-compliance</div>
+  <ul>
+    <li>AI users learned significantly less: quiz −17% (4.15 points of 27, d=0.738, p=.01), with no significant average time saving — productivity and learning decoupled.</li>
+    <li>Control group hit a median 3 errors vs AI group's 1; independently resolving errors appears to be where the learning happened; biggest score gap on debugging questions.</li>
+    <li>Six interaction personas: low scorers (24–39%) = AI Delegation (n=4), Progressive Reliance (n=4), Iterative AI Debugging (n=4); high scorers (65–86%) = Conceptual Inquiry only (n=7), Hybrid Code-Explanation (n=3), Generation-Then-Comprehension (n=2). Delegation was fastest (19.5 vs 23 min) but learned least.</li>
+    <li>AI users self-reported feeling "lazy" with "gaps in understanding"; typing vs pasting AI code made no difference — cognitive engagement, not time-on-task, is what preserved learning.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR3 (skill atrophy — strongest causal evidence in the folder), L3, Brake·Anchor·Engine, AI-as-junior-staff loop — codify the two winning patterns as taught studio behaviors (explanations-only phases; critique-after-generation), and keep 🔴 AI-free formation blocks for fundamentals. Students who delegate everything ship fast and learn least — exactly the junior-task-automation risk.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 How Generative AI Influences Learning Outcomes in Programming Education: Three-level Bayesian Meta-analysis</h3>
+  <div class="cite">Educational Psychology Review (2026), Zhejiang University · 3-level Bayesian meta-analysis; 35 journal studies, 131 effect sizes, 2022–2025; outcomes split AIPO (assisted) / IPO (independent) / HOS (higher-order) / MEO (motivational-emotional)</div>
+  <ul>
+    <li>Credible small-to-medium positive effects on all four outcomes: AIPO g=0.36 [0.07, 0.66]; IPO g=0.25 [0.01, 0.47]; HOS g=0.53 [0.26, 0.79]; MEO g=0.35 [0.12, 0.57]; no credible difference between categories.</li>
+    <li>No credible moderation by educational context, instructional design, or system design anywhere — "the conditions that strengthen or weaken these effects remain undetermined" (sparse cells: 43 of 103 subgroup estimates rest on ≤5 studies).</li>
+    <li>Five exploratory MEO contrasts only: strategy training &gt; none (Δg=0.55), experienced &gt; novice students (Δg=0.66), Python &gt; C-family (Δg=0.56), 1–3-month &gt; &lt;1-month interventions (Δg=0.61).</li>
+    <li>No included study ran a delayed post-test; IPO lower bound sits at 0.01 — independent-performance gains are real but thin and untested for retention.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L6 (protect fundamentals; HOS only g≈0.53 medium), L2 nuance — since no integration recipe is empirically crowned, DDCT should treat its 3-week tool-sprint blocks as local experiments with own measurements (pre/post + delayed), not adopt imported "best practices" on faith. Novice-vs-experienced contrast supports S1's Y3 fork timing.</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2026 Vibe Coding Before the Trend: Practitioner Reflections Across Four Student Cohorts</h3>
+  <div class="cite">Practitioner report (Mar 2026), Fontys ICT, Netherlands · 4 deployments, 107 student reflections: Open Learning ICT n=54 (2 days), Marketing minor n=24 (half day), NWU South Africa BA Communication n=22 (single session), Journalism n=7/20 (afternoon); Cursor free tier</div>
+  <ul>
+    <li>Five patterns across cohorts: career urgency (strongest in ICT cohorts); "AI handles syntax, I focus on thinking"; memorizing→evaluating skill shift; partnership framing ("conductor, not replaced") present in all four cohorts; accessibility strongest among the least-technical cohorts (journalism, marketing).</li>
+    <li>The real bottleneck was plumbing, not prompting: install paths, file structures, dependency management — not prompt formulation.</li>
+    <li>Day-2 of the 2-day format = analyze another team's solution (codebase review with Cursor), then enhance it — peer review built in.</li>
+    <li>Follow-up signal: marketing students subsequently chose internships/graduation projects centered on digital skills; authors' honest caveat: their statistical patterns mostly reflected their own data-collection design, not cohort backgrounds.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR7 (converting AI-hostile students), L8 (jam/block formats), S4 (student-authored missions) — copy the tiered tool onramp (chat artifacts → Lovable/Bolt → Cursor IDE), let non-tech students bring their own problems (quality/motivation jumped when they did), and add simple pre/post measures. Career-urgency + partnership framing is the conversion narrative for DD's AI skeptics.</div>
+</div>
+
+<div class="paper star">
+  <h3>★ 2026 Vibe Coding with Preservice Teachers: Self-Efficacy Pilot Study</h3>
+  <div class="cite">Frontiers in Psychology 17:1957111 · single-group pretest-posttest pilot; n=159 preservice teachers (92.5% women, 4 non-CS programs, Türkiye); 4 weeks / ~6 instructional hours; Gemini 2.5 Flash via Google AI Studio on students' phones; CPSES + behavioral-intention scale</div>
+  <ul>
+    <li>Simple-task programming self-efficacy 1.48→5.67 of 7 (dz=2.62); complex-task 1.55→3.92 (dz=1.72); intention to use GAI in teaching 4.14→4.34 (dz=0.29); all p&lt;.001 and robust to Bonferroni/Wilcoxon.</li>
+    <li>Complex-task confidence stalled near the scale midpoint — syntax barrier fell, higher-level demands did not.</li>
+    <li>Instructional structure: weekly demo hour (vicarious) + guided hands-on hour + independent assignments screenshot-verified as functioning programs (mastery); Week 3 taught staged prompting (analyze problem → specify functionality → generate → refine).</li>
+    <li>Author's own caveats: no control group, full measurement invariance not established, floor-level baselines + regression to the mean inflate dz; confidence ≠ competence (CPSES measures general programming confidence, not unaided skill).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR7/anxiety, S4, L8 — a phone-browser, ~6-hour vibe-coding onramp moved high-anxiety non-tech novices from "cannot write Hello World" to moderate confidence; the staged-prompting worksheet and demo+guided+independent rhythm are cheap, replicable first-week material for DD students. Full materials published as supplementary — do not oversell the effect sizes.</div>
+</div>
+
+<h2>Top 3 cases for the DDCT curriculum</h2>
+<div class="top">
+  <h3>1. CS50's guardrailed course-specific AI tutor + human-feedback improvement loop (papers 3 &amp; 7)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> GPT-4 tutor over the course's own materials (RAG on lecture captions), pedagogical guardrails ("guide, don't solve"), 10-heart throttling, human endorsement of forum answers; then fixed instruction dilution (22% of 10M messages leaked code blocks) with a Socratic prompt, few-shot examples, and a fine-tune on just 50 curated tutor conversations, judged via a TF "battle/arena" platform (29–72 TFs, 1,309 + 480 comparisons). · <b>Measured result:</b> 88% curricular accuracy vs 48% ChatGPT baseline; 86% student approval; ~$1.50/student/year at 211k users; fine-tuned/few-shot versions beat the original in ~60% of multi-turn comparisons with model-graded eval matching humans 82%. · <b>Strengthens:</b> S0 (AI-Fluency core, local-model lab), DR23, L1/L5 — build a DDCT "studio duck" over DigiPen course content, 🟢-zone mandated, with a staff-curated 50-conversation alignment set and regression checks on every model update.</p>
+</div>
+<div class="top"><h3>2. Cognitive-engagement over delegation: the Anthropic skill-formation RCT (paper 12)</h3><p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> preregistered RCT (n=52 experienced devs) learning a new Python library with vs without a GPT-4o assistant; every session screen-recorded and coded into six usage personas. · <b>Measured result:</b> AI access cut learning 17% (d=0.738) with no average speed-up; Conceptual-Inquiry and Generation-Then-Comprehension users scored 65–86% on the retention quiz while delegators scored 24–39%; the largest deficit was in debugging. · <b>Strengthens:</b> DR3 (skill atrophy), L3, AI-as-junior-staff loop — teach the two winning patterns as explicit studio protocol (explanations-only phases; generate-then-critique), make "ask why, not do it" a graded 🟢-zone behavior in the judgment notebook, and keep 🔴 AI-free formation blocks for fundamentals.</p></div>
+<div class="top"><h3>3. Dual-mode assignments + process-visible assessment from the vibe-coding review (paper 10)</h3><p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> synthesis of 37 studies of AI-assisted university coding, extracting assessment designs: same task done AI-free then AI-assisted and graded separately (Liang &amp; Chen); grade split 20% code / 30% prompt log / 50% critical reflection (Al-Khalifa); five-module course ending in a capstone graded on formal spec + verification suite + interaction log + prototype (Liao). · <b>Measured result:</b> fairness/engagement rated 4.4–4.6/5 for the log+reflection scheme; planning-hint scaffolding was the only strategy consistently associated with higher performance (102 students); faculty oppose bans (2.7%) despite 73.7% expecting more plagiarism. · <b>Strengthens:</b> DR23 (assessment integrity), L3, DR9 — a ready-made grading contract for DDCT's 3-zone policy: segregate 🔴 unaided work from 🟡 disclosed AI work, and score the process (log + reflection + verification), not just the artifact.</p></div>
+
+<h2>Gaps &amp; notes</h2>
+<ul style="font-size:13.5px">
+<li><b>Internal inconsistencies in the 2025 meta-analysis (paper 8):</b> abstract says 35 studies, results/conclusion say 32; the completion-time CI is printed as [−2.13, −0.74] in the abstract but [−2.13, 0.74] in the forest plot, and p=.34 — the claimed "significant reduction" in task time is not supported. Trust the performance SMD=0.86; distrust the time claim.</li>
+<li><b>Meta-evidence vs RCT tension:</b> the Bayesian meta-analysis (paper 13) finds positive independent-performance gains (g=0.25) while the Anthropic RCT (12) finds −17% learning — reconcilable because the meta's IPO measures are end-of-intervention, no study anywhere ran delayed retention tests, and the RCT targeted novel-skill formation (a new library), which is where DDCT's first-years live.</li>
+<li><b>Population mismatch:</b> evidence concentrates on CS1/intro Python with ChatGPT-class models (papers 9, 13); nothing covers game engines, 3D/content pipelines, or art-and-design students — only paper 1 (pre-AI Unity course) and papers 14/15 (non-CS cohorts) approximate DD/CT populations, so transfer is inference, not citation.</li>
+<li><b>Effect-size inflation risks:</b> preservice-teacher dz=2.62 comes from floor-level baselines with no control group and failed measurement invariance (author-acknowledged); the TAM study is single-country, self-report, purposive.</li>
+<li><b>Fast decay of tool findings:</b> 33/37 vibe-coding studies date from 2025–26, and paper 14 documents setup barriers collapsing within a year — treat tool-specific results (Cursor friction, model versions) as perishable; the durable findings are interaction-pattern and assessment-design ones.</li>
+<li><b>Moderators undetermined:</b> the Bayesian meta-analysis could not certify any integration condition as superior — a caution against importing "best practice" claims and an argument for DDCT instrumenting its own sprint blocks.</li>
+</ul>
+
+<footer>Part of the papers-digest pipeline · source text in ../text/2-computer-science/ · master index: 00-INDEX.html</footer>
+</div></body></html>

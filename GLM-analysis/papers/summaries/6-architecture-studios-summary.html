@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6-architecture-studios — papers digest</title>
+<style>
+:root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#0f766e}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+header.hero{background:linear-gradient(135deg,#111827,#134e4a);color:#fff;border-radius:16px;padding:24px 26px;margin-bottom:20px}
+header.hero h1{margin:0 0 6px;font-size:22px}header.hero p{margin:0;color:#cdeae5;font-size:13.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:2px 10px;border-radius:999px;font-size:11.5px}
+h2{font-size:18px;margin:30px 0 8px}
+.paper{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:14px 18px;margin:12px 0}
+.paper.star{border-left-color:#d97706;background:#fffbeb}
+.paper h3{margin:0 0 4px;font-size:15px}.paper .cite{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.paper ul{margin:6px 0;padding-left:20px;font-size:13.5px}.paper li{margin:3px 0}
+.map{font-size:12.5px;background:#eef8f4;border-radius:8px;padding:6px 10px;margin-top:8px}
+.top{background:#fdf2f8;border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin:12px 0}
+.top h3{margin:0 0 6px;font-size:15px;color:#831843}
+footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="hero">
+  <h1>6-architecture-studios — papers digest</h1>
+  <p>Summaries and DDCT-relevant cases extracted from 4 papers · generated 2026-10-13 by digest agent</p>
+  <div class="badges"><span class="badge">★ = concrete transferable case</span><span class="badge">numbers cited from source text</span></div>
+</header>
+
+<div class="paper star">
+  <h3>2025 · Teaching with Artificial Intelligence in Architecture: Embedding Technical Skills and Ethical Reflection in a Core Design Studio</h3>
+  <div class="cite">Buildings (MDPI) 2025, 15, 3069 · case study: 2024–25 third-year core studio (Architectural Design III/IV), Zhejiang University + post-course questionnaire (n=70 valid)</div>
+  <ul>
+    <li>Dual-module retrofit without touching studio structure: 20 class-hours (45 min each) of AI skills (LLM → AIGC image → LoRA fine-tuning → ComfyUI → multimodal) + 4 ethics threads (data privacy/copyright, accountability, stylistic authorship/cultural bias, model bias) run inside regular crit sessions. 95.7% rated the module ≥ moderately beneficial (24.3% extremely), yet actual use was shallow: 51.0% only "briefly experimented", 5.9% used frequently, 13.7% never used.</li>
+    <li>Capability ratings (5-pt Likert): information synthesis M=4.28 (84.1% agree 4–5) vs analytical reasoning M=3.86 (67.1%) vs creative thinking M=3.46 (44.3%) and visual representation M=3.47 (44.3%) — students rate AI as analyzer, not creator.</li>
+    <li>Phase-dependent usage: design development 62.9%, pre-design research 55.7%, final representation 31.4% (opposite of commercial practice). Tool ranks flip by phase: LLMs top in research (mean rank 1.35, 25 top-1 picks), custom ComfyUI workflows overtake LLMs for representation (2.14 vs 2.47).</li>
+    <li>Ethics format: 65.7% prefer informal embedded discussion/self-reflection vs 28.6% wanting formal instruction; 82.8% intend future AI use but 57.1% conditionally ("tools immature, will observe"). Staffing model: 1 dedicated technical instructor serving a 1:9 faculty–student studio ratio; module revised live mid-year as tools churned (SDXL Jul 2023 → Grok 4 Jul 2025); university cloud platform ran SD/ComfyUI for students without GPUs.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> S0 Infuse + DR24/L7 + L4 + DR12 — copy the 20h modular add-on with a single dedicated AI technical instructor (solves the faculty-readiness bottleneck without retraining every tutor), ethics threads embedded in crit rather than a standalone ethics course, and a university-hosted cloud/local model lab (NDA-safe analog).</div>
+</div>
+
+<div class="paper star">
+  <h3>2026 · Cultivating reflective designers: process-oriented pedagogies for harnessing AI's creative unpredictability in architectural studios</h3>
+  <div class="cite">Journal of Asian Architecture and Building Engineering (Taylor &amp; Francis, online 29 Jan 2026) · 15-week 4th-year studio, Sejong University (Seoul), n=12; mixed methods: Creativity Support Index, design logs, self-evaluation vs 3-tutor rubric, comparison vs prior non-AI studios (IRB-approved; no control group)</div>
+  <ul>
+    <li>CSI overall 66.58 (N=12): Exploration 7.17 and Collaboration (weighted 20.8) and Expressiveness (20.5) highest; Immersion lowest (5.5, weighted 11.0) — low immersion/enjoyment read as productive cognitive tension of "low-cost failure" iteration, not tool failure.</li>
+    <li>Self- vs tutor-evaluation correlation r ≈ 0.96. Versus students' previous non-AI studios, clear gains in Form, Representation, Material, Conceptual Development; essentially no change in Spatial Planning, Drawing Quality, Function/Performance/Safety — selective enhancement, fundamentals untouched (straight L6 evidence).</li>
+    <li>Contrary to prior literature, students reported the most tangible AI support in middle/late stages (Representation, Detailing, Drawing Quality rose in Stage C); Function/Performance/Safety scored low at every stage.</li>
+    <li>Practice levers: mandatory per-stage design log with 9 fields (images, input method, AI platform, prompts, process, challenges, successes, next steps, reflection on AI potential), shared online whiteboard, 5-point rubric extended from KAAB Student Performance Criteria; students shifted from result-driven prompting to interpretive "co-doing", treating AI misfits as creative stimuli (typology-breaking outputs).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L3 + DR23 + L6 + S0/S4 — the 9-field design log is a ready-made judgment-notebook/reflection-scaffold instrument; grade the log, not just renders; rubric anchored to accredited program outcomes keeps assessment integrity while AI use is visible.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 · Reflection in co-action: AI joins the crit</h3>
+  <div class="cite">Perspective + targeted scoping review (open-access, accepted 27 Feb 2026; journal name not recoverable from converted text) · Web of Science Core Collection searched 1 Jan 2026: 134 records → 69 full-text → 16 included studies; two-stage thematic synthesis</div>
+  <ul>
+    <li>Four meta-themes across the 16 GenAI/LLM studio studies: (1) phase-dependent integration — strongest in early ideation, contested near grading/accountability; (2) new studio literacies: prompting, evaluating, translating outputs into design decisions, documenting process; (3) scaffolds/formats (co-design interfaces, hackathons, dual-module studios) make "co-doing" teachable; (4) governance: authorship, assessment integrity, bias/equity.</li>
+    <li>Acceptability of GenAI is conditional on transparent disclosure and declines as work approaches grading or professional accountability; students should be assessed on judgment/translation/justification, not surface novelty of AI imagery.</li>
+    <li>Core claim: "learning by co-doing" is an achievement of curriculum design, not an automatic outcome of tool access — benefits track designed interaction formats that externalize the human–AI dialogue.</li>
+    <li>Four prescribed studio moves: sequence AI legitimacy by phase; prompt journals + critique AI outputs as representations, not answers; externalize human–AI dialogue via structured formats; integrity policy with process documentation/prompt traces. Effect sizes: not reported (qualitative synthesis; perspective).</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> S0 3-zone policy + DR23 + L3/L8 + crit redesign — map 🟢/🟡/🔴 AI zones onto the project timeline (early breadth = green; resolution/justification milestones = disclosure or AI-free), and make the prompt journal a crit artifact.</div>
+</div>
+
+<div class="paper">
+  <h3>2026 · Undergraduate architecture design studios in transition: a critical review of evolving methods and practices</h3>
+  <div class="cite">Springer Nature journal (accepted 2 Apr 2026; name not recoverable from converted text) · structured narrative review with systematic search: Scopus (182 records) + WoS (67), 1980–June 2024 → n=72 included studies; typology + comparative framework</div>
+  <ul>
+    <li>72 studies classified into 5 studio methodologies + hybrids: Reflective DS n=22 (18 process-based, 4 concept-based), Collaborative n=23, Computer-Aided n=12, Interdisciplinary n=12, Online n=15; hybrid combinations (RDS+CDS, RDS+CADS+IDS, etc.) documented but fragmentary (Table 1 alignment partially garbled in MinerU conversion).</li>
+    <li>Headline gap: learning-outcome evidence is overwhelmingly qualitative case studies and reflective accounts; empirical assessments (pre/post tests, surveys, performance assessments) are a small minority in RDS, CDS and IDS, and evaluation frameworks vary too much to compare methods — the field lacks any standardized studio assessment.</li>
+    <li>Integrating emerging technologies "such as artificial intelligence and augmented reality" into studio pedagogy is named a major unresolved obstacle, alongside evaluation efficacy and inclusivity; the 1980→2020s timeline (apprenticeship → Beaux-Arts → Bauhaus → Schön → CAD/BIM → COVID online/hybrid) shows studios absorb new modes as slow-layer hybrids over decades.</li>
+    <li>AI-specific evidence: none — the June 2024 cutoff predates the GenAI-studio literature (papers 1–3 above). Effect sizes: not reported.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR26 + DR23 + S1/S4 — use the typology as the slow-layer vocabulary (DD/CT studios are already "process-based Reflective + Computer-Aided" hybrids); the review's own gap — no robust studio evaluation frameworks — is the space where DDCT rubrics (design logs, phase rubrics) could lead rather than follow.</div>
+</div>
+
+<h2>Top 3 cases for the DDCT curriculum</h2>
+<div class="top">
+  <h3>1. The 20-hour dual-module AI retrofit with one dedicated technical instructor (Zhejiang University, Buildings 2025)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> 20 class-hours of AI skills (LLM → AIGC → LoRA → ComfyUI) bolted onto an unchanged third-year core studio, ethics run as threads inside existing crit sessions, one dedicated technical instructor (studio ratio 1:9), university cloud platform hosting SD/ComfyUI for hardware-poor students, syllabus updated live across the year as tools churned. · <b>Measured result:</b> n=70 survey — 95.7% ≥ moderately beneficial; 65.7% prefer embedded over formal ethics; but only 5.9% became frequent users and 51.0% merely experimented (satisfaction ≠ adoption; phase-sensitive scaffolding is the stated fix). · <b>Strengthens:</b> S0 Infuse, DR24/L7 (faculty bottleneck solved by role split), L4, DR12 — at DDCT: run AI-Fluency as a 20h module inside existing DD/CT studios with a single shared AI technical instructor and a KMUTT-hosted local/cloud model lab, instead of retraining all studio faculty.</p>
+</div>
+<div class="top"><h3>2. Stage-based design logs + shared whiteboard + outcomes-anchored rubric (Sejong University, JAABE 2026)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> 15-week studio where the graded process artifacts are 9-field per-stage design logs (prompts, platform, process, challenges, next steps, reflection on AI potential), a collaborative whiteboard for peer visibility, and a 5-point rubric extended from accreditation criteria; tutors grade process, not just renders. · <b>Measured result:</b> n=12 — CSI 66.58 (Exploration/Collaboration high, Immersion low = productive tension); self vs tutor r ≈ 0.96; gains vs prior non-AI studios concentrated in Form/Representation/Material/Concept while Function/Performance/Safety stayed flat. · <b>Strengthens:</b> L3 (reflection scaffold as strongest lever), DR23 (assessment integrity via process visibility, not surveillance — L5), L6 (explicit fundamentals to protect) — at DDCT: adopt the design log as the judgment-notebook artifact across studio courses and anchor rubrics to program learning outcomes.</p>
+</div>
+<div class="top"><h3>3. Phase-sequenced AI legitimacy + prompt traces in the crit (Iranmanesh 2026, synthesis of 16 studies)</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> From a 16-study scoping review: legitimize AI for breadth in early phases, require translation, justification and documented disclosure as work approaches resolution; prompt journals; critique AI outputs as representations rather than answers; integrity policy built on process documentation. · <b>Measured result:</b> not an intervention (qualitative synthesis; no effect sizes) — but the underlying corpus shows acceptability of AI use collapses near grading unless disclosure is designed in. · <b>Strengthens:</b> S0 3-zone policy (🟢 early ideation / 🟡 disclosed development / 🔴 AI-free or fully justified resolution), DR23/DR16 disclosure, crit redesign — at DDCT: map the 3 zones onto every project timeline and make the prompt log a required crit artifact; zones vary by phase, not by course.</p>
+</div>
+
+<h2>Gaps &amp; notes</h2>
+<ul style="font-size:13.5px">
+  <li>Samples are small and designs weak across the folder: n=70 single-year survey (paper 1), n=12 single studio with no control (paper 2), 16-study qualitative synthesis (paper 3), 72 mostly small case studies (paper 4). No RCTs, no longitudinal tracking, no effect sizes anywhere.</li>
+  <li>Apparent contradiction to resolve in pilots: paper 1 finds usage peaks upstream (design development 62.9% vs final representation 31.4%) while paper 2 finds perceived support peaks mid/late (Representation/Detailing/Drawing Quality). Different constructs — usage frequency ≠ perceived support — so DDCT pilots should measure both.</li>
+  <li>Paper 2's r ≈ 0.96 self–tutor correlation is likely inflated by aggregated 5-point rubric granularity; treat as directional. Paper 2's "comparison vs previous non-AI studios" is retrospective self/tutor rating, not a controlled baseline.</li>
+  <li>Paper 4's literature cutoff (June 2024) means its 5-type typology predates the GenAI-studio wave — use it for the slow curricular layer and evaluation-gap argument, not for AI guidance. Paper 3 (same author cluster as paper 4's ODS strand) is a perspective: useful prescriptions, untested.</li>
+  <li>Venue names for papers 3 and 4 were not recoverable from the converted text (running headers stripped by the converter).</li>
+  <li>Transfer caveat: all four papers are architecture studios, where "representation phase" ≈ DD/CT art-production milestone and "function/performance/safety" ≈ technical/production requirements; mapping needs adaptation, and none of the papers touches games, interactive media, or DigiPen-style engineering outcomes.</li>
+  <li>Directly relevant to AI-skeptical DDCT students: paper 1's 57.1% "wait and observe" stance and 65.7% preference for informal embedded ethics suggest resistance softens when AI is framed as phase-specific tooling inside familiar studio rituals rather than a new ideology.</li>
+</ul>
+
+<footer>Part of the papers-digest pipeline · source text in ../text/6-architecture-studios/ · master index: 00-INDEX.html</footer>
+</div></body></html>

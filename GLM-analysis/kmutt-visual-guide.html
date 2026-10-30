@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DDCT × Generative AI — Curriculum Scenarios (Visual Guide)</title>
+<style>
+  :root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--kmutt:#f97316;--digipen:#b91c1c;--go:#059669;--warn:#d97706;--stop:#dc2626;--s4:#7c3aed;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+  header.hero{background:linear-gradient(135deg,#111827 0%,#7c2d12 60%,#ea580c 100%);color:#fff;border-radius:18px;padding:36px 32px;margin-bottom:26px}
+  header.hero h1{margin:0 0 10px;font-size:28px;line-height:1.25}
+  header.hero p{margin:0;color:#fde8d7;max-width:880px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);padding:4px 12px;border-radius:999px;font-size:12.5px}
+  h2{font-size:21px;margin:42px 0 6px;display:flex;align-items:center;gap:10px}
+  h2 .num{background:var(--ink);color:#fff;width:28px;height:28px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:none}
+  .sub{color:var(--muted);margin:0 0 14px;font-size:14px}
+  .figure{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;overflow-x:auto}
+  .figcap{font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center}
+  .grid{display:grid;gap:12px}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+  table{border-collapse:collapse;width:100%;font-size:13px;background:#fff;border-radius:12px;overflow:hidden}
+  th{background:#eef1f8;text-align:left;padding:8px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#3a4358}
+  td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+  tr:hover td{background:#fff8f1}
+  .school{border-left:4px solid #999;padding:12px 14px;background:#fff;border-radius:0 10px 10px 0;box-shadow:0 1px 2px rgba(28,35,51,.06)}
+  .school b{display:block;font-size:14.5px}
+  .school span{font-size:13px;color:var(--muted)}
+  .tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;background:#eef1f8;color:#3a4358;margin-top:6px;margin-right:4px}
+  .note{font-size:12.5px;color:var(--muted);background:#fff4e8;border:1px solid #fed7aa;border-radius:10px;padding:10px 14px;margin-top:12px}
+  svg text{font-family:"Segoe UI",system-ui,Arial,sans-serif}
+  footer{margin-top:46px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>DDCT × Generative AI — Curriculum Scenarios</h1>
+  <p>A decision kit for the Digital Design &amp; Creative Technology programs at KMUTT: the AI concerns x-ray for design careers, production and Thailand's industry — and six deployable curriculum configurations, from a 12-month in-place retrofit to a mission-driven atelier with advisor-matched pathways. Built on the global research in this folder (DigiPen, RPI, FABW, NTU, Gallatin, Design Factory…) plus Thailand's own data.</p>
+  <div class="badges">
+    <span class="badge">🇹🇭 depa: industry 50.6 B฿ ↗ / headcount −1% (AI)</span>
+    <span class="badge">🎓 DigiPen joint program = curriculum supply line</span>
+    <span class="badge">🪜 Apprenticeship rebuilt</span>
+    <span class="badge">🗺 6 scenarios · 3 phases</span>
+  </div>
+</header>
+
+<!-- 1. CONCERNS X-RAY -->
+<h2><span class="num">1</span>The AI concerns x-ray for digital design</h2>
+<p class="sub">Four concern families from the research (full evidence in <b>01-concerns-breakdown.md</b>). Size ≈ how much they should drive design.</p>
+<div class="figure">
+<svg viewBox="0 0 1000 560" role="img" aria-label="AI concerns x-ray, four quadrants">
+  <g>
+    <rect x="20" y="30" width="470" height="250" rx="14" fill="#fef2f2" stroke="#fca5a5"/>
+    <text x="44" y="62" font-size="15" font-weight="700" fill="#991b1b">A · CAREER (students)</text>
+    <text x="44" y="88" font-size="12" fill="#1c2333">• Entry tasks automated — "AI cut the apprenticeship subsidy"</text>
+    <text x="44" y="108" font-size="12" fill="#1c2333">• Portfolio no longer proves skill → judge process, not artifact</text>
+    <text x="44" y="128" font-size="12" fill="#1c2333">• Prompt-only trap → craft before tools ("can't direct what you</text>
+    <text x="44" y="146" font-size="12" fill="#1c2333">  can't evaluate")</text>
+    <text x="44" y="168" font-size="12" fill="#1c2333">• Creative middle hollows; judgment work grows (direction,</text>
+    <text x="44" y="186" font-size="12" fill="#1c2333">  evaluation, taste, compliance)</text>
+    <text x="44" y="208" font-size="12" fill="#1c2333">• Tool half-life 6–18 mo → "learn a new tool in 2 weeks"</text>
+    <text x="44" y="230" font-size="12" fill="#1c2333">• Identity threat: students who "offend AI" need agency + a</text>
+    <text x="44" y="248" font-size="12" fill="#1c2333">  legitimate AI-free space — not mandates</text>
+  </g>
+  <g>
+    <rect x="510" y="30" width="470" height="250" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+    <text x="534" y="62" font-size="15" font-weight="700" fill="#1e3a8a">B · PRODUCTION (how work gets made)</text>
+    <text x="534" y="88" font-size="12" fill="#1c2333">• AI = parallel track in pre-production + execution assist —</text>
+    <text x="534" y="106" font-size="12" fill="#1c2333">  supervision &amp; art direction show minimal AI investment</text>
+    <text x="534" y="126" font-size="12" fill="#1c2333">• Consistency/retakes weak → control skills (LoRA, ControlNet)</text>
+    <text x="534" y="146" font-size="12" fill="#1c2333">• IP fog + NDAs → ethics/law thread; human = legal deliverable</text>
+    <text x="534" y="166" font-size="12" fill="#1c2333">• Cloud AI breaks client NDAs → local-model lab (FABW model)</text>
+    <text x="534" y="186" font-size="12" fill="#1c2333">• Verification becomes a named skill (blind tests, error taxonomy)</text>
+    <text x="534" y="206" font-size="12" fill="#1c2333">• Tool churn → anchor on USD/engines/Python; tools = blocks</text>
+    <text x="534" y="226" font-size="12" fill="#1c2333">• Disclosure = a credit line on every deliverable</text>
+  </g>
+  <g>
+    <rect x="20" y="300" width="470" height="250" rx="14" fill="#fffbeb" stroke="#fcd34d"/>
+    <text x="44" y="332" font-size="15" font-weight="700" fill="#92400e">C · INDUSTRY (Thailand included)</text>
+    <text x="44" y="358" font-size="12" fill="#1c2333">• Thai animation: 3.4–3.5 B฿, 3rd straight yearly contraction —</text>
+    <text x="44" y="376" font-size="12" fill="#1c2333">  neighbors' labor cost + outsourcing shifts + AI</text>
+    <text x="44" y="396" font-size="12" fill="#1c2333">• Digital content overall: 50.6 B฿ (+10%/yr) but workforce −1%</text>
+    <text x="44" y="414" font-size="12" fill="#1c2333">  to 7,688 because of AI → up-skill the incumbents (AnT-style)</text>
+    <text x="44" y="434" font-size="12" fill="#1c2333">• Western clients impose AI clauses → compliance-ready = selling skill</text>
+    <text x="44" y="454" font-size="12" fill="#1c2333">• SMEs now commission 3D content (new tiny-budget client class)</text>
+    <text x="44" y="474" font-size="12" fill="#1c2333">• Differentiation: "Creative Direction in the AI era" + Thai IP,</text>
+    <text x="44" y="492" font-size="12" fill="#1c2333">  not a generic tools degree</text>
+  </g>
+  <g>
+    <rect x="510" y="300" width="470" height="250" rx="14" fill="#f5f3ff" stroke="#c4b5fd"/>
+    <text x="534" y="332" font-size="15" font-weight="700" fill="#4c1d95">D · PEDAGOGY &amp; INSTITUTION</text>
+    <text x="534" y="358" font-size="12" fill="#1c2333">• AI-flooded homework → 3-zone policy + vivas + process files</text>
+    <text x="534" y="378" font-size="12" fill="#1c2333">• Faculty readiness → UNESCO teacher ladder + AI Teaching Fellows</text>
+    <text x="534" y="398" font-size="12" fill="#1c2333">• Tool licensing unstable → partnerships + open-weight fallback</text>
+    <text x="534" y="418" font-size="12" fill="#1c2333">• Approvals are slow, AI is fast → slow architecture + fast blocks</text>
+    <text x="534" y="438" font-size="12" fill="#1c2333">• Student anxiety → honest labor map + growth-rate mentoring</text>
+    <text x="534" y="458" font-size="12" fill="#1c2333">• DigiPen lineage = formal curriculum supply line (§7)</text>
+  </g>
+</svg>
+<div class="figcap">Synthesis: the risk isn't "AI replaces designers" — it's "the school keeps training the execution middle while the market pays only for judgment."</div>
+</div>
+
+<!-- 2. PIPELINE REALITY -->
+<h2><span class="num">2</span>Where AI actually sits in a production pipeline (2026 evidence)</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 300" role="img" aria-label="AI intensity across pipeline stages">
+  <defs><linearGradient id="aiheat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#fca5a5"/></linearGradient></defs>
+  <text x="20" y="26" font-size="14" font-weight="700">AI intensity by stage — high in ideation &amp; execution, low in direction</text>
+  <g font-size="12">
+    <rect x="30" y="50" width="150" height="90" rx="10" fill="url(#aiheat)"/>
+    <text x="105" y="90" text-anchor="middle" fill="#fff" font-weight="700">IDEATION /</text>
+    <text x="105" y="106" text-anchor="middle" fill="#fff" font-weight="700">PRE-PROD</text>
+    <text x="105" y="128" text-anchor="middle" fill="#fff">parallel track</text>
+    <rect x="200" y="70" width="150" height="70" rx="10" fill="#fdba74"/>
+    <text x="275" y="98" text-anchor="middle" font-weight="700" fill="#7c2d12">3D ASSETS</text>
+    <text x="275" y="116" text-anchor="middle" fill="#7c2d12">lookdev assist</text>
+    <rect x="370" y="80" width="150" height="60" rx="10" fill="#fde68a"/>
+    <text x="445" y="104" text-anchor="middle" font-weight="700" fill="#713f12">ANIMATION</text>
+    <text x="445" y="120" text-anchor="middle" fill="#713f12">mocap cleanup</text>
+    <rect x="540" y="95" width="150" height="45" rx="10" fill="#bbf7d0"/>
+    <text x="615" y="115" text-anchor="middle" font-weight="700" fill="#14532d">RENDER / QA</text>
+    <text x="615" y="130" text-anchor="middle" fill="#14532d">upscale, verify</text>
+    <rect x="710" y="110" width="270" height="30" rx="10" fill="#dcfce7" stroke="#86efac"/>
+    <text x="845" y="130" text-anchor="middle" font-weight="700" fill="#166534">DIRECTION · SUPERVISION · CLIENT TRUST — minimal AI</text>
+    <line x1="30" y1="180" x2="980" y2="180" stroke="#cbd5e1" stroke-width="2"/>
+    <text x="30" y="205" font-size="12.5" fill="#5b6478">Implication for DDCT: teach AI where it truly accelerates (left), and build the judgment layer (right) —</text>
+    <text x="30" y="223" font-size="12.5" fill="#5b6478">"AI can generate motion but cannot judge motion." Sources: Previs Office (Aug 2026), ILM/DNEG practice, MAAC pipeline whitepaper.</text>
+  </g>
+</svg>
+</div>
+
+<!-- 3. LADDER -->
+<h2><span class="num">3</span>The junior→senior problem — ladder collapsed vs rebuilt</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 330" role="img" aria-label="Old apprenticeship ladder vs DDCT rebuilt ladder">
+  <text x="20" y="26" font-size="14" font-weight="700" fill="#991b1b">OLD LADDER (industry, collapsing)</text>
+  <g font-size="12">
+    <rect x="40" y="45" width="380" height="34" rx="8" fill="#fecaca"/>
+    <text x="55" y="67">SENIOR / DIRECTOR — grown from juniors ↓</text>
+    <rect x="70" y="90" width="350" height="34" rx="8" fill="#fed7aa"/>
+    <text x="85" y="112">MID — "creative middle" being flattened</text>
+    <rect x="100" y="135" width="320" height="34" rx="8" fill="#fecaca" stroke="#ef4444" stroke-dasharray="6 4"/>
+    <text x="115" y="157" fill="#991b1b">JUNIOR — automated away (the subsidy is gone)</text>
+    <text x="120" y="195" fill="#991b1b" font-size="12.5">↓ pipeline to seniors thins — crisis lands in 5–10 yrs</text>
+  </g>
+  <text x="520" y="26" font-size="14" font-weight="700" fill="#14532d">DDCT REBUILT LADDER (in-house, 6 mechanisms)</text>
+  <g font-size="12">
+    <rect x="520" y="45" width="460" height="34" rx="8" fill="#bbf7d0"/>
+    <text x="535" y="67">④ AI-direction rotations: evaluate, correct, direct others, run pipelines</text>
+    <rect x="520" y="90" width="460" height="34" rx="8" fill="#bbf7d0"/>
+    <text x="535" y="112">③ Studio-hierarchy simulation: seniors direct juniors on campus</text>
+    <rect x="520" y="135" width="460" height="34" rx="8" fill="#dcfce7"/>
+    <text x="535" y="157">② Judgment notebooks: constraint · trade-off · failure mode · evidence</text>
+    <rect x="520" y="180" width="460" height="34" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+    <text x="535" y="202">① AI-off craft core (Y1–2): taste before tools</text>
+    <text x="535" y="245" fill="#166534">⑤ Industry-embedded term (depa/TACGA briefs) · ⑥ growth-rate assessment</text>
+    <text x="535" y="268" fill="#5b6478">"Optimize for growth rate, not current productivity."</text>
+  </g>
+</svg>
+<div class="figcap">The school becomes the apprenticeship the industry stopped funding — detail in 02-curriculum-scenarios.md §7.</div>
+</div>
+
+<!-- 4. SCENARIOS -->
+<h2><span class="num">4</span>Six deployable scenarios</h2>
+<p class="sub">Overview cards below — full details, per-scenario diagrams, structure plans and reference links in <b><a href="scenario-deep-dive.html">scenario-deep-dive.html</a></b>.</p>
+<div class="grid g3">
+  <div class="school" style="border-left-color:#059669"><b>0 · INFUSE (12 mo)</b><span>Keep DD &amp; CT; add AI-Fluency core (UNESCO × Ringling principles), ethics thread, 3-week tool-sprint blocks, local-model lab, 3-zone policy.</span><span class="tag">Lowest risk</span><span class="tag">Phase 1</span></div>
+  <div class="school" style="border-left-color:#0d9488"><b>1 · TWO-TRACK UNDERGRAD (18–24 mo)</b><span>Shared AI-off Y1–2 → Y3 fork: <i>Craft &amp; Direction</i> vs <i>AI-Augmented Production</i> → Y4 mixed capstone (DigiPen team model). Split at Y3 — never at intake.</span><span class="tag">Phase 3</span></div>
+  <div class="school" style="border-left-color:#2563eb"><b>2 · NEW B.Sc. CREATIVE TECH &amp; AI (24–36 mo)</b><span>DigiPen BS-in-AI blueprint: math → PyTorch → generative media → engine embedding → evaluation; yearly team productions; "Thai IP, global pipelines" twist.</span><span class="tag">Heaviest lift</span></div>
+  <div class="school" style="border-left-color:#7c3aed"><b>3 · GRADUATE / M.Sc. CREATIVE AI (18–30 mo)</b><span>Weekend-hybrid for professionals + research-thesis route with creative component (NTU ADM style); <b>AnT-style 4+2-month certificate</b> with depa/TACGA — Thailand's reskilling urgency.</span><span class="tag">Phase 2</span></div>
+  <div class="school" style="border-left-color:#be185d;background:#fdf2f8"><b>4 · MISSION-DRIVEN ATELIER (pilot 12 mo)</b><span>Learning Agreement + <i>matched adviser</i> (Gallatin) · Design-Factory atelier · 3-week block intensives (Colorado Plan) · vertical studios + competency badges. Craft-first missions are as legitimate as AI-heavy ones — converts resistant students via authorship.</span><span class="tag">Unorthodox</span><span class="tag">Phase 2 pilot</span></div>
+  <div class="school" style="border-left-color:#d97706"><b>5 · THAI CREATIVE-AI ACADEMY (9–12 mo)</b><span>TAICA-style stackable micro-credentials open to all KMUTT + partner unis + industry: L1 AI Fluency → L2 applied blocks → L3 sponsored studio intensives (CDM × Inworld pattern). Feeds every other scenario.</span><span class="tag">Phase 1</span></div>
+</div>
+
+<div class="figure" style="overflow-x:auto">
+<table>
+  <tr><th>Scenario</th><th>Speed</th><th>Cost</th><th>Faculty load</th><th>Fits resistant students</th><th>Industry value</th><th>Differentiation</th><th>Risk</th></tr>
+  <tr><td><b>0 Infuse</b></td><td>●●●</td><td>●●●</td><td>●○○</td><td>●●○</td><td>●●○</td><td>●○○</td><td>low</td></tr>
+  <tr><td><b>1 Two-track</b></td><td>●●○</td><td>●●○</td><td>●●○</td><td>●●●</td><td>●●●</td><td>●●○</td><td>med</td></tr>
+  <tr><td><b>2 New B.Sc.</b></td><td>●○○</td><td>●○○</td><td>●○○</td><td>●○○</td><td>●●●</td><td>●●●</td><td>high</td></tr>
+  <tr><td><b>3 Graduate</b></td><td>●●○</td><td>●●○</td><td>●●○</td><td>opt-in adults</td><td>●●●</td><td>●●●</td><td>med</td></tr>
+  <tr><td><b>4 Atelier</b></td><td>●●○</td><td>●●○</td><td>●○○</td><td>●●●</td><td>●●●</td><td>●●●</td><td>med</td></tr>
+  <tr><td><b>5 Alliance</b></td><td>●●●</td><td>●●●</td><td>●●○</td><td>●●● (entry point)</td><td>●●●</td><td>●●○</td><td>low</td></tr>
+</table>
+</div>
+
+<!-- 5. POLICY -->
+<h2><span class="num">5</span>The 3-zone AI policy (needed in every scenario)</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 170" role="img" aria-label="Three zone AI policy">
+  <rect x="30" y="40" width="300" height="70" rx="12" fill="#fee2e2" stroke="#ef4444"/>
+  <text x="180" y="68" text-anchor="middle" font-weight="700" fill="#991b1b" font-size="14">🔴 AI-FREE</text>
+  <text x="180" y="90" text-anchor="middle" font-size="12">live in-class · foundations · portfolios · craft missions</text>
+  <rect x="350" y="40" width="300" height="70" rx="12" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="500" y="68" text-anchor="middle" font-weight="700" fill="#92400e" font-size="14">🟡 AI-DISCLOSED</text>
+  <text x="500" y="90" text-anchor="middle" font-size="12">disclosure form + making-of evidence on submission</text>
+  <rect x="670" y="40" width="300" height="70" rx="12" fill="#dcfce7" stroke="#059669"/>
+  <text x="820" y="68" text-anchor="middle" font-weight="700" fill="#14532d" font-size="14">🟢 AI-REQUIRED</text>
+  <text x="820" y="90" text-anchor="middle" font-size="12">advanced production + capstones: use, disclose, evaluate</text>
+  <text x="500" y="140" text-anchor="middle" font-size="12.5" fill="#5b6478">Assessment that survives AI: versioned files · live crits · oral defenses · making-of dossiers · growth-rate reviews — grade trajectory &amp; judgment, not just artifacts.</text>
+</svg>
+</div>
+
+<!-- 6. ROADMAP -->
+<h2><span class="num">6</span>Recommended phasing (0–36 months)</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 240" role="img" aria-label="Phased roadmap">
+  <line x1="40" y1="120" x2="960" y2="120" stroke="#cbd5e1" stroke-width="4"/>
+  <g font-size="12">
+    <circle cx="120" cy="120" r="10" fill="#059669"/>
+    <text x="120" y="95" font-weight="700" text-anchor="middle" fill="#059669">PHASE 1 · 0–12 mo</text>
+    <text x="120" y="148" text-anchor="middle" fill="#1c2333">Scenario 0 Infuse + Scenario 5 L1</text>
+    <text x="120" y="165" text-anchor="middle" fill="#1c2333">3-zone policy · AI Curriculum Council</text>
+    <text x="120" y="182" text-anchor="middle" fill="#1c2333">(students hold seats) · faculty ladder</text>
+    <text x="120" y="199" text-anchor="middle" fill="#1c2333">DigiPen channel requests (CS 394/594…)</text>
+    <circle cx="500" cy="120" r="10" fill="#7c3aed"/>
+    <text x="500" y="95" font-weight="700" text-anchor="middle" fill="#7c3aed">PHASE 2 · 12–24 mo</text>
+    <text x="500" y="148" text-anchor="middle" fill="#1c2333">Atelier pilot (20–30 volunteers)</text>
+    <text x="500" y="165" text-anchor="middle" fill="#1c2333">AnT-style certificate w/ depa·TACGA</text>
+    <text x="500" y="182" text-anchor="middle" fill="#1c2333">Alliance L2/L3 sponsored briefs</text>
+    <circle cx="880" cy="120" r="10" fill="#2563eb"/>
+    <text x="880" y="95" font-weight="700" text-anchor="middle" fill="#2563eb">PHASE 3 · 24–36 mo</text>
+    <text x="880" y="148" text-anchor="middle" fill="#1c2333">Two-track concentrations formalized</text>
+    <text x="880" y="165" text-anchor="middle" fill="#1c2333">Full M.Sc. Creative AI launches</text>
+    <text x="880" y="182" text-anchor="middle" fill="#1c2333">B.Sc. CT+AI only if DigiPen channel</text>
+    <text x="880" y="199" text-anchor="middle" fill="#1c2333">+ enrollment justify</text>
+  </g>
+</svg>
+</div>
+
+<!-- 7. DIGIPEN CHANNEL -->
+<h2><span class="num">7</span>The DigiPen channel — your unfair advantage</h2>
+<div class="grid g3">
+  <div class="school" style="border-left-color:#b91c1c"><b>Request artifacts</b><span>CS 394/594 <i>How Generative AI Works</i> design (it embeds models into Unity/Unreal — a perfect CT fit) · BS-in-AI degree map · BFA portfolio-policy language · ethics-module rubric.</span></div>
+  <div class="school" style="border-left-color:#b91c1c"><b>Singapore templates</b><span>The <b>Attach-and-Train</b> structure (4 mo class + 2 mo industry attachment → Specialist Diploma) is the exact shape of Scenario 3's certificate — ask for the partner-company playbook.</span></div>
+  <div class="school" style="border-left-color:#b91c1c"><b>Exchange &amp; co-badging</b><span>Faculty audit visits · guest lectures at a DDCT AI symposium · DigiPen-endorsed Alliance blocks. And heed their lesson: they kept BFA foundations AI-<i>off</i> while going AI-deep in CS — the argument for Scenario 1's Y3 split over an intake split.</span></div>
+</div>
+
+<!-- 8. UNORTHODOX GALLERY -->
+<h2><span class="num">8</span>The unorthodox-structures gallery (precedents behind Scenario 4)</h2>
+<div class="grid g3">
+  <div class="school" style="border-left-color:#4c1d95"><b>NYU Gallatin — individualized study</b><span>Students author a concentration with a <i>matched primary faculty adviser</i>; rigor guarded by committee. The proven version of "program finds advisor to match them."</span></div>
+  <div class="school" style="border-left-color:#4c1d95"><b>Aalto Design Factory — passion-based PBL</b><span>Projects as the unit of learning; industry co-creation; bootcamp culture; interdisciplinary teams.</span></div>
+  <div class="school" style="border-left-color:#4c1d95"><b>Block teaching — Colorado College Plan</b><span>One course at a time, 3-week immersion: intense focus + higher attendance; pair with spaced re-touch sessions to counter retention tail-off.</span></div>
+  <div class="school" style="border-left-color:#4c1d95"><b>TAICA (Taiwan) — credit alliance</b><span>Cross-university AI credit programs — the model for the Thai Creative-AI Academy ladder.</span></div>
+  <div class="school" style="border-left-color:#4c1d95"><b>DigiPen — vertical team projects</b><span>Cross-discipline yearly game teams: the capstone engine that Scenario 1 &amp; 4 reuse.</span></div>
+  <div class="school" style="border-left-color:#4c1d95"><b>NTU ADM — creative-component thesis</b><span>Research degree where the thesis may be artwork + shorter text — the graduate-route architecture.</span></div>
+</div>
+
+<div class="note"><b>Read with:</b> 01-concerns-breakdown.md (28 design requirements + evidence) · 02-curriculum-scenarios.md (full scenario specs, decision matrix, DigiPen workstream, KPIs) · <b><a href="scenario-deep-dive.html">scenario-deep-dive.html</a></b> (illustrated detail + reference links per scenario) · the global research in the parent folder (research-report.md, references.md).</div>
+
+<footer>
+Prepared 2026-10-11 for the DDCT curriculum working group, KMUTT — built on this folder's global research (DigiPen, SCAD, Ringling, FABW, NTU, RPI, Gallatin, Design Factory, UNESCO, TAICA) plus Thailand data: depa digital-content report (50.6 B฿ industry, −1% workforce), TACGA animation contraction, Previs Office pipeline analysis, Fortune/Beam/apprenticeship-ladder essays. All links archived in ../references.md.
+</footer>
+
+</div>
+</body>
+</html>

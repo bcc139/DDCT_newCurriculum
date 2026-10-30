@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direction-First Curriculum — visual companion</title>
+<style>
+  :root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#be185d;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+  header.hero{background:linear-gradient(135deg,#111827 0%,#831843 60%,#be185d 100%);color:#fff;border-radius:18px;padding:34px 30px;margin-bottom:26px}
+  header.hero h1{margin:0 0 10px;font-size:27px;line-height:1.25}
+  header.hero p{margin:0;color:#fbd5e5;max-width:900px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);padding:4px 12px;border-radius:999px;font-size:12.5px}
+  h2{font-size:21px;margin:42px 0 6px;display:flex;align-items:center;gap:10px}
+  h2 .num{background:var(--ink);color:#fff;width:28px;height:28px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex:none}
+  .sub{color:var(--muted);margin:0 0 14px;font-size:14px}
+  .figure{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;overflow-x:auto}
+  .figcap{font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center}
+  .grid{display:grid;gap:12px}
+  .g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+  .school{border-left:4px solid var(--acc);padding:12px 14px;background:#fff;border-radius:0 10px 10px 0;box-shadow:0 1px 2px rgba(28,35,51,.06)}
+  .school b{display:block;font-size:14.5px}
+  .school span{font-size:13px;color:var(--muted)}
+  .tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;background:#fdf2f8;color:#831843;margin-top:6px;margin-right:4px}
+  a{color:#1d4ed8;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .note{font-size:12.5px;color:#9a3412;background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:10px 14px;margin-top:12px}
+  svg text{font-family:"Segoe UI",system-ui,Arial,sans-serif}
+  footer{margin-top:46px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Direction-First — the curriculum built on judgment</h1>
+  <p>Visual companion to <b>03-direction-first-curriculum.md</b>: if AI handles execution, the teachable center of a design degree moves to taste, critique, direction of humans + AI, product judgment, and the ability to fund yourself. Here is what that looks like as a ladder, a loop, a stack, and a timeline.</p>
+  <div class="badges">
+    <span class="badge">Solo devs = 21% of devs (GDC 2026)</span>
+    <span class="badge">Indie = 40% of Steam releases / 35% of sales</span>
+    <span class="badge">🪜 6-rung direction ladder</span>
+    <span class="badge">🚀 incubator precedents: NYU · Drexel · RIT</span>
+  </div>
+</header>
+
+<!-- 1. SKILL SHIFT -->
+<h2><span class="num">1</span>The skill shift — what a design degree is "about"</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 330" role="img" aria-label="Skill pyramid old vs new">
+  <text x="20" y="28" font-size="15" font-weight="700">The pyramid inverts its emphasis — but never deletes its base</text>
+  <g font-size="12">
+    <!-- old pyramid -->
+    <polygon points="170,60 90,250 250,250" fill="#e5e7eb"/>
+    <text x="170" y="245" text-anchor="middle" font-size="11" fill="#374151">execution</text>
+    <text x="170" y="228" text-anchor="middle" font-size="11" fill="#374151">craft skills</text>
+    <text x="170" y="90" text-anchor="middle" font-size="11" fill="#6b7280" transform="rotate(0)">direction</text>
+    <text x="170" y="282" text-anchor="middle" font-weight="700" fill="#374151">TRADITIONAL DEGREE</text>
+    <text x="170" y="300" text-anchor="middle" fill="#6b7280" font-size="11">wide craft base, direction learned on the job</text>
+    <!-- arrow -->
+    <path d="M300 155 h70" stroke="#9ca3af" stroke-width="3" marker-end="url(#ar1)"/>
+    <defs><marker id="ar1" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#9ca3af"/></marker></defs>
+    <!-- new -->
+    <rect x="410" y="55" width="560" height="52" rx="10" fill="#be185d"/>
+    <text x="690" y="78" text-anchor="middle" fill="#fff" font-size="12.5" font-weight="700">DIRECTION LAYER — taste · critique · directing AI · directing people · product · business</text>
+    <text x="690" y="96" text-anchor="middle" fill="#fbcfe8" font-size="11">the teachable center: judgment, theory-armed, portfolio-proven</text>
+    <rect x="410" y="118" width="560" height="46" rx="10" fill="#f9a8d4"/>
+    <text x="690" y="140" text-anchor="middle" fill="#831843" font-size="12" font-weight="700">AI PRODUCTION FLOOR</text>
+    <text x="690" y="156" text-anchor="middle" fill="#831843" font-size="11">generation, control passes, pipeline integration — "the junior staff"</text>
+    <rect x="410" y="176" width="560" height="46" rx="10" fill="#fde68a"/>
+    <text x="690" y="198" text-anchor="middle" fill="#92400e" font-size="12" font-weight="700">COMPRESSED CRAFT BASE (kept, not skipped)</text>
+    <text x="690" y="214" text-anchor="middle" fill="#92400e" font-size="11">evaluation floor + premium hand-craft niche — "can't direct what you can't evaluate"</text>
+    <text x="690" y="252" text-anchor="middle" font-weight="700" fill="#374151">DIRECTION-FIRST DEGREE</text>
+    <text x="690" y="270" text-anchor="middle" fill="#6b7280" font-size="11">craft compressed to an evaluation floor; direction trained in-school via mixed human+AI teams;</text>
+    <text x="690" y="286" text-anchor="middle" fill="#6b7280" font-size="11">venture skills so judgment can fund itself</text>
+  </g>
+</svg>
+<div class="figcap">Evidence: AI investment concentrates in execution while "supervision and art direction show minimal AI investment" (Previs Office 2026) — the apex skill is now the core product of the degree.</div>
+</div>
+
+<!-- 2. LADDER -->
+<h2><span class="num">2</span>The Direction Ladder — six assessable rungs</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 400" role="img" aria-label="Direction ladder six rungs">
+  <defs><marker id="ar2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#be185d"/></marker></defs>
+  <g font-size="12">
+    <rect x="20" y="40" width="960" height="46" rx="10" fill="#be185d"/>
+    <text x="44" y="60" font-weight="700" fill="#fff">6 · DIRECTING A BUSINESS — position · price · market · fund</text>
+    <text x="44" y="77" fill="#fbcfe8" font-size="11">venture modules + incubator year — assessed on real KPIs (wishlists, sales, client revenue)</text>
+    <rect x="60" y="98" width="880" height="46" rx="10" fill="#c026d3"/>
+    <text x="84" y="118" font-weight="700" fill="#fff">5 · DIRECTING A PRODUCT — scope · sequence · cut</text>
+    <text x="84" y="135" fill="#f5d0fe" font-size="11">Solo Studio Practicum + capstone — assessed on shipped artifact + postmortem</text>
+    <rect x="100" y="156" width="800" height="46" rx="10" fill="#db2777"/>
+    <text x="124" y="176" font-weight="700" fill="#fff">4 · DIRECTING PEOPLE — brief · delegate · review</text>
+    <text x="124" y="193" fill="#fbcfe8" font-size="11">vertical-studio rotations (lead → director of juniors) — assessed on team retrospective + output</text>
+    <rect x="140" y="214" width="720" height="46" rx="10" fill="#e11d48"/>
+    <text x="164" y="234" font-weight="700" fill="#fff">3 · DIRECTING AI — brief · evaluate · iterate</text>
+    <text x="164" y="251" fill="#fecdd3" font-size="11">AI-as-junior-staff loop (§3) — assessed on acceptance rate, revision economy, judgment notebook</text>
+    <rect x="180" y="272" width="640" height="46" rx="10" fill="#f43f5e"/>
+    <text x="204" y="292" font-weight="700" fill="#fff">2 · CRITIQUE — articulate why</text>
+    <text x="204" y="309" fill="#fecdd3" font-size="11">Criticism Lab: published weekly critiques (Grace/RPI-style) — assessed on writing + oral defense</text>
+    <rect x="220" y="330" width="560" height="46" rx="10" fill="#fb7185"/>
+    <text x="244" y="350" font-weight="700" fill="#fff">1 · TASTE — recognize quality</text>
+    <text x="244" y="367" fill="#ffe4e6" font-size="11">craft blocks, teardowns, critique immersion — assessed by blind ranking vs. expert consensus</text>
+  </g>
+</svg>
+<div class="figcap">Rungs 3–4 run in parallel on the same briefs: students direct AI agents and junior schoolmates side by side — one structure solves both "AI replaced juniors" and "juniors can't become seniors."</div>
+</div>
+
+<!-- 3. AI AS JUNIOR STAFF -->
+<h2><span class="num">3</span>AI-as-junior-staff — direction practice, industrialized</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 300" role="img" aria-label="AI as junior staff loop">
+  <text x="20" y="28" font-size="15" font-weight="700">Students manage AI the way an art director manages juniors</text>
+  <g font-size="12">
+    <rect x="40" y="90" width="180" height="64" rx="12" fill="#fdf2f8" stroke="#f472b6"/>
+    <text x="130" y="116" text-anchor="middle" font-weight="700" fill="#831843">1 · BRIEF</text>
+    <text x="130" y="136" text-anchor="middle" fill="#1c2333" font-size="11">written intent, references,</text>
+    <text x="130" y="150" text-anchor="middle" fill="#1c2333" font-size="11">constraints, acceptance criteria</text>
+    <rect x="270" y="90" width="180" height="64" rx="12" fill="#eef2ff" stroke="#818cf8"/>
+    <text x="360" y="116" text-anchor="middle" font-weight="700" fill="#3730a3">2 · AI DRAFT(S)</text>
+    <text x="360" y="136" text-anchor="middle" fill="#1c2333" font-size="11">generation + control passes</text>
+    <text x="360" y="150" text-anchor="middle" fill="#1c2333" font-size="11">(LoRA / ControlNet / re-brief)</text>
+    <rect x="500" y="90" width="180" height="64" rx="12" fill="#fef3c7" stroke="#fbbf24"/>
+    <text x="590" y="116" text-anchor="middle" font-weight="700" fill="#92400e">3 · CRITIQUE</text>
+    <text x="590" y="136" text-anchor="middle" fill="#1c2333" font-size="11">against brief; error taxonomy;</text>
+    <text x="590" y="150" text-anchor="middle" fill="#1c2333" font-size="11">taste decides</text>
+    <rect x="730" y="90" width="180" height="64" rx="12" fill="#dcfce7" stroke="#4ade80"/>
+    <text x="820" y="116" text-anchor="middle" font-weight="700" fill="#14532d">4 · QUALITY GATE</text>
+    <text x="820" y="136" text-anchor="middle" fill="#1c2333" font-size="11">accept · iterate · or kill —</text>
+    <text x="820" y="150" text-anchor="middle" fill="#1c2333" font-size="11">and record judgment notes</text>
+    <path d="M220 122 h46" stroke="#be185d" stroke-width="2.5" marker-end="url(#ar3)"/>
+    <path d="M450 122 h46" stroke="#be185d" stroke-width="2.5" marker-end="url(#ar3)"/>
+    <path d="M680 122 h46" stroke="#be185d" stroke-width="2.5" marker-end="url(#ar3)"/>
+    <defs><marker id="ar3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#be185d"/></marker></defs>
+    <path d="M820 90 C 820 30, 360 30, 360 86" fill="none" stroke="#be185d" stroke-width="2.5" marker-end="url(#ar3)"/>
+    <text x="590" y="42" text-anchor="middle" fill="#831843" font-size="11.5" font-weight="700">revise loop — direction is the loop, not the output</text>
+    <rect x="40" y="200" width="870" height="70" rx="12" fill="#fff" stroke="#e5e7eb"/>
+    <text x="60" y="224" font-weight="700" fill="#831843" font-size="12.5">JUDGMENT NOTEBOOK — one entry per cycle:</text>
+    <text x="60" y="244" fill="#1c2333" font-size="12">constraint · trade-off · failure-mode checked · evidence used · what to watch in production</text>
+    <text x="60" y="261" fill="#5b6478" font-size="11.5">(the method that "makes invisible apprenticeship explicit" — architect-to-CTO pattern; graded artifact, not homework)</text>
+  </g>
+</svg>
+<div class="figcap">Graded metrics: acceptance rate, revision economy (iterations per accepted asset), notebook depth — never the raw AI output.</div>
+</div>
+
+<!-- 4. STACK -->
+<h2><span class="num">4</span>The curriculum stack — theory spine + four practicum layers</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 340" role="img" aria-label="Direction-first curriculum stack">
+  <g font-size="12">
+    <rect x="20" y="50" width="200" height="250" rx="14" fill="#111827"/>
+    <text x="120" y="80" text-anchor="middle" fill="#fff" font-weight="700" font-size="13">THEORY SPINE</text>
+    <text x="120" y="104" text-anchor="middle" fill="#d1d5db" font-size="11">every year:</text>
+    <text x="120" y="124" text-anchor="middle" fill="#d1d5db" font-size="11">critical game design</text>
+    <text x="120" y="141" text-anchor="middle" fill="#d1d5db" font-size="11">(RPI-style seminars)</text>
+    <text x="120" y="161" text-anchor="middle" fill="#d1d5db" font-size="11">Tampere's 4 perspectives</text>
+    <text x="120" y="178" text-anchor="middle" fill="#d1d5db" font-size="11">(form·players·production·</text>
+    <text x="120" y="195" text-anchor="middle" fill="#d1d5db" font-size="11">framing)</text>
+    <text x="120" y="215" text-anchor="middle" fill="#d1d5db" font-size="11">Criticism Lab</text>
+    <text x="120" y="232" text-anchor="middle" fill="#d1d5db" font-size="11">critical playmaking</text>
+    <text x="120" y="252" text-anchor="middle" fill="#f9a8d4" font-size="11">(Grace-style rapid</text>
+    <text x="120" y="269" text-anchor="middle" fill="#f9a8d4" font-size="11">critical games)</text>
+    <text x="120" y="292" text-anchor="middle" fill="#fff" font-size="10.5">→ the vocabulary of direction</text>
+    <rect x="250" y="50" width="200" height="250" rx="14" fill="#fce7f3" stroke="#f472b6"/>
+    <text x="350" y="80" text-anchor="middle" font-weight="700" fill="#831843" font-size="13">DIRECTION PRACTICUM</text>
+    <text x="350" y="104" text-anchor="middle" fill="#1c2333" font-size="11">Direction Ladder rungs 1–4</text>
+    <text x="350" y="124" text-anchor="middle" fill="#1c2333" font-size="11">blind taste tests</text>
+    <text x="350" y="141" text-anchor="middle" fill="#1c2333" font-size="11">published critiques</text>
+    <text x="350" y="161" text-anchor="middle" fill="#1c2333" font-size="11">AI-as-staff loops</text>
+    <text x="350" y="178" text-anchor="middle" fill="#1c2333" font-size="11">vertical studios:</text>
+    <text x="350" y="195" text-anchor="middle" fill="#1c2333" font-size="11">direct juniors + AI</text>
+    <text x="350" y="215" text-anchor="middle" fill="#1c2333" font-size="11">rotating roles:</text>
+    <text x="350" y="232" text-anchor="middle" fill="#1c2333" font-size="11">junior → lead → director</text>
+    <text x="350" y="292" text-anchor="middle" fill="#831843" font-size="10.5">→ judgment trained on mixed teams</text>
+    <rect x="480" y="50" width="200" height="250" rx="14" fill="#eef2ff" stroke="#818cf8"/>
+    <text x="580" y="80" text-anchor="middle" font-weight="700" fill="#3730a3" font-size="13">AI PRODUCTION FLOOR</text>
+    <text x="580" y="104" text-anchor="middle" fill="#1c2333" font-size="11">mechanisms, not menus</text>
+    <text x="580" y="124" text-anchor="middle" fill="#1c2333" font-size="11">image/video/3D gen + control</text>
+    <text x="580" y="141" text-anchor="middle" fill="#1c2333" font-size="11">agents &amp; retrieval</text>
+    <text x="580" y="161" text-anchor="middle" fill="#1c2333" font-size="11">engine embedding</text>
+    <text x="580" y="178" text-anchor="middle" fill="#1c2333" font-size="11">(Unity/Unreal, CS394-style)</text>
+    <text x="580" y="198" text-anchor="middle" fill="#1c2333" font-size="11">evaluation methods</text>
+    <text x="580" y="218" text-anchor="middle" fill="#1c2333" font-size="11">local-model lab (NDA-safe)</text>
+    <text x="580" y="292" text-anchor="middle" fill="#3730a3" font-size="10.5">→ the "junior staff," industrialized</text>
+    <rect x="710" y="50" width="200" height="250" rx="14" fill="#fff7ed" stroke="#fb923c"/>
+    <text x="810" y="80" text-anchor="middle" font-weight="700" fill="#9a3412" font-size="13">VENTURE LAYER</text>
+    <text x="810" y="104" text-anchor="middle" fill="#1c2333" font-size="11">Solo Studio Practicum</text>
+    <text x="810" y="124" text-anchor="middle" fill="#1c2333" font-size="11">(market-test → build → launch</text>
+    <text x="810" y="141" text-anchor="middle" fill="#1c2333" font-size="11">→ postmortem)</text>
+    <text x="810" y="161" text-anchor="middle" fill="#1c2333" font-size="11">pricing · contracts · IP</text>
+    <text x="810" y="178" text-anchor="middle" fill="#1c2333" font-size="11">self-publishing (Steam/Itch)</text>
+    <text x="810" y="198" text-anchor="middle" fill="#1c2333" font-size="11">marketing · festivals · community</text>
+    <text x="810" y="218" text-anchor="middle" fill="#1c2333" font-size="11">income-portfolio planning</text>
+    <text x="810" y="240" text-anchor="middle" fill="#1c2333" font-size="11">INCUBATOR YEAR (Y4 select)</text>
+    <text x="810" y="292" text-anchor="middle" fill="#9a3412" font-size="10.5">→ judgment that funds itself</text>
+  </g>
+  <text x="20" y="330" font-size="12" fill="#5b6478">Compression layer underneath all four: craft blocks as the evaluation floor (AI-accelerated practice loops) + premium hand-craft studios as an opt-in mastery.</text>
+</svg>
+<div class="figcap">The Atelier (Scenario 4) is the natural host; Track A of Scenario 1 renames to "Craft &amp; Direction" on this stack.</div>
+</div>
+
+<!-- 5. TIMELINE -->
+<h2><span class="num">5</span>Four years in one picture — from taste to funded studio</h2>
+<div class="figure">
+<svg viewBox="0 0 1000 240" role="img" aria-label="Four year timeline">
+  <line x1="40" y1="110" x2="960" y2="110" stroke="#cbd5e1" stroke-width="4"/>
+  <g font-size="12">
+    <circle cx="120" cy="110" r="9" fill="#fb7185"/>
+    <text x="120" y="85" font-weight="700" text-anchor="middle" fill="#be123c">YEAR 1 · TASTE</text>
+    <text x="120" y="138" text-anchor="middle" fill="#1c2333">craft blocks (AI-free) + theory spine</text>
+    <text x="120" y="156" text-anchor="middle" fill="#1c2333">begins + first critiques published;</text>
+    <text x="120" y="174" text-anchor="middle" fill="#1c2333">first game jam (mass-launch reps)</text>
+    <circle cx="380" cy="110" r="9" fill="#e11d48"/>
+    <text x="380" y="85" font-weight="700" text-anchor="middle" fill="#be123c">YEAR 2 · DIRECT AI</text>
+    <text x="380" y="138" text-anchor="middle" fill="#1c2333">AI-as-staff loops; judgment notebooks;</text>
+    <text x="380" y="156" text-anchor="middle" fill="#1c2333">Solo Studio Practicum #1 (Itch launch);</text>
+    <text x="380" y="174" text-anchor="middle" fill="#1c2333">venture module: pricing &amp; IP basics</text>
+    <circle cx="640" cy="110" r="9" fill="#c026d3"/>
+    <text x="640" y="85" font-weight="700" text-anchor="middle" fill="#a21caf">YEAR 3 · DIRECT PEOPLE</text>
+    <text x="640" y="138" text-anchor="middle" fill="#1c2333">vertical studios (lead, then director);</text>
+    <text x="640" y="156" text-anchor="middle" fill="#1c2333">Solo Studio #2 with market test + client</text>
+    <text x="640" y="174" text-anchor="middle" fill="#1c2333">brief; marketing/festivals module</text>
+    <circle cx="890" cy="110" r="9" fill="#7c3aed"/>
+    <text x="890" y="85" font-weight="700" text-anchor="middle" fill="#6d28d9">YEAR 4 · SHIP &amp; FUND</text>
+    <text x="890" y="138" text-anchor="middle" fill="#1c2333">capstone shipped publicly; incubator</text>
+    <text x="890" y="156" text-anchor="middle" fill="#1c2333">selection → launch track (NYU model);</text>
+    <text x="890" y="174" text-anchor="middle" fill="#1c2333">Direction Portfolio defense (viva)</text>
+  </g>
+  <text x="40" y="215" font-size="12" fill="#5b6478">Graduation evidence = the Direction Portfolio: shipped artifact(s) + decision logs + published critiques + a direction case study + a business case.</text>
+</svg>
+</div>
+
+<!-- 6. PRECEDENTS -->
+<h2><span class="num">6</span>Precedents that make each piece credible</h2>
+<div class="grid g3">
+  <div class="school"><b>NYU Game Center Incubator</b><span>Annual launch program: recent-grad teams get time, space, mentors (50+ industry partners) toward commercial release — outcomes include *Airplane Mode* (AMC) and *A Memoir Blue* (Annapurna); ~6 selected from 40–50 applicants.</span><span class="tag">Incubator year</span><span class="tag"><a href="https://gamecenter.nyu.edu/about/incubator/">link</a></span></div>
+  <div class="school"><b>Drexel Entrepreneurial Game Studio</b><span>Since 2013, dozens of student teams publish games through the incubator program — proof student publishing can be an institutional habit, not luck.</span><span class="tag"><a href="https://egs.drexel.edu/">link</a></span></div>
+  <div class="school"><b>RIT MAGIC Spell Studios</b><span>University infrastructure explicitly built to publish student work on Steam.</span><span class="tag"><a href="https://www.rit.edu/news/student-video-game-published-steam">link</a></span></div>
+  <div class="school"><b>RPI Critical Game Design</b><span>The theory+practice spine: analysis seminars beside design studios; practice-based dissertations — the localizable backbone for the spine column.</span><span class="tag"><a href="https://hass.rpi.edu/gsas/critical-game-design-phd">link</a></span></div>
+  <div class="school"><b>Tampere four perspectives</b><span>Form · players · production · framing — the ready-made map for "what a director must understand about games beyond making them."</span><span class="tag"><a href="https://www.tuni.fi/en/tau/masters-programmes/game-studies">link</a></span></div>
+  <div class="school"><b>Lindsay Grace — Critical Gameplay</b><span>Rapid-prototyped critical art games (Smithsonian-shown) — the studio format for "critical playmaking" blocks.</span><span class="tag"><a href="https://www.criticalgameplay.com/">link</a></span></div>
+  <div class="school"><b>Market reality (GDC 2026)</b><span>Solo devs 21% of respondents (↑ from 18%); 86% of solo devs self-fund; indie = 40% of Steam releases, 35% of sales; 28% of devs laid off in 2 yrs → teach income portfolios, not indie lottery.</span><span class="tag"><a href="https://www.shanethegamer.com/research/indie-games-statistics/">stats</a></span></div>
+  <div class="school"><b>Craft-floor precedents</b><span>DigiPen's BFA portfolio AI ban + DHU's first-month restriction: the compressed-craft base is policy, not nostalgia.</span><span class="tag"><a href="https://www.digipen.edu/admissions/how-to-apply/undergraduate-admissions-requirements/bfa-in-digital-art-and-animation">link</a></span></div>
+  <div class="school"><b>AI-as-staff method</b><span>Judgment notebooks + "5 associates operating AI-augmented workflows" — the apprenticeship essays' design for junior-as-AI-director.</span><span class="tag"><a href="https://firstprincipalsletters.substack.com/p/the-apprenticeship-ladder-just-collapsed">link</a></span></div>
+</div>
+
+<div class="note"><b>Read with:</b> 03-direction-first-curriculum.md (full argument, ladder table, risk analysis) · 02-curriculum-scenarios.md §7 (how the ladder merges with the six scenarios) · 01-concerns-breakdown.md (the DRs this satisfies: DR1–DR7, DR17–DR22).</div>
+
+<footer>Prepared 2026-10-11. New evidence this round: NYU Game Center Incubator pages, Drexel EGS, RIT MAGIC Spell Studios, GDC 2026 State-of-the-Industry statistics (via industry trackers) — archived in ../references.md session 9. All other precedents from the existing 71-program archive.</footer>
+
+</div>
+</body>
+</html>

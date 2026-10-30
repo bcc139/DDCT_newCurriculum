@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DDCT Scenario Deep-Dive — six curriculum choices, illustrated &amp; referenced</title>
+<style>
+  :root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--kmutt:#ea580c;
+    --s0:#059669;--s1:#0d9488;--s2:#2563eb;--s3:#7c3aed;--s4:#be185d;--s5:#d97706;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 20px 64px}
+  header.hero{background:linear-gradient(135deg,#111827 0%,#312e81 55%,#be185d 100%);color:#fff;border-radius:18px;padding:34px 30px;margin-bottom:26px}
+  header.hero h1{margin:0 0 10px;font-size:27px;line-height:1.25}
+  header.hero p{margin:0;color:#e2e8f0;max-width:880px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);padding:4px 12px;border-radius:999px;font-size:12.5px}
+  h2{font-size:22px;margin:46px 0 6px;display:flex;align-items:center;gap:10px}
+  h2 .num{color:#fff;width:30px;height:30px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+  .sub{color:var(--muted);margin:0 0 14px;font-size:14px}
+  .figure{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;overflow-x:auto}
+  .figcap{font-size:12.5px;color:var(--muted);margin-top:8px;text-align:center}
+  .glance{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 4px}
+  .gl{font-size:12px;padding:3px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#3a4358}
+  table{border-collapse:collapse;width:100%;font-size:13px;background:#fff;border-radius:12px;overflow:hidden}
+  th{background:#eef1f8;text-align:left;padding:8px 10px;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:#3a4358}
+  td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+  .refs{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin:12px 0}
+  .refs h4{margin:4px 0 8px;font-size:13.5px}
+  .refs ul{margin:0;padding-left:18px;font-size:13px}
+  .refs li{margin:5px 0}
+  a{color:#1d4ed8;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .moves{background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:12px 18px;margin:12px 0}
+  .moves h4{margin:4px 0 8px;font-size:13.5px;color:#9a3412}
+  .moves ol{margin:0;padding-left:20px;font-size:13px}
+  .moves li{margin:4px 0}
+  .drs{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+  .drs b{color:var(--ink)}
+  svg text{font-family:"Segoe UI",system-ui,Arial,sans-serif}
+  footer{margin-top:46px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px}
+  @media print{body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>Scenario Deep-Dive — Six Curriculum Choices for DDCT, Illustrated &amp; Referenced</h1>
+  <p>Each scenario below gets its own diagram, structure plan, design-requirement mapping, first three moves, and annotated precedent links (all drawn from this folder's research archive — full link list in <b>references.md</b>). Mix-and-match across the three phases recommended in <b>02-curriculum-scenarios.md §8</b>.</p>
+  <div class="badges">
+    <span class="badge">6 scenarios · 6 diagrams</span><span class="badge">🔗 every claim linked</span><span class="badge">🧭 first-3-moves per scenario</span><span class="badge">📚 precedents from 71-program archive</span>
+  </div>
+</header>
+
+<!-- ================= SCENARIO 0 ================= -->
+<h2 id="s0"><span class="num" style="background:var(--s0)">0</span>INFUSE — retrofit DD &amp; CT in place</h2>
+<p class="sub">Keep both programs; add five layers around them. The fastest, lowest-risk move — and the foundation every other scenario reuses.</p>
+<div class="glance">
+  <span class="gl">⏱ 12 months</span><span class="gl">💰 low cost</span><span class="gl">👥 low-mid faculty load</span><span class="gl">⚠️ low risk</span><span class="gl">🎓 all current students</span>
+</div>
+<div class="figure">
+<svg viewBox="0 0 1000 380" role="img" aria-label="Scenario 0 retrofit layers">
+  <defs><marker id="a0" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#9ca3af"/></marker></defs>
+  <text x="20" y="28" font-size="15" font-weight="700">The retrofit: 5 layers wrapped around the existing DD &amp; CT spine</text>
+  <!-- spine -->
+  <rect x="330" y="150" width="340" height="56" rx="12" fill="#111827"/>
+  <text x="500" y="174" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">EXISTING DD &amp; CT DEGREES</text>
+  <text x="500" y="193" text-anchor="middle" fill="#d1d5db" font-size="11.5">(DigiPen-lineage course spine, unchanged)</text>
+  <!-- L1 fluency -->
+  <rect x="20" y="50" width="280" height="66" rx="12" fill="#d1fae5" stroke="#34d399"/>
+  <text x="40" y="74" font-size="12.5" font-weight="700" fill="#065f46">LAYER 1 · AI FLUENCY (new Y1 course)</text>
+  <text x="40" y="92" font-size="11.5" fill="#1c2333">delegation · description · discernment ·</text>
+  <text x="40" y="107" font-size="11.5" fill="#1c2333">diligence × UNESCO student framework</text>
+  <!-- L2 ethics -->
+  <rect x="700" y="50" width="280" height="66" rx="12" fill="#dbeafe" stroke="#60a5fa"/>
+  <text x="720" y="74" font-size="12.5" font-weight="700" fill="#1e3a8a">LAYER 2 · ETHICS / IP / LAW THREAD</text>
+  <text x="720" y="92" font-size="11.5" fill="#1c2333">Thai copyright + EU-AI-Act client clauses,</text>
+  <text x="720" y="107" font-size="11.5" fill="#1c2333">disclosure practice in existing HU courses</text>
+  <!-- L3 studio augmentation -->
+  <rect x="20" y="250" width="280" height="72" rx="12" fill="#fce7f3" stroke="#f472b6"/>
+  <text x="40" y="274" font-size="12.5" font-weight="700" fill="#831843">LAYER 3 · STUDIO AUGMENTATION</text>
+  <text x="40" y="292" font-size="11.5" fill="#1c2333">Y2: optional AI-variant assignments ·</text>
+  <text x="40" y="307" font-size="11.5" fill="#1c2333">Y4 capstone: craft-built OR AI-augmented</text>
+  <text x="40" y="322" font-size="11.5" fill="#1c2333">(dossier + disclosure form)</text>
+  <!-- L4 blocks -->
+  <rect x="700" y="250" width="280" height="72" rx="12" fill="#fef3c7" stroke="#fbbf24"/>
+  <text x="720" y="274" font-size="12.5" font-weight="700" fill="#92400e">LAYER 4 · TOOL-SPRINT BLOCKS</text>
+  <text x="720" y="292" font-size="11.5" fill="#1c2333">two 3-week electives/year, content replaced</text>
+  <text x="720" y="307" font-size="11.5" fill="#1c2333">annually (image/video gen; agent pipelines)</text>
+  <text x="720" y="322" font-size="11.5" fill="#1c2333">— mechanisms, not vendor menus</text>
+  <!-- L5 lab+policy -->
+  <rect x="330" y="290" width="340" height="66" rx="12" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="350" y="314" font-size="12.5" font-weight="700" fill="#4c1d95">LAYER 5 · LOCAL-MODEL LAB + 3-ZONE POLICY</text>
+  <text x="350" y="332" font-size="11.5" fill="#1c2333">open-weight models on dept GPUs (NDA-safe);</text>
+  <text x="350" y="347" font-size="11.5" fill="#1c2333">🔴 AI-free / 🟡 disclosed / 🟢 required zones</text>
+  <!-- arrows -->
+  <line x1="160" y1="116" x2="380" y2="148" stroke="#9ca3af" stroke-width="2" marker-end="url(#a0)"/>
+  <line x1="840" y1="116" x2="620" y2="148" stroke="#9ca3af" stroke-width="2" marker-end="url(#a0)"/>
+  <line x1="160" y1="250" x2="380" y2="208" stroke="#9ca3af" stroke-width="2" marker-end="url(#a0)"/>
+  <line x1="840" y1="250" x2="620" y2="208" stroke="#9ca3af" stroke-width="2" marker-end="url(#a0)"/>
+  <line x1="500" y1="290" x2="500" y2="210" stroke="#9ca3af" stroke-width="2" marker-end="url(#a0)"/>
+</svg>
+<div class="figcap">Five additive layers — the degree spine itself is untouched, so approvals stay at course level.</div>
+</div>
+
+<div class="refs"><h4>📚 Precedents &amp; further reading</h4><ul>
+  <li><b>AI Fluency course design (4 principles: delegation, description, discernment, diligence)</b> — Ringling's certificate co-developed with Anthropic + University College Cork: <a href="https://www.cgw.com/Press-Center/News/2025/Ringling-College-of-Art-and-Design-shapes-the-tr.aspx">CGW article</a></li>
+  <li><b>UNESCO AI competency framework for students</b> (map course outcomes to it): <a href="https://www.unesco.org/en/articles/ai-competency-framework-students">unesco.org</a> · for teachers: <a href="https://www.unesco.org/en/articles/ai-competency-framework-teachers">framework for teachers</a></li>
+  <li><b>AI-tool use policy, published</b> — Futuregames' responsible-use policy page: <a href="https://futuregames.se/se/admissions/learning-by-doing/">futuregames.se</a></li>
+  <li><b>Portfolio policy language</b> ("AI generated art is not allowed") — DigiPen BFA admissions: <a href="https://www.digipen.edu/admissions/how-to-apply/undergraduate-admissions-requirements/bfa-in-digital-art-and-animation">digipen.edu</a> · Sheridan's equivalent naming Midjourney/ChatGPT: <a href="https://www.sheridancollege.ca/programs/bachelor-of-animation">sheridancollege.ca</a></li>
+  <li><b>Local-model lab precedent (NDA-safe, sovereignty)</b> — FABW's non-cloud AI platform + ethics framework: <a href="https://www.filmakademie.de/en/the-filmakademie/history-of-fabw">filmakademie.de</a></li>
+  <li><b>"Mechanisms over menu" course design</b> — DigiPen CS 394/594 How Generative AI Works: <a href="https://www.digipen.edu/showcase/news/generative-ai-course">digipen.edu</a></li>
+  <li><b>First-month AI restriction (foundations integrity)</b> — Digital Hollywood University via Mainichi: <a href="https://mainichi.jp/english/articles/20260731/p2a/00m/0na/010000c">mainichi.jp</a></li>
+</ul></div>
+<div class="moves"><h4>🧭 First three moves</h4><ol>
+  <li>Draft the 3-zone policy + stand up the AI Curriculum Council <i>with student seats</i> (one semester).</li>
+  <li>Write the AI-Fluency syllabus against UNESCO's framework; pilot it as a 3-week block before making it a required course.</li>
+  <li>Buy/provision one local-model GPU node; install open-weight image/video/LLM stack; write the NDA-safe usage guide.</li>
+</ol></div>
+<p class="drs"><b>Design requirements met:</b> DR3 (taste before tools) · DR8 (legitimate AI-free space) · DR9 (honest pipeline map) · DR11–DR13, DR16 (ethics, local models, evaluation, disclosure) · DR23 (3-zone integrity) · DR24–DR26 (faculty ladder, tool budgeting, fast blocks). <i>Not met:</i> DR1/DR4 (apprenticeship), DR22 (differentiation).</p>
+
+<!-- ================= SCENARIO 1 ================= -->
+<h2 id="s1"><span class="num" style="background:var(--s1)">1</span>TWO-TRACK UNDERGRAD — fork at Year 3, merge at Year 4</h2>
+<p class="sub">Your fine-arts/digital-arts analogy, corrected by the global evidence: split students <b>late</b> (after shared foundations) and by <b>destination</b>, never at intake — then force the tracks to need each other in a mixed capstone.</p>
+<div class="glance">
+  <span class="gl">⏱ 18–24 months</span><span class="gl">💰 medium cost</span><span class="gl">👥 medium faculty load</span><span class="gl">⚠️ medium risk</span><span class="gl">🎓 Y3+ students</span>
+</div>
+<div class="figure">
+<svg viewBox="0 0 1000 430" role="img" aria-label="Scenario 1 Y-shaped track fork">
+  <text x="20" y="28" font-size="15" font-weight="700">The Y-shape: shared AI-off core → Y3 fork → Y4 mixed capstone</text>
+  <!-- Y1-2 shared -->
+  <rect x="250" y="50" width="500" height="84" rx="14" fill="#ccfbf1" stroke="#2dd4bf"/>
+  <text x="500" y="76" text-anchor="middle" font-size="13.5" font-weight="700" fill="#134e4a">YEARS 1–2 · SHARED CORE (🔴 AI-free zone, honored)</text>
+  <text x="500" y="96" text-anchor="middle" font-size="11.5" fill="#1c2333">DD: drawing · design fundamentals · 3D foundations · animation principles</text>
+  <text x="500" y="114" text-anchor="middle" font-size="11.5" fill="#1c2333">CT: math · programming (C++/Python) · graphics basics + AI-Fluency course</text>
+  <!-- fork lines -->
+  <path d="M500 134 C 500 170, 260 170, 260 205" fill="none" stroke="#94a3b8" stroke-width="3" marker-end="url(#a0)"/>
+  <path d="M500 134 C 500 170, 740 170, 740 205" fill="none" stroke="#94a3b8" stroke-width="3" marker-end="url(#a0)"/>
+  <!-- Track A -->
+  <rect x="60" y="210" width="400" height="118" rx="14" fill="#fef2f2" stroke="#fca5a5"/>
+  <text x="80" y="236" font-size="13.5" font-weight="700" fill="#991b1b">YEAR 3 · TRACK A — CRAFT &amp; DIRECTION</text>
+  <text x="80" y="258" font-size="11.5" fill="#1c2333">• Traditional pipeline mastery: advanced modeling/anim/lighting</text>
+  <text x="80" y="276" font-size="11.5" fill="#1c2333">• Critique &amp; art-direction studio (RPI-style critical lens)</text>
+  <text x="80" y="294" font-size="11.5" fill="#1c2333">• AI as object of study: evaluation, ethics, critical use</text>
+  <text x="80" y="312" font-size="11.5" fill="#1c2333">• Output: a hand-crafted short + a direction portfolio</text>
+  <!-- Track B -->
+  <rect x="540" y="210" width="400" height="118" rx="14" fill="#eff6ff" stroke="#93c5fd"/>
+  <text x="560" y="236" font-size="13.5" font-weight="700" fill="#1e3a8a">YEAR 3 · TRACK B — AI-AUGMENTED PRODUCTION</text>
+  <text x="560" y="258" font-size="11.5" fill="#1c2333">• Control techniques: ControlNet-class, LoRA fine-tuning</text>
+  <text x="560" y="276" font-size="11.5" fill="#1c2333">• Pipeline integration: USD · engines · ComfyUI graphs</text>
+  <text x="560" y="294" font-size="11.5" fill="#1c2333">• Evaluation methods + hallucination reduction (CS394-style)</text>
+  <text x="560" y="312" font-size="11.5" fill="#1c2333">• Output: an AI-augmented production reel + tool dossier</text>
+  <!-- merge -->
+  <path d="M260 328 C 260 360, 500 360, 500 380" fill="none" stroke="#94a3b8" stroke-width="3"/>
+  <path d="M740 328 C 740 360, 500 360, 500 380" fill="none" stroke="#94a3b8" stroke-width="3" marker-end="url(#a0)"/>
+  <rect x="250" y="384" width="500" height="40" rx="12" fill="#111827"/>
+  <text x="500" y="409" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">YEAR 4 · MIXED CAPSTONE TEAM — Track A directs, Track B builds (shipped game/film)</text>
+</svg>
+<div class="figcap">Track names sell destinations, not tools — the lesson from DigiPen (program-level split) and SCAD's controversy (avoid ideology branding).</div>
+</div>
+<div class="refs"><h4>📚 Precedents &amp; further reading</h4><ul>
+  <li><b>Shared-then-fork precedent + mixed teams:</b> DigiPen embeds yearly cross-disciplinary game teams (art + design + CS + sound) — see BS-in-AI program: <a href="https://www.digipen.edu/academics/computer-science-degrees/bs-in-computer-science-in-machine-learning">digipen.edu</a> and its CS-and-Game-Design sequence showing AI-for-Games placement: <a href="https://www.digipen.edu/academics/game-design-and-development-degrees/bs-in-computer-science-and-game-design/sample-course-sequence">sample sequence</a></li>
+  <li><b>What an intake-level split costs you politically:</b> Fast Company on SCAD's Applied-AI-major controversy: <a href="https://www.fastcompany.com/91430743/scad-applied-ai-major-savannah-college-art-design-controversy-animation-film-tv-gaming-graphic-ilustration-jobs">fastcompany.com</a> · the gentler minor route: <a href="https://www.georgiaentertainment.com/2026/08/the-art-of-intelligence-training-the-next-generation-to-humanize-ai/">Georgia Entertainment</a></li>
+  <li><b>Critical-lens courses for Track A</b> (AI as object of study): RPI Critical Game Design: <a href="https://hass.rpi.edu/gsas/critical-game-design-phd">hass.rpi.edu</a> · Tampere's four perspectives: <a href="https://www.tuni.fi/en/tau/masters-programmes/game-studies">tuni.fi</a></li>
+  <li><b>Control-technique curriculum for Track B:</b> DigiPen CS 394/594: <a href="https://www.digipen.edu/showcase/news/generative-ai-course">digipen.edu</a> · practitioner pipeline guide (ComfyUI/ControlNet/USD): <a href="https://www.maacjayanagar.com/genai-vfx-guide">GenAI VFX whitepaper</a></li>
+  <li><b>Uppsala's organizational note:</b> even production game design can live in a humanities faculty — useful for naming the tracks: <a href="https://www.uu.se/en/department/game-design">uu.se</a></li>
+</ul></div>
+<div class="moves"><h4>🧭 First three moves</h4><ol>
+  <li>Write the two Y3 track maps as concentration sheets inside DD/CT (avoids new-degree approvals).</li>
+  <li>Pick one Y4 capstone brief that structurally requires both tracks (e.g., AI-augmented Thai folklore short) and staff it with one Track-A lead + one Track-B lead as co-advisors.</li>
+  <li>Run an information campaign *before* Y2 students choose — present tracks as destinations ("art director" vs "technical director"), never as pro/anti AI.</li>
+</ol></div>
+<p class="drs"><b>Design requirements met:</b> DR1/DR4 partially (capstone hierarchy) · DR3 (AI-off core) · DR5–DR6 (role clarity, judgment work) · DR8 (no intake split) · DR9–DR10, DR13–DR14 (honest AI teaching) · DR22 (named destinations). <i>Needs:</i> Scenario 4's vertical studios for the full ladder.</p>
+
+<!-- ================= SCENARIO 2 ================= -->
+<h2 id="s2"><span class="num" style="background:var(--s2)">2</span>NEW B.Sc. — Creative Technology &amp; AI</h2>
+<p class="sub">A four-year sibling to CT, using the DigiPen BS-in-AI blueprint your partnership gives you direct access to — with a Thai-content twist for differentiation.</p>
+<div class="glance">
+  <span class="gl">⏱ 24–36 months (incl. approvals)</span><span class="gl">💰 high cost</span><span class="gl">👥 high faculty load</span><span class="gl">⚠️ high risk</span><span class="gl">🎓 new intake</span>
+</div>
+<div class="figure">
+<svg viewBox="0 0 1000 350" role="img" aria-label="Scenario 2 four-year spine">
+  <text x="20" y="28" font-size="15" font-weight="700">The 4-year spine (DigiPen BS-in-AI blueprint, CT-adapted)</text>
+  <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#9ca3af"/></marker></defs>
+  <!-- yearly boxes -->
+  <g font-size="11.5">
+    <rect x="20" y="50" width="220" height="120" rx="12" fill="#dbeafe" stroke="#60a5fa"/>
+    <text x="40" y="74" font-weight="700" fill="#1e3a8a" font-size="12.5">YEAR 1 — FOUNDATIONS</text>
+    <text x="40" y="96" fill="#1c2333">Linear algebra · probability</text>
+    <text x="40" y="114" fill="#1c2333">Python + C++ · CS fundamentals</text>
+    <text x="40" y="132" fill="#1c2333">AI Fluency · drawing/design core</text>
+    <text x="40" y="150" fill="#1c2333">Team micro-project (toy game/tool)</text>
+    <rect x="265" y="50" width="220" height="120" rx="12" fill="#e0e7ff" stroke="#818cf8"/>
+    <text x="285" y="74" font-weight="700" fill="#3730a3" font-size="12.5">YEAR 2 — MACHINE LEARNING</text>
+    <text x="285" y="96" fill="#1c2333">Data science · ML I (regression,</text>
+    <text x="285" y="114" fill="#1c2333">SVM, ensembles) · Deep Learning I</text>
+    <text x="285" y="132" fill="#1c2333">(PyTorch) · graphics programming</text>
+    <text x="285" y="150" fill="#1c2333">Yearly team project v2</text>
+    <rect x="510" y="50" width="220" height="120" rx="12" fill="#ede9fe" stroke="#a78bfa"/>
+    <text x="530" y="74" font-weight="700" fill="#4c1d95" font-size="12.5">YEAR 3 — GENERATIVE MEDIA</text>
+    <text x="530" y="96" fill="#1c2333">Image/video/3D generation · LLM</text>
+    <text x="530" y="114" fill="#1c2333">agents + retrieval · control (LoRA/</text>
+    <text x="530" y="132" fill="#1c2333">ControlNet) · evaluation methods</text>
+    <text x="530" y="150" fill="#1c2333">Yearly team project v3 (client brief)</text>
+    <rect x="755" y="50" width="220" height="120" rx="12" fill="#fae8ff" stroke="#e879f9"/>
+    <text x="775" y="74" font-weight="700" fill="#86198f" font-size="12.5">YEAR 4 — EMBED &amp; SHIP</text>
+    <text x="775" y="96" fill="#1c2333">Engine embedding (Unity/Unreal,</text>
+    <text x="775" y="114" fill="#1c2333">C++/C#) · local-model ops ·</text>
+    <text x="775" y="132" fill="#1c2333">ethics/IP/compliance · capstone:</text>
+    <text x="775" y="150" fill="#1c2333">Thai-IP game/film + tool dossier</text>
+    <line x1="240" y1="110" x2="263" y2="110" stroke="#9ca3af" stroke-width="2" marker-end="url(#a2)"/>
+    <line x1="485" y1="110" x2="508" y2="110" stroke="#9ca3af" stroke-width="2" marker-end="url(#a2)"/>
+    <line x1="730" y1="110" x2="753" y2="110" stroke="#9ca3af" stroke-width="2" marker-end="url(#a2)"/>
+  </g>
+  <!-- differentiator ribbon -->
+  <rect x="20" y="200" width="955" height="60" rx="12" fill="#fff7ed" stroke="#fdba74"/>
+  <text x="40" y="226" font-size="12.5" font-weight="700" fill="#9a3412">DDCT DIFFERENTIATOR — "Thai content, global pipelines":</text>
+  <text x="40" y="246" font-size="12" fill="#1c2333">capstones built on Thai cultural IP with compliance-ready production (disclosure logs, indemnified tools) — the skill Western outsourcing clients now contractually demand.</text>
+  <text x="40" y="300" font-size="12" fill="#5b6478">5-year BS/MS acceleration and a yearly public showcase (DigiPen-style) optional but recommended. Approvals tip: launch first as a named CT concentration, convert to a degree when enrollment proves demand.</text>
+</svg>
+<div class="figcap">Blueprint: DigiPen's BS in CS in AI (course ladder: ML I → Deep Learning incl. LLMs/generative models → concentrations), adapted with a production spine.</div>
+</div>
+<div class="refs"><h4>📚 Precedents &amp; further reading</h4><ul>
+  <li><b>The blueprint itself — DigiPen BS in Computer Science in AI</b> (course codes CS 372 / CS 376 / MAT 345; concentrations incl. Neural Networks-LLMs): <a href="https://www.digipen.edu/academics/computer-science-degrees/bs-in-computer-science-in-machine-learning">digipen.edu</a> — <i>requestable in full via your DigiPen channel</i></li>
+  <li><b>Graduate-level analogue with GenAI focus</b> — NTU ADM MSc Game Design, Art &amp; Technology: <a href="https://www.ntu.edu.sg/adm/programmes/graduate-admissions/msc-in-game-design-art-and-technology">ntu.edu.sg</a></li>
+  <li><b>What an AI-major launch looks like politically</b> — SCAD Applied AI (BDes): <a href="https://www.scad.edu/academics/programs/applied-ai">program</a> · <a href="https://www.fastcompany.com/91430743/scad-applied-ai-major-savannah-college-art-design-controversy-animation-film-tv-gaming-graphic-ilustration-jobs">the controversy</a></li>
+  <li><b>Deep-technical course model</b> — DigiPen online MS in AI (30-credit structure): <a href="https://online.digipen.edu/masters-in-ai">online.digipen.edu</a> · CS 394/594 (engine embedding, hallucination reduction): <a href="https://www.digipen.edu/showcase/news/generative-ai-course">course article</a></li>
+  <li><b>UK MSc showing the ML-for-media unit mix</b> (ML for Media Production, Generative AI for Media): <a href="https://www.bournemouth.ac.uk/study/courses/msc-artificial-intelligence-media">Bournemouth NCCA</a></li>
+</ul></div>
+<div class="moves"><h4>🧭 First three moves</h4><ol>
+  <li>Formally request the DigiPen BS-in-AI degree map + CS 394/594 syllabus through the DDCT–DigiPen channel (see 02-curriculum-scenarios.md §9).</li>
+  <li>Pilot the Y3 "Generative Media" semester as Scenario-0 tool-sprint blocks; use enrollment as the go/no-go signal.</li>
+  <li>Recruit 1–2 ML-capable faculty or visiting industry TDs before approvals — the degree is only as real as its Y2–3 staffing.</li>
+</ol></div>
+<p class="drs"><b>Design requirements met:</b> DR5–DR7 (new-role skills, tool-learning speed) · DR9, DR13–DR14 (mechanisms, evaluation, durable layers) · DR17/DR19–DR22 (value-chain lift, compliance, differentiation). <i>Risks:</i> DR8 (avoid branding as "the AI degree" for hostile students — position as CT's elite sibling).</p>
+
+<!-- ================= SCENARIO 3 ================= -->
+<h2 id="s3"><span class="num" style="background:var(--s3)">3</span>GRADUATE — M.Sc./M.F.A. Creative AI + AnT-style certificate</h2>
+<p class="sub">The highest-urgency piece: Thailand's digital-content headcount is already shrinking due to AI while the industry grows — the incumbents need reskilling now, and a graduate layer builds your research capacity.</p>
+<div class="glance">
+  <span class="gl">⏱ 18–30 months</span><span class="gl">💰 medium cost (industry-co-fundable)</span><span class="gl">👥 medium load</span><span class="gl">⚠️ medium risk</span><span class="gl">🎓 professionals + researchers</span>
+</div>
+<div class="figure">
+<svg viewBox="0 0 1000 400" role="img" aria-label="Scenario 3 graduate structure">
+  <defs><marker id="a3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#9ca3af"/></marker></defs>
+  <text x="20" y="28" font-size="15" font-weight="700">One program, two doors + a fast certificate</text>
+  <!-- AnT certificate -->
+  <rect x="20" y="55" width="430" height="120" rx="14" fill="#fff7ed" stroke="#fb923c"/>
+  <text x="40" y="80" font-size="13" font-weight="700" fill="#9a3412">FAST DOOR · ANT-STYLE CERTIFICATE (4+2 months)</text>
+  <text x="40" y="102" font-size="11.5" fill="#1c2333">4 mo classroom: AI-augmented production for mid-career artists</text>
+  <text x="40" y="120" font-size="11.5" fill="#1c2333">2 mo embedded with partner studios (TACGA members)</text>
+  <text x="40" y="138" font-size="11.5" fill="#1c2333">Co-funding: depa + hiring companies (DigiPen Singapore template)</text>
+  <text x="40" y="158" font-size="11.5" fill="#1c2333">Outcome: Specialist Certificate + placement pipeline</text>
+  <!-- Master -->
+  <rect x="550" y="55" width="430" height="120" rx="14" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="570" y="80" font-size="13" font-weight="700" fill="#4c1d95">FULL M.SC. CREATIVE AI (18–24 months, weekend/online hybrid)</text>
+  <text x="570" y="102" font-size="11.5" fill="#1c2333">Core: generative media · pipeline integration · evaluation ·</text>
+  <text x="570" y="120" font-size="11.5" fill="#1c2333">ethics/compliance · research methods · studio briefs</text>
+  <text x="570" y="138" font-size="11.5" fill="#1c2333">Format serves working professionals (NFTS 6-mo model scaled up)</text>
+  <text x="570" y="158" font-size="11.5" fill="#1c2333">Feeds PhD later; AnT certificate credits can stack in</text>
+  <!-- exit paths -->
+  <line x1="700" y1="175" x2="560" y2="215" stroke="#9ca3af" stroke-width="2" marker-end="url(#a3)"/>
+  <line x1="830" y1="175" x2="830" y2="215" stroke="#9ca3af" stroke-width="2" marker-end="url(#a3)"/>
+  <rect x="330" y="220" width="360" height="80" rx="12" fill="#fae8ff" stroke="#e879f9"/>
+  <text x="350" y="245" font-size="12.5" font-weight="700" fill="#86198f">EXIT A · PRACTICE ROUTE</text>
+  <text x="350" y="266" font-size="11.5" fill="#1c2333">industry brief + portfolio + oral defense</text>
+  <text x="350" y="284" font-size="11.5" fill="#1c2333">(CDM × Inworld AI brief model)</text>
+  <rect x="710" y="220" width="270" height="80" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <text x="730" y="245" font-size="12.5" font-weight="700" fill="#5b21b6">EXIT B · RESEARCH ROUTE</text>
+  <text x="730" y="266" font-size="11.5" fill="#1c2333">thesis with optional creative component</text>
+  <text x="730" y="284" font-size="11.5" fill="#1c2333">(NTU ADM "Thesis + Creative Component")</text>
+  <!-- partners ribbon -->
+  <rect x="20" y="330" width="960" height="52" rx="12" fill="#f0fdf4" stroke="#86efac"/>
+  <text x="40" y="352" font-size="12.5" font-weight="700" fill="#14532d">PARTNER ROLES:</text>
+  <text x="40" y="370" font-size="12" fill="#1c2333">depa — co-funding &amp; policy hook (their own data shows the AI headcount squeeze) · TACGA studios — briefs + attachment slots · DigiPen — AnT playbook + guest faculty · DDCT — teaching + local-model lab</text>
+</svg>
+<div class="figcap">Urgency math: Thai digital content = 50.6 B฿ and growing ~10%/yr, while headcount fell 1% (7,688) "due to the adoption of AI" — someone must retrain the incumbents; better you than nobody.</div>
+</div>
+<div class="refs"><h4>📚 Precedents &amp; further reading</h4><ul>
+  <li><b>The AnT template</b> — DigiPen Singapore's Attach-and-Train launch (retrains STEM professionals into AI software developers for games; Specialist Diploma; partner companies): <a href="https://www.digipen.edu.sg/showcase/news/digipen-singapore-announces-the-launch-of-its-attach-and-train-ant-program-for-artificial-intelligence-software-developer">launch</a> · <a href="https://www.digipen.edu.sg/showcase/news/pmets-successfully-converted-into-ai-software-developers-through-digipen-singapore-attach-and-train-program">graduate outcomes (4 mo class + 2 mo OJT)</a></li>
+  <li><b>Short professional course shape</b> — NFTS "AI for Film and TV: Tools, Protocols and Practices" (6-month part-time online): <a href="https://nfts.co.uk/ai-protocols-and-practices-film-and-television">nfts.co.uk</a></li>
+  <li><b>Industry-brief learning</b> — CDM's Inworld AI master's project (students solve live AI-NPC briefs): <a href="https://thecdm.ca/news/inworldai-industry-project-a-high">thecdm.ca</a></li>
+  <li><b>Creative-component thesis architecture</b> — NTU ADM MA (Research): <a href="https://www.ntu.edu.sg/education/graduate-programme/master-of-arts-(research)">ntu.edu.sg</a> · Concordia's Research-Creation PhD stream (studio exam + artwork + 150–200pp text): <a href="https://www.concordia.ca/artsci/cissc/phd-humanities/research-creation.html">concordia.ca</a></li>
+  <li><b>Thailand urgency data</b> — depa via Nation (50.6 B฿, −1% workforce due to AI): <a href="https://www.nationthailand.com/business/tech/40054880">nationthailand.com</a> · TACGA animation contraction: <a href="https://www.bangkokpost.com/business/general/3098408/agency-upbeat-on-growth-outlook-for-digital-content">Bangkok Post</a></li>
+</ul></div>
+<div class="moves"><h4>🧭 First three moves</h4><ol>
+  <li>Hold a joint workshop with depa + 3–5 TACGA studios to size the AnT cohort (who would sponsor seats?).</li>
+  <li>Ask DigiPen (Singapore campus) for the AnT partner-company playbook via your channel.</li>
+  <li>Approve the M.Sc. skeleton with the two exit routes; start with the practice route only (research route needs supervisor capacity you build meanwhile).</li>
+</ol></div>
+<p class="drs"><b>Design requirements met:</b> DR18 (serve the incumbent workforce) · DR1/DR4 (adults apprentice on real briefs) · DR5, DR11, DR19 (new roles, compliance, client-ready) · DR22 (first-mover differentiation in Thailand). <i>Note:</i> undergrad resistance is irrelevant here — adults opt in.</p>
+
+<!-- ================= SCENARIO 4 ================= -->
+<h2 id="s4"><span class="num" style="background:var(--s4)">4</span>MISSION-DRIVEN ATELIER — the unorthodox pilot</h2>
+<p class="sub">Your instinct, assembled from four proven mechanisms: Gallatin's matched advisers, Aalto Design Factory's passion-based PBL, the Colorado Block Plan's 3-week intensives, and DigiPen-style vertical teams — with competency badges as the transcript.</p>
+<div class="glance">
+  <span class="gl">⏱ pilot in 12 months</span><span class="gl">💰 medium cost</span><span class="gl">👥 high advising load</span><span class="gl">⚠️ medium risk (registrar friction)</span><span class="gl">🎓 volunteer cohort 20–30</span>
+</div>
+<div class="figure">
+<svg viewBox="0 0 1000 470" role="img" aria-label="Scenario 4 atelier engine">
+  <defs><marker id="a4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#9ca3af"/></marker></defs>
+  <text x="20" y="28" font-size="15" font-weight="700">The atelier engine: agreement → adviser → blocks → badges</text>
+  <!-- learning agreement -->
+  <rect x="330" y="48" width="340" height="66" rx="12" fill="#fdf2f8" stroke="#f472b6"/>
+  <text x="500" y="72" text-anchor="middle" font-size="13" font-weight="700" fill="#831843">LEARNING AGREEMENT (mission)</text>
+  <text x="500" y="92" text-anchor="middle" font-size="11" fill="#1c2333">"AI-assisted Thai folklore shorts" · "procedural indie</text>
+  <text x="500" y="107" text-anchor="middle" font-size="11" fill="#1c2333">environments" · "critical craft-first practice" — all legitimate</text>
+  <!-- advisers -->
+  <rect x="60" y="48" width="240" height="66" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <text x="180" y="72" text-anchor="middle" font-size="12" font-weight="700" fill="#5b21b6">MATCHED ADVISER</text>
+  <text x="180" y="90" text-anchor="middle" font-size="11" fill="#1c2333">primary faculty (Gallatin model)</text>
+  <text x="180" y="105" text-anchor="middle" font-size="11" fill="#1c2333">+ industry mentor</text>
+  <rect x="700" y="48" width="240" height="66" rx="12" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <text x="820" y="72" text-anchor="middle" font-size="12" font-weight="700" fill="#5b21b6">RIGOR COMMITTEE</text>
+  <text x="820" y="90" text-anchor="middle" font-size="11" fill="#1c2333">checks each agreement meets</text>
+  <text x="820" y="105" text-anchor="middle" font-size="11" fill="#1c2333">degree standards</text>
+  <line x1="300" y1="80" x2="328" y2="80" stroke="#9ca3af" stroke-width="2" marker-end="url(#a4)"/>
+  <line x1="670" y1="80" x2="698" y2="80" stroke="#9ca3af" stroke-width="2" marker-end="url(#a4)"/>
+  <!-- blocks -->
+  <text x="20" y="150" font-size="13" font-weight="700" fill="#831843">A TERM OF 3-WEEK BLOCKS (one subject at a time — Colorado Plan)</text>
+  <g font-size="11.5">
+    <rect x="20" y="165" width="180" height="70" rx="10" fill="#fce7f3" stroke="#f9a8d4"/><text x="110" y="192" text-anchor="middle" font-weight="700">BLOCK 1</text><text x="110" y="210" text-anchor="middle">Drawing Bootcamp</text><text x="110" y="226" text-anchor="middle">(🔴 AI-free craft)</text>
+    <rect x="215" y="165" width="180" height="70" rx="10" fill="#eef2ff" stroke="#a5b4fc"/><text x="305" y="192" text-anchor="middle" font-weight="700">BLOCK 2</text><text x="305" y="210" text-anchor="middle">ComfyUI Deep-Dive</text><text x="305" y="226" text-anchor="middle">(🟢 AI-required)</text>
+    <rect x="410" y="165" width="180" height="70" rx="10" fill="#ecfdf5" stroke="#6ee7b7"/><text x="500" y="192" text-anchor="middle" font-weight="700">BLOCK 3</text><text x="500" y="210" text-anchor="middle">Character Pipeline</text><text x="500" y="226" text-anchor="middle">(🟡 disclosed)</text>
+    <rect x="605" y="165" width="180" height="70" rx="10" fill="#fef9c3" stroke="#fde047"/><text x="695" y="192" text-anchor="middle" font-weight="700">BLOCK 4</text><text x="695" y="210" text-anchor="middle">Game-Jam Production</text><text x="695" y="226" text-anchor="middle">(vertical team)</text>
+    <rect x="800" y="165" width="180" height="70" rx="10" fill="#f3e8ff" stroke="#d8b4fe"/><text x="890" y="192" text-anchor="middle" font-weight="700">BLOCK 5</text><text x="890" y="210" text-anchor="middle">Research Sprint</text><text x="890" y="226" text-anchor="middle">(judgment notes)</text>
+  </g>
+  <text x="20" y="262" font-size="11.5" fill="#5b6478">Pair every block with a spaced "re-touch" session 4–6 weeks later — block-mode literature warns of retention tail-off without it.</text>
+  <!-- vertical studio -->
+  <rect x="20" y="285" width="460" height="100" rx="12" fill="#fff" stroke="#f472b6"/>
+  <text x="40" y="310" font-size="12.5" font-weight="700" fill="#831843">VERTICAL STUDIO (every term, Y1–4 mixed)</text>
+  <text x="40" y="332" font-size="11.5" fill="#1c2333">Rotating roles: JUNIOR (execute) → LEAD (run pipeline) →</text>
+  <text x="40" y="350" font-size="11.5" fill="#1c2333">DIRECTOR (art-direct juniors + AI outputs) — the collapsed</text>
+  <text x="40" y="368" font-size="11.5" fill="#1c2333">industry ladder, rebuilt on campus; growth-rate reviews/block</text>
+  <!-- badges -->
+  <rect x="520" y="285" width="460" height="100" rx="12" fill="#fff" stroke="#f472b6"/>
+  <text x="540" y="310" font-size="12.5" font-weight="700" fill="#831843">COMPETENCY BADGES = the transcript</text>
+  <text x="540" y="332" font-size="11.5" fill="#1c2333">craft · control · direction · research · compliance</text>
+  <text x="540" y="350" font-size="11.5" fill="#1c2333">Each badge = evidence portfolio + live viva, not seat time;</text>
+  <text x="540" y="368" font-size="11.5" fill="#1c2333">stackable into Scenarios 2/3 degrees and Academy L3</text>
+  <!-- resistance note -->
+  <rect x="20" y="405" width="960" height="50" rx="12" fill="#fdf2f8" stroke="#f9a8d4"/>
+  <text x="40" y="427" font-size="12.5" font-weight="700" fill="#831843">WHY THIS CONVERTS AI-HOSTILE STUDENTS:</text>
+  <text x="40" y="445" font-size="12" fill="#1c2333">they author the mission — including explicitly craft-first missions with full AI-free legitimacy — so resistance becomes authorship, and the same architecture serves both camps.</text>
+</svg>
+<div class="figcap">Four imported mechanisms, one engine. Detail: 02-curriculum-scenarios.md §Scenario 4 &amp; §7.</div>
+</div>
+<div class="refs"><h4>📚 Precedents &amp; further reading</h4><ul>
+  <li><b>Matched-adviser individualized study</b> — NYU Gallatin ("how Gallatin works": student-authored concentration + primary faculty adviser): <a href="https://gallatin.nyu.edu/about/how-gallatin-works.html">gallatin.nyu.edu</a> · plain-language overview: <a href="https://meet.nyu.edu/academics/the-gallatin-degree-how-does-it-work/">meet.nyu.edu</a></li>
+  <li><b>Passion/problem-based atelier platform</b> — Aalto Design Factory (PBL, industry co-creation, bootcamps): <a href="https://designfactory.aalto.fi/tag/education/">designfactory.aalto.fi</a></li>
+  <li><b>Block teaching</b> — THE's practitioner guide: <a href="https://www.timeshighereducation.com/campus/block-teaching-what-it-how-do-it-and-why">guide</a> · 50-year Colorado College Block Plan retrospective: <a href="https://www.timeshighereducation.com/campus/collections/what-block-teaching">collection</a> · honest critique (retention tail-off → add spaced re-touch): <a href="https://www.timeshighereducation.com/depth/block-teaching-future-university-pedagogy">critique</a> · design guidance: <a href="https://www.qmul.ac.uk/queenmaryacademy/educators/resources/degree-apprenticeships/curriculum-design/block-teaching/">Queen Mary Academy</a></li>
+  <li><b>Vertical teams</b> — DigiPen's yearly cross-disciplinary game projects: <a href="https://www.digipen.edu/academics/computer-science-degrees/bs-in-computer-science-in-machine-learning">digipen.edu</a></li>
+  <li><b>Craft-first missions with full academic legitimacy</b> — RPI Critical Game Design (making + critique in one degree): <a href="https://hass.rpi.edu/gsas/critical-game-design-phd">hass.rpi.edu</a> · the critical-gameplay art lineage: <a href="https://www.criticalgameplay.com/">criticalgameplay.com</a></li>
+</ul></div>
+<div class="moves"><h4>🧭 First three moves</h4><ol>
+  <li>Recruit the pilot honestly: call for 20–30 volunteers across Y2–Y4; explicitly invite craft-first missions.</li>
+  <li>Write the badge taxonomy (5 competencies × 3 levels) with assessment rubrics — this is the piece registrars will ask about.</li>
+  <li>Negotiate one registrar concession: block-scheduled terms + badge transcript for the pilot cohort only, evaluated after year 1.</li>
+</ol></div>
+<p class="drs"><b>Design requirements met:</b> DR1/DR4 fully (the ladder lives here) · DR7 (blocks = learn-a-tool-fast) · DR8 (authorship converts resistance) · DR2 (badges assess process/judgment) · DR22 (distinctive identity). <i>Main cost:</i> advising hours — cap student-adviser ratios at ~8:1.</p>
+
+<!-- ================= SCENARIO 5 ================= -->
+<h2 id="s5"><span class="num" style="background:var(--s5)">5</span>THAI CREATIVE-AI ACADEMY — the alliance ladder</h2>
+<p class="sub">KMUTT-hosted, industry-co-funded micro-credentials open to every KMUTT student, partner universities, and working professionals — Taiwan's TAICA proves the model at national scale.</p>
+<div class="glance">
+  <span class="gl">⏱ 9–12 months to L1–L2</span><span class="gl">💰 low-medium (sponsorable)</span><span class="gl">👥 medium load</span><span class="gl">⚠️ low risk</span><span class="gl">🎓 everyone + industry</span>
+</div>
+<div class="figure">
+<svg viewBox="0 0 1000 360" role="img" aria-label="Scenario 5 credential ladder">
+  <defs><marker id="a5" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#9ca3af"/></marker></defs>
+  <text x="20" y="28" font-size="15" font-weight="700">The stackable ladder (each level credits toward Scenarios 2–4)</text>
+  <g font-size="12">
+    <rect x="60" y="55" width="880" height="70" rx="12" fill="#fef3c7" stroke="#fbbf24"/>
+    <text x="85" y="82" font-weight="700" fill="#92400e" font-size="13">LEVEL 1 · AI FLUENCY — 3 weeks</text>
+    <text x="85" y="102" fill="#1c2333" font-size="11.5">open to ALL KMUTT students + industry; literacy, ethics, honest pipeline map — the entry point that doesn't require believing in AI</text>
+    <rect x="160" y="145" width="780" height="70" rx="12" fill="#fde68a" stroke="#f59e0b"/>
+    <text x="185" y="172" font-weight="700" fill="#92400e" font-size="13">LEVEL 2 · APPLIED BLOCKS — 3 weeks each</text>
+    <text x="185" y="192" fill="#1c2333" font-size="11.5">image/video gen for production · 3D-gen pipelines · agent workflows · ethics &amp; compliance — cross-enrollable TAICA-style with partner universities</text>
+    <rect x="260" y="235" width="680" height="70" rx="12" fill="#fb923c"/>
+    <text x="285" y="262" font-weight="700" fill="#fff" font-size="13">LEVEL 3 · STUDIO INTENSIVE — 8–12 weeks</text>
+    <text x="285" y="282" fill="#fff7ed" font-size="11.5">sponsored briefs with depa/TACGA studios (CDM × Inworld pattern) → stackable into B.Sc. (S2), M.Sc. (S3), Atelier badges (S4)</text>
+    <line x1="500" y1="125" x2="500" y2="143" stroke="#9ca3af" stroke-width="2" marker-end="url(#a5)"/>
+    <line x1="500" y1="215" x2="500" y2="233" stroke="#9ca3af" stroke-width="2" marker-end="url(#a5)"/>
+  </g>
+  <text x="60" y="335" font-size="12" fill="#5b6478">Governance: partner-university credit agreement (TAICA-style) + industry sponsorship board; DigiPen co-badging would make L2 blocks regionally magnetic (see §7 of the main guide).</text>
+</svg>
+<div class="figcap">Start L1 within a year — it doubles as Scenario 0's fluency course and the alliance's front door.</div>
+</div>
+<div class="refs"><h4>📚 Precedents &amp; further reading</h4><ul>
+  <li><b>The national-scale proof</b> — Taiwan AI College Alliance (cross-university AI credit programs, certificates): <a href="https://www.yzu.edu.tw/admin/aa/index.php/en-us/taica">TAICA at Yuan Ze</a> · lead-course listing: <a href="https://curricul.site.nthu.edu.tw/p/406-1208-273769,r7982.php?Lang=en">NTHU AIA courses</a></li>
+  <li><b>Continuing-education micro-credential shape</b> — DigiPen Singapore's 3-month deep-learning micro-credential: <a href="https://www.digipen.edu.sg/academics/continuing-education">digipen.edu.sg</a></li>
+  <li><b>Sponsored industry briefs as a course format</b> — CDM × Inworld AI: <a href="https://thecdm.ca/news/inworldai-industry-project-a-high">thecdm.ca</a></li>
+  <li><b>Short-course depth exemplar</b> — ArtFX's AI intro inside a professional master's: <a href="https://artfx.school/formation/mastere-game-art/">artfx.school</a> · Utrecht's game-AI summer course: <a href="https://utrechtsummerschool.nl/courses/art-music/game-design-and-development">utrechtsummerschool.nl</a></li>
+  <li><b>Fluency-course design</b> — Ringling/Anthropic AI Fluency: <a href="https://www.cgw.com/Press-Center/News/2025/Ringling-College-of-Art-and-Design-shapes-the-tr.aspx">cgw.com</a> · UNESCO student framework: <a href="https://www.unesco.org/en/articles/ai-competency-framework-students">unesco.org</a></li>
+</ul></div>
+<div class="moves"><h4>🧭 First three moves</h4><ol>
+  <li>Run L1 as a paid summer bootcamp for 60 mixed participants (KMUTT + 2 partner unis + TACGA members) — cash-flow positive from day one.</li>
+  <li>Sign the first cross-crediting MOU with 2–3 partner universities (copy TAICA's program-certificate structure).</li>
+  <li>Sell one L3 sponsored brief to a studio (their IP, your supervision, students credited) — the demo that recruits the next sponsors.</li>
+</ol></div>
+<p class="drs"><b>Design requirements met:</b> DR18 (incumbent reskilling at scale) · DR7 (blocks) · DR24–DR26 (fast layer, partnership funding) · DR8 (L1 as non-ideological entry). <i>Watch:</i> credit-recognition negotiations are the long pole — start them in month 1.</p>
+
+<!-- ================= COMPARISON REMINDER ================= -->
+<h2><span class="num" style="background:var(--ink)">✦</span>How the six fit together (reminder)</h2>
+<div class="figure" style="overflow-x:auto">
+<table>
+  <tr><th></th><th>Phase</th><th>Primary job</th><th>Feeds</th></tr>
+  <tr><td><b>0 Infuse</b></td><td>1 (now)</td><td>Baseline AI literacy + policy + lab for everyone</td><td>everything — L1 content, fluency course</td></tr>
+  <tr><td><b>5 Academy</b></td><td>1 (now)</td><td>Scale + revenue + industry reach</td><td>L3 briefs → capstones; L1 → fluency course</td></tr>
+  <tr><td><b>4 Atelier</b></td><td>2 (pilot)</td><td>Convert resistance; build the junior→senior engine; test unorthodox structure</td><td>badges → Scenario 1/2/3 quality</td></tr>
+  <tr><td><b>3 Graduate</b></td><td>2</td><td>Retrain the shrinking workforce; research capacity</td><td>AnT → Academy L3; thesis → PhD later</td></tr>
+  <tr><td><b>1 Two-track</b></td><td>3</td><td>Structural depth without intake split</td><td>Y4 capstone = mini Atelier + L3</td></tr>
+  <tr><td><b>2 New B.Sc.</b></td><td>3 (conditional)</td><td>Full technical degree on the DigiPen blueprint</td><td>requires DigiPen channel + proven enrollment</td></tr>
+</table>
+</div>
+
+<footer>
+Companion to 01-concerns-breakdown.md (28 DRs) and 02-curriculum-scenarios.md (full specs). All precedent links above are archived with annotations in ../references.md (sessions 1–8). No new web searches were needed for this document — it synthesizes the existing 71-program research archive. Prepared 2026-10-11.
+</footer>
+
+</div>
+</body>
+</html>

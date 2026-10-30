@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9-game-based-learning — papers digest</title>
+<style>
+:root{--ink:#1c2333;--muted:#5b6478;--bg:#f6f7fb;--card:#fff;--line:#e3e6ef;--acc:#0f766e}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 20px 60px}
+header.hero{background:linear-gradient(135deg,#111827,#134e4a);color:#fff;border-radius:16px;padding:24px 26px;margin-bottom:20px}
+header.hero h1{margin:0 0 6px;font-size:22px}header.hero p{margin:0;color:#cdeae5;font-size:13.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:2px 10px;border-radius:999px;font-size:11.5px}
+h2{font-size:18px;margin:30px 0 8px}
+.paper{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:12px;padding:14px 18px;margin:12px 0}
+.paper.star{border-left-color:#d97706;background:#fffbeb}
+.paper h3{margin:0 0 4px;font-size:15px}.paper .cite{color:var(--muted);font-size:12.5px;margin-bottom:8px}
+.paper ul{margin:6px 0;padding-left:20px;font-size:13.5px}.paper li{margin:3px 0}
+.map{font-size:12.5px;background:#eef8f4;border-radius:8px;padding:6px 10px;margin-top:8px}
+.top{background:#fdf2f8;border:1px solid #f9a8d4;border-radius:12px;padding:14px 18px;margin:12px 0}
+.top h3{margin:0 0 6px;font-size:15px;color:#831843}
+footer{margin-top:30px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body><div class="wrap">
+
+<header class="hero">
+  <h1>9-game-based-learning — papers digest</h1>
+  <p>Summaries and DDCT-relevant cases extracted from 4 papers · generated 2026-10-13 by digest agent</p>
+  <div class="badges"><span class="badge">★ = concrete transferable case</span><span class="badge">numbers cited from source text</span></div>
+</header>
+
+<div class="paper">
+  <h3>[2026] Effectiveness of AI-Supported Game-Based Learning: A Systematic Review of Outcomes, Challenges, and Future Directions (Kaşarcı &amp; Yurt)</h3>
+  <div class="cite">Behavioral Sciences (MDPI) 16(7):1050 · PRISMA 2020 systematic review of 55 peer-reviewed empirical studies, 2021–2026 (WoS + Scopus; dual coding κ = 0.89; thematic synthesis — pooling not feasible)</div>
+  <ul>
+    <li>Quality is thin: only 4/55 studies (7%) high-quality (RCT/factorial), 57% moderate, 36% low (mean 16.1/25); LLM/GenAI is now the most common mechanism (n = 24, 44%), ahead of adaptive difficulty (n = 15, 27%); peak year 2025 (n = 26).</li>
+    <li>Positive but uneven effects: GenAI financial-literacy game (n = 134, ages 7–12) → +58% financial performance, −37% maladaptive choices; GenAI leadership simulation → +16 pp vs control (t = 9.13, p &lt; 0.001, n = 160); emotion-aware adaptive GBL → −50% negative emotions, +15% quiz scores.</li>
+    <li>Over-reliance is the core risk: positive LLM-tutor perceptions do not translate into learning gains (Fang et al.); several studies (Gaurav 2022; G. Tao 2026, n = 102) found AI conditions no better than non-AI games on knowledge — engagement moved, knowledge did not.</li>
+    <li>Interpretable beats sophisticated: transparent rule-based difficulty adaptation outperformed complex alternatives (creative self-efficacy η²p = 0.349); stealth assessment from gameplay logs reaches AUC 0.848–0.913; only 2/55 studies ran bias audits; longitudinal evidence beyond 8 weeks is nearly absent.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L1 (aligned AI beats raw AI), L6, DR3, DR23 — copy the mechanism-level design rules into the AI-as-junior-staff loop: AI calls should be <i>low-frequency and goal-directed</i> (they beat habitual exploratory use), feedback must force productive struggle, and assessment should read process artifacts (stealth-assessment logic) rather than surveil. Feeds S0 fluency course and the 3-zone AI policy.</div>
+</div>
+
+<div class="paper star">
+  <h3>[2026] Game-Based Learning for Asynchronous AI Literacy Course: Approach to Improve Students' Cognitive, Behavioural, Affective, and Ethical Learning of AI (Kim, Yang, Chan, Lin, Song &amp; Li)</h3>
+  <div class="cite">European Journal of Education (Wiley), DOI 10.1111/ejed.70658 · mixed-methods pre/post (n = 311 valid surveys out of 4,898 enrolled first-years, all majors) + 20 interviews; mandatory 13-week asynchronous module at XJTLU (China)</div>
+  <ul>
+    <li>Concrete course design: "intelligent train to the future" narrative, 5 thematic units; Level-Up points (20 pts per level, up to Level 6, cap 120, gift at 100+), Moodle leaderboard, and peer-rated "collaborative argumentation" forums.</li>
+    <li>Significant pre→post gains, all small effects (ω² = 0.01–0.03): cognitive 5.05→5.44; behavioural — collaboration largest (4.94→5.37, p &lt; 0.001); affective — self-efficacy largest (5.07→5.50, p &lt; 0.001); overall AI literacy MANOVA F(4,617) = 4.95, p &lt; 0.001.</li>
+    <li>Ethical learning did NOT improve significantly (5.48→5.67, p = 0.09, ω² &lt; 0.01) — game mechanics alone could not carry ethics; interviews point to extended case-based deliberation as the missing ingredient.</li>
+    <li>Challenges: students' weak self-regulation (SRL/SSRL) skills, feedback limited to correct/incorrect + level-up (no "why"), system lag; students requested a personal AI companion. Caveats: 6.3% response rate, no control group, single institution.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> S0 (AI-Fluency core course taught gamefully) + S5-L1 — the closest existing blueprint for DDCT's fluency requirement: lift the level-up progression + peer-rated argumentation + ABCE (affective-behavioural-cognitive-ethical) pre/post measurement (adapted Ng et al. 2024 scale, 34 items); but keep ethics as facilitated case deliberation inside studios (L4), not gamified quests. The affective/self-efficacy gains are a documented lever for converting AI-skeptical students (DR27).</div>
+</div>
+
+<div class="paper">
+  <h3>[2026] The effects of gamified AI-supported digital learning environments on personalized learning and student engagement in school education: a systematic review and meta-analysis (Niyazova, Duisekeyeva, Berdi, Usembayeva &amp; Mindetbayeva)</h3>
+  <div class="cite">Frontiers in Education 11:1754080 · PRISMA review of 81 studies (2015–2025) + random-effects meta-analysis (Hedges' g) of the experimental/quasi-experimental subset; six databases; JBI quality appraisal</div>
+  <ul>
+    <li>Pooled SMD = 1.01 (95% CI 0.69–1.33, p &lt; 0.001) vs non-AI instruction — but I² = 95.8%, so read it as a mean across wildly different implementations, not a uniform effect.</li>
+    <li>Outcome split is the headline: academic achievement SMD = 1.86 and affective-motivational SMD = 1.13, but behavioural engagement non-significant (SMD = −0.30) and attitudes non-significant (0.61) — engagement behaves as a process variable, not a reliable outcome.</li>
+    <li>Generative AI largest by technology type (SMD = 1.38, p = 0.020, k = 7) vs non-generative conversational/ITS ≈ 0.55; effect persists in high-quality studies (k = 31, SMD = 0.84; moderate-quality k = 9 inflates to 1.57); ≥2024 studies 1.33 (k = 23) vs 0.59 pre-2024 (k = 17); Asia largest region (k = 30, SMD = 1.18) vs Europe 0.59 (k = 9). Egger's p = 0.077.</li>
+    <li>Meta-regression (model ns, p = 0.254; 15.4% of variance explained): tech type, education level, age, sample size explain nothing — impact depends on pedagogical embedding; most interventions were supplements to teacher-led instruction, which the authors credit for amplifying gains.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> L2 (integration mode is the variable) + L1 — strongest quantitative support for designing S0 tool-sprint blocks / S5-L1 applied blocks as faculty-orchestrated "AI practice gyms" that supplement studio teaching rather than standalone apps; DR24 (faculty readiness gates the effect); the honest expectation-setter for the working group is the high-quality-study figure (~0.8 SD), not the headline 1.01.</div>
+</div>
+
+<div class="paper">
+  <h3>[2026] Integrating AI into educational game design: an AI-enhanced MDA framework (Wen &amp; Chu)</h3>
+  <div class="cite">Research in Learning Technology 34:3746 (ALT, open access) · conceptual paper — theory synthesis and framework development (Torraco / Jabareen / Hevner design-science); no participants, no empirical validation (authors state effectiveness "has not yet been validated")</div>
+  <ul>
+    <li>Extends the Mechanics–Dynamics–Aesthetics framework with AI as a cross-cutting integrative axis: generative AI, adaptive learning algorithms, and procedural content generation each map onto all three MDA layers (multi-directional, not linear).</li>
+    <li>Gives concrete mappings, e.g. generative AI → parameterised rules (mechanics) + adaptive pacing (dynamics) + novelty/immersion (aesthetics); PCG → content variation (mechanics) + replayability and strategy flexibility (dynamics) + emergent surprise (aesthetics).</li>
+    <li>Offers four evaluation criteria for AI functions in a design: generativity, adaptability, cognitive-load reduction, interactivity.</li>
+    <li>Numbers: not reported — no data collected; the framework awaits pilot studies and classroom trials.</li>
+  </ul>
+  <div class="map"><b>DDCT:</b> DR9 (honest pipeline placement) + DR15 (workflow design), usable in S2/S4 game-design studios — MDA is a ready-made critique rubric: require students to state which MDA layer each AI function touches (and which it must not), turning "where does AI honestly sit in my design?" into a graded analysis exercise on the Direction Ladder (taste→critique). Treat as a teaching device, not evidence.</div>
+</div>
+
+<h2>Top 3 cases for the DDCT curriculum</h2>
+<div class="top">
+  <h3>1. XJTLU gamified asynchronous AI-literacy course — the S0 fluency-course blueprint ★</h3>
+  <p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> mandatory 13-week async AI-literacy module for 4,898 first-years across all majors — narrative frame, level-up points (20/level to L6), real-time leaderboard, peer-rated collaborative argumentation, ABCE pre/post survey · <b>Measured result:</b> significant cognitive/behavioural/affective gains (self-efficacy 5.07→5.50, p&lt;0.001; collaboration 4.94→5.37, p&lt;0.001) but ethics null (p=0.09) · <b>Strengthens:</b> S0 + S5-L1 — copy the level-up/peer-rating mechanics and ABCE outcome measurement for DDCT's AI-Fluency core; move ethics into facilitated studio cases (L4); use the documented affective gains as the conversion lever for AI-skeptical DD/CT students (DR27).</p>
+</div>
+<div class="top"><h3>2. "AI practice gym with teacher orchestration" — supplements beat standalone wrappers</h3><p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> meta-analysis of school-based gamified AI environments (81 studies reviewed; experimental subset meta-analysed), contrasting integration modes · <b>Measured result:</b> pooled SMD = 1.01 (p&lt;0.001) when AI-personalized practice supplements teacher-led instruction; generative AI SMD = 1.38; behavioural engagement alone ns (−0.30); shrinks to 0.84 in high-quality designs · <b>Strengthens:</b> L2 + S0's 3-week tool-sprint blocks — design each block as a faculty-orchestrated AI practice gym with explicit curricular alignment, never a self-serve app; cite ~0.8 SD (not 1.01) as the honest ceiling (DR24, L6).</p></div>
+<div class="top"><h3>3. Goal-directed, low-frequency AI-interaction rules — anti-atrophy design</h3><p style="margin:4px 0;font-size:13.5px"><b>What was done:</b> mechanism-level synthesis across 55 AI-GBL studies: low-frequency goal-directed AI/NPC interactions vs habitual exploratory use; interpretable rule-based adaptation vs opaque models; stealth assessment from work logs · <b>Measured result:</b> AI presence alone gave no knowledge advantage in several included studies (engagement moved, knowledge did not); transparent rule-based adaptation η²p = 0.349 on self-efficacy; stealth assessment AUC 0.848–0.913; only 2/55 studies bias-audited · <b>Strengthens:</b> DR3 (skill atrophy) + DR23 (assessment integrity) — bake "call AI on purpose, log the call" into the AI-as-junior-staff loop (brief→draft→critique→quality gate + judgment notebook) and grade process-visible logs rather than proctoring (L5).</p></div>
+
+<h2>Gaps &amp; notes</h2>
+<ul style="font-size:13.5px">
+  <li>Scope: all 4 papers treat GBL/gamification as pedagogy <i>for other subjects</i>; none is about teaching game development as a profession — this folder informs the fluency/teaching layer (S0, S5-L1) and studio critique practice, not a game curriculum.</li>
+  <li>Evidence quality: only 7% RCTs (paper 1); near-zero longitudinal evidence beyond 8 weeks; extreme heterogeneity (I² ≈ 96%) in the meta-analysis means its pooled SMD is a rough mean across incomparable implementations.</li>
+  <li>Geography: both syntheses report East-Asian concentration; the Asia subgroup (k = 30, SMD = 1.18) is the geographically closest estimate to Thailand, but nothing in the folder is Thailand-specific.</li>
+  <li>Apparent contradiction: paper 3's engagement null (SMD = −0.30) vs paper 2's affective gains — engagement is operationalized inconsistently across the field; do not let engagement-dashboard claims drive curriculum decisions.</li>
+  <li>Paper 2 caveats: 6.3% survey response rate (311/4,898), no control group, single institution; the ethics null may be under-powered rather than a true null.</li>
+  <li>Paper 3 internal sloppiness: ITS appears twice in its AI-type table (k = 4, SMD 0.55 and k = 2, SMD 0.72) and the meta-regression dependent variable is mislabeled "log odds ratio" — treat its subgroup numbers as approximate. Review abstract counts 81 included studies while meta-analytic subgroups sum to ~40 (the meta subset is smaller than the review set).</li>
+  <li>Paper 4 is explicitly unvalidated conceptual work — the MDA rubric is worth piloting as a studio critique device, but it carries no empirical weight.</li>
+</ul>
+
+<footer>Part of the papers-digest pipeline · source text in ../text/9-game-based-learning/ · master index: 00-INDEX.html</footer>
+</div></body></html>
